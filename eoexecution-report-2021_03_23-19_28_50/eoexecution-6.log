@@ -1,0 +1,134 @@
+2021-03-23 19:29:31,589 eolearn.core.eoworkflow DEBUG    Computing SentinelHubInputTask(*(), **{'bbox': BBox(((915284.5415499813, 7009891.854462869), (986616.8233885444, 7071009.689093189)), crs=CRS('32617')), 'time_interval': ['2019-05-12', '2019-5-18']})
+2021-03-23 19:29:31,592 sentinelhub.ogc DEBUG    URL=https://services.sentinel-hub.com/ogc/wfs/8b62defc-8bf6-4075-9eaf-6e24383df20e?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=915284.5415499813%2C7009891.854462869%2C986616.8233885444%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2019-05-12T00%3A00%3A00%2F2019-05-18T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0
+2021-03-23 19:29:31,597 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:37,144 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "GET /ogc/wfs/8b62defc-8bf6-4075-9eaf-6e24383df20e?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=915284.5415499813%2C7009891.854462869%2C986616.8233885444%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2019-05-12T00%3A00%3A00%2F2019-05-18T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0 HTTP/1.1" 200 None
+2021-03-23 19:29:37,149 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1056_0: Successful download from https://services.sentinel-hub.com/ogc/wfs/8b62defc-8bf6-4075-9eaf-6e24383df20e?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=915284.5415499813%2C7009891.854462869%2C986616.8233885444%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2019-05-12T00%3A00%3A00%2F2019-05-18T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0
+2021-03-23 19:29:37,153 eolearn.io.processing_api DEBUG    Downloading 5 requests of type DataCollection.SENTINEL2_L1C
+2021-03-23 19:29:37,156 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_1: Sleeping for 0.05
+2021-03-23 19:29:37,158 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:37,158 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Sleeping for 0.05
+2021-03-23 19:29:37,159 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_3: Sleeping for 0.05
+2021-03-23 19:29:37,161 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_4: Sleeping for 0.05
+2021-03-23 19:29:37,209 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_1: Sleeping for 0.00
+2021-03-23 19:29:37,210 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Sleeping for 0.00
+2021-03-23 19:29:37,212 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_3: Sleeping for 0.00
+2021-03-23 19:29:37,213 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_4: Sleeping for 0.00
+2021-03-23 19:29:37,217 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Sleeping for 0.05
+2021-03-23 19:29:37,217 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:37,218 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_3: Sleeping for 0.05
+2021-03-23 19:29:37,220 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_4: Sleeping for 0.05
+2021-03-23 19:29:37,269 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Sleeping for 0.00
+2021-03-23 19:29:37,272 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_3: Sleeping for 0.00
+2021-03-23 19:29:37,273 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_4: Sleeping for 0.00
+2021-03-23 19:29:37,274 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Sleeping for 0.00
+2021-03-23 19:29:37,279 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_4: Sleeping for 0.05
+2021-03-23 19:29:37,279 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Sleeping for 0.05
+2021-03-23 19:29:37,279 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:37,330 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_4: Sleeping for 0.00
+2021-03-23 19:29:37,331 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Sleeping for 0.00
+2021-03-23 19:29:37,336 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_4: Sleeping for 0.00
+2021-03-23 19:29:37,337 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Sleeping for 0.00
+2021-03-23 19:29:37,343 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Sleeping for 0.05
+2021-03-23 19:29:37,344 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:37,396 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Sleeping for 0.00
+2021-03-23 19:29:37,401 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Sleeping for 0.00
+2021-03-23 19:29:37,408 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:43,118 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-23 19:29:43,140 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-23 19:29:43,596 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-23 19:29:45,053 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-23 19:29:45,763 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-23 19:29:46,329 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_4: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-23 19:29:46,958 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_0: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-23 19:29:52,058 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-23 19:29:56,655 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_2: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-23 19:29:58,106 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1057_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-23 19:29:58,122 eolearn.io.processing_api DEBUG    Downloads complete
+2021-03-23 19:29:58,176 eolearn.core.eoworkflow DEBUG    Computing AddValidDataMaskTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(5, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(5, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(5, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+  }
+  bbox: BBox(((915284.5415499813, 7009891.854462869), (986616.8233885444, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2019, 5, 12, 16, 15, 55), ..., datetime.datetime(2019, 5, 18, 16, 35, 49)], length=5
+),), **{})
+2021-03-23 19:29:58,177 eolearn.core.eoworkflow DEBUG    Removing intermediate result for AddValidDataMaskTask
+2021-03-23 19:29:58,178 eolearn.core.eoworkflow DEBUG    Computing AddValidDataCoverage(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(5, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(5, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(5, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(5, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+  }
+  bbox: BBox(((915284.5415499813, 7009891.854462869), (986616.8233885444, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2019, 5, 12, 16, 15, 55), ..., datetime.datetime(2019, 5, 18, 16, 35, 49)], length=5
+),), **{})
+2021-03-23 19:29:58,179 eolearn.core.eoworkflow DEBUG    Removing intermediate result for AddValidDataCoverage
+2021-03-23 19:29:58,180 eolearn.core.eoworkflow DEBUG    Computing SimpleFilterTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(5, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(5, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(5, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(5, 306, 357, 1), dtype=bool)
+  }
+  scalar: {
+    COVERAGE: numpy.ndarray(shape=(5, 1), dtype=float64)
+  }
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+  }
+  bbox: BBox(((915284.5415499813, 7009891.854462869), (986616.8233885444, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2019, 5, 12, 16, 15, 55), ..., datetime.datetime(2019, 5, 18, 16, 35, 49)], length=5
+),), **{})
+2021-03-23 19:29:58,181 root         DEBUG    EOWorkflow execution failed

@@ -1,0 +1,616 @@
+2021-03-23 19:29:05,351 eolearn.core.eoworkflow DEBUG    Computing SentinelHubInputTask(*(), **{'bbox': BBox(((843952.2597114183, 7071009.689093189), (915284.5415499813, 7132127.523723509)), crs=CRS('32617')), 'time_interval': ['2019-05-12', '2019-5-18']})
+2021-03-23 19:29:05,351 sentinelhub.ogc DEBUG    URL=https://services.sentinel-hub.com/ogc/wfs/8b62defc-8bf6-4075-9eaf-6e24383df20e?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=843952.2597114183%2C7071009.689093189%2C915284.5415499813%2C7132127.523723509&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2019-05-12T00%3A00%3A00%2F2019-05-18T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0
+2021-03-23 19:29:05,369 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:06,110 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "GET /ogc/wfs/8b62defc-8bf6-4075-9eaf-6e24383df20e?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=843952.2597114183%2C7071009.689093189%2C915284.5415499813%2C7132127.523723509&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2019-05-12T00%3A00%3A00%2F2019-05-18T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0 HTTP/1.1" 200 6748
+2021-03-23 19:29:06,121 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1008_0: Successful download from https://services.sentinel-hub.com/ogc/wfs/8b62defc-8bf6-4075-9eaf-6e24383df20e?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=843952.2597114183%2C7071009.689093189%2C915284.5415499813%2C7132127.523723509&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2019-05-12T00%3A00%3A00%2F2019-05-18T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0
+2021-03-23 19:29:06,125 eolearn.io.processing_api DEBUG    Downloading 3 requests of type DataCollection.SENTINEL2_L1C
+2021-03-23 19:29:06,128 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1009_1: Sleeping for 0.05
+2021-03-23 19:29:06,129 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:06,129 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1009_2: Sleeping for 0.05
+2021-03-23 19:29:06,180 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1009_1: Sleeping for 0.00
+2021-03-23 19:29:06,181 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1009_2: Sleeping for 0.00
+2021-03-23 19:29:06,185 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1009_2: Sleeping for 0.05
+2021-03-23 19:29:06,187 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:06,238 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1009_2: Sleeping for 0.00
+2021-03-23 19:29:06,243 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1009_2: Sleeping for 0.00
+2021-03-23 19:29:06,251 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:07,612 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-23 19:29:07,712 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-23 19:29:08,302 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1009_2: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-23 19:29:08,752 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-23 19:29:08,842 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1009_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-23 19:29:10,142 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1009_0: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-23 19:29:10,151 eolearn.io.processing_api DEBUG    Downloads complete
+2021-03-23 19:29:10,187 eolearn.core.eoworkflow DEBUG    Computing AddValidDataMaskTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(3, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(3, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+  }
+  bbox: BBox(((843952.2597114183, 7071009.689093189), (915284.5415499813, 7132127.523723509)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2019, 5, 15, 16, 25, 30), ..., datetime.datetime(2019, 5, 18, 16, 35, 27)], length=3
+),), **{})
+2021-03-23 19:29:10,192 eolearn.core.eoworkflow DEBUG    Removing intermediate result for AddValidDataMaskTask
+2021-03-23 19:29:10,192 eolearn.core.eoworkflow DEBUG    Computing AddValidDataCoverage(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(3, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(3, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+  }
+  bbox: BBox(((843952.2597114183, 7071009.689093189), (915284.5415499813, 7132127.523723509)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2019, 5, 15, 16, 25, 30), ..., datetime.datetime(2019, 5, 18, 16, 35, 27)], length=3
+),), **{})
+2021-03-23 19:29:10,192 eolearn.core.eoworkflow DEBUG    Removing intermediate result for AddValidDataCoverage
+2021-03-23 19:29:10,192 eolearn.core.eoworkflow DEBUG    Computing SimpleFilterTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(3, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(3, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+  }
+  scalar: {
+    COVERAGE: numpy.ndarray(shape=(3, 1), dtype=float64)
+  }
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+  }
+  bbox: BBox(((843952.2597114183, 7071009.689093189), (915284.5415499813, 7132127.523723509)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2019, 5, 15, 16, 25, 30), ..., datetime.datetime(2019, 5, 18, 16, 35, 27)], length=3
+),), **{})
+2021-03-23 19:29:10,195 eolearn.core.eoworkflow DEBUG    Removing intermediate result for SimpleFilterTask
+2021-03-23 19:29:10,195 eolearn.core.eoworkflow DEBUG    Computing TimeRaster(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(1, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(1, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+  }
+  scalar: {
+    COVERAGE: numpy.ndarray(shape=(1, 1), dtype=float64)
+  }
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+  }
+  bbox: BBox(((843952.2597114183, 7071009.689093189), (915284.5415499813, 7132127.523723509)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2019, 5, 15, 16, 25, 30)]
+),), **{})
+2021-03-23 19:29:10,195 fiona.env    DEBUG    Entering env context: <fiona.env.Env object at 0x000002BBCECA6248>
+2021-03-23 19:29:10,195 fiona.env    DEBUG    Starting outermost env
+2021-03-23 19:29:10,202 fiona.env    DEBUG    No GDAL environment exists
+2021-03-23 19:29:10,202 fiona.env    DEBUG    New GDAL environment <fiona._env.GDALEnv object at 0x000002BBCED4D988> created
+2021-03-23 19:29:10,202 fiona._env   DEBUG    Logging error handler pushed.
+2021-03-23 19:29:10,202 fiona._env   DEBUG    All drivers registered.
+2021-03-23 19:29:10,202 fiona._env   DEBUG    GDAL_DATA found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\gdal'.
+2021-03-23 19:29:10,202 fiona._env   DEBUG    PROJ_LIB found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\proj'.
+2021-03-23 19:29:10,202 fiona._env   DEBUG    Started GDALEnv <fiona._env.GDALEnv object at 0x000002BBCED4D988>.
+2021-03-23 19:29:10,202 fiona.env    DEBUG    Updated existing <fiona._env.GDALEnv object at 0x000002BBCED4D988> with options {}
+2021-03-23 19:29:10,202 fiona.env    DEBUG    Entered env context: <fiona.env.Env object at 0x000002BBCECA6248>
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    Got coordinate system
+2021-03-23 19:29:10,441 fiona.ogrext INFO     Failed to auto identify EPSG: 7
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    NULL pointer error
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    Params: b'+proj=lcc +lat_0=40 +lon_0=-100 +lat_1=49 +lat_2=77 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs'
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    Got coordinate system
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    OLC_FASTSETNEXTBYINDEX: 1
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    OLC_FASTFEATURECOUNT: 1
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    Next index: 0
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    Next index: 1
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    Next index: 2
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    Next index: 3
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    Next index: 4
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    Next index: 5
+2021-03-23 19:29:10,441 fiona.ogrext DEBUG    Next index: 6
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 7
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 8
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 9
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 10
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 11
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 12
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 13
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 14
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 15
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 16
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 17
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 18
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 19
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 20
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 21
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 22
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 23
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 24
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 25
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 26
+2021-03-23 19:29:10,452 fiona.ogrext DEBUG    Next index: 27
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 28
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 29
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 30
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 31
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 32
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 33
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 34
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 35
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 36
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 37
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 38
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 39
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 40
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 41
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 42
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 43
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 44
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 45
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 46
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 47
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 48
+2021-03-23 19:29:10,462 fiona.ogrext DEBUG    Next index: 49
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 50
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 51
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 52
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 53
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 54
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 55
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 56
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 57
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 58
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 59
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 60
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 61
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 62
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 63
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 64
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 65
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 66
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 67
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 68
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 69
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 70
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 71
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 72
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 73
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 74
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 75
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 76
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 77
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 78
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 79
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 80
+2021-03-23 19:29:10,472 fiona.ogrext DEBUG    Next index: 81
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 82
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 83
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 84
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 85
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 86
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 87
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 88
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 89
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 90
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 91
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 92
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 93
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 94
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 95
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 96
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 97
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 98
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 99
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 100
+2021-03-23 19:29:10,482 fiona.ogrext DEBUG    Next index: 101
+2021-03-23 19:29:10,491 fiona.ogrext DEBUG    Next index: 102
+2021-03-23 19:29:10,491 fiona.ogrext DEBUG    Next index: 103
+2021-03-23 19:29:10,491 fiona.ogrext DEBUG    Next index: 104
+2021-03-23 19:29:10,491 fiona.ogrext DEBUG    Next index: 105
+2021-03-23 19:29:10,491 fiona.ogrext DEBUG    Next index: 106
+2021-03-23 19:29:10,491 fiona.ogrext DEBUG    Next index: 107
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 108
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 109
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 110
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 111
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 112
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 113
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 114
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 115
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 116
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 117
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 118
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 119
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 120
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 121
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 122
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 123
+2021-03-23 19:29:10,495 fiona.ogrext DEBUG    Next index: 124
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 125
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 126
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 127
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 128
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 129
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 130
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 131
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 132
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 133
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 134
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 135
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 136
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 137
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 138
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 139
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 140
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 141
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 142
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 143
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 144
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 145
+2021-03-23 19:29:10,501 fiona.ogrext DEBUG    Next index: 146
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 147
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 148
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 149
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 150
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 151
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 152
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 153
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 154
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 155
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 156
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 157
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 158
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 159
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 160
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 161
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 162
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 163
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 164
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 165
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 166
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 167
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 168
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 169
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 170
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 171
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 172
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 173
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 174
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 175
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 176
+2021-03-23 19:29:10,511 fiona.ogrext DEBUG    Next index: 177
+2021-03-23 19:29:10,522 fiona.ogrext DEBUG    Next index: 178
+2021-03-23 19:29:10,522 fiona.ogrext DEBUG    Next index: 179
+2021-03-23 19:29:10,522 fiona.ogrext DEBUG    Next index: 180
+2021-03-23 19:29:10,522 fiona.ogrext DEBUG    Next index: 181
+2021-03-23 19:29:10,522 fiona.ogrext DEBUG    Next index: 182
+2021-03-23 19:29:10,522 fiona.ogrext DEBUG    Next index: 183
+2021-03-23 19:29:10,522 fiona.ogrext DEBUG    Next index: 184
+2021-03-23 19:29:10,522 fiona.ogrext DEBUG    Next index: 185
+2021-03-23 19:29:10,522 fiona.ogrext DEBUG    Next index: 186
+2021-03-23 19:29:10,522 fiona.ogrext DEBUG    Next index: 187
+2021-03-23 19:29:10,522 fiona.ogrext DEBUG    Next index: 188
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 189
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 190
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 191
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 192
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 193
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 194
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 195
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 196
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 197
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 198
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 199
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 200
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 201
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 202
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 203
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 204
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 205
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 206
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 207
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 208
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 209
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 210
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 211
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 212
+2021-03-23 19:29:10,532 fiona.ogrext DEBUG    Next index: 213
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 214
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 215
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 216
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 217
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 218
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 219
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 220
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 221
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 222
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 223
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 224
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 225
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 226
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 227
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 228
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 229
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 230
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 231
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 232
+2021-03-23 19:29:10,542 fiona.ogrext DEBUG    Next index: 233
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 234
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 235
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 236
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 237
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 238
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 239
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 240
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 241
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 242
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 243
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 244
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 245
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 246
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 247
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 248
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 249
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 250
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 251
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 252
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 253
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 254
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 255
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 256
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 257
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 258
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 259
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 260
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 261
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 262
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 263
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 264
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 265
+2021-03-23 19:29:10,551 fiona.ogrext DEBUG    Next index: 266
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 267
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 268
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 269
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 270
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 271
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 272
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 273
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 274
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 275
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 276
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 277
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 278
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 279
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 280
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 281
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 282
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 283
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 284
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 285
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 286
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 287
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 288
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 289
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 290
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 291
+2021-03-23 19:29:10,562 fiona.ogrext DEBUG    Next index: 292
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 293
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 294
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 295
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 296
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 297
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 298
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 299
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 300
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 301
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 302
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 303
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 304
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 305
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 306
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 307
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 308
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 309
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 310
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 311
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 312
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 313
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 314
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 315
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 316
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 317
+2021-03-23 19:29:10,572 fiona.ogrext DEBUG    Next index: 318
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 319
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 320
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 321
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 322
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 323
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 324
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 325
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 326
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 327
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 328
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 329
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 330
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 331
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 332
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 333
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 334
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 335
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 336
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 337
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 338
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 339
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 340
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 341
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 342
+2021-03-23 19:29:10,581 fiona.ogrext DEBUG    Next index: 343
+2021-03-23 19:29:10,592 fiona.ogrext DEBUG    Next index: 344
+2021-03-23 19:29:10,592 fiona.ogrext DEBUG    Next index: 345
+2021-03-23 19:29:10,592 fiona.ogrext DEBUG    Next index: 346
+2021-03-23 19:29:10,592 fiona.ogrext DEBUG    Next index: 347
+2021-03-23 19:29:10,592 fiona.ogrext DEBUG    Next index: 348
+2021-03-23 19:29:10,592 fiona.ogrext DEBUG    Next index: 349
+2021-03-23 19:29:10,592 fiona.ogrext DEBUG    Next index: 350
+2021-03-23 19:29:10,596 fiona.ogrext DEBUG    Next index: 351
+2021-03-23 19:29:10,596 fiona.ogrext DEBUG    Next index: 352
+2021-03-23 19:29:10,596 fiona.ogrext DEBUG    Next index: 353
+2021-03-23 19:29:10,596 fiona.ogrext DEBUG    Next index: 354
+2021-03-23 19:29:10,596 fiona.ogrext DEBUG    Next index: 355
+2021-03-23 19:29:10,602 fiona.ogrext DEBUG    Next index: 356
+2021-03-23 19:29:10,602 fiona.ogrext DEBUG    Next index: 357
+2021-03-23 19:29:10,602 fiona.ogrext DEBUG    Next index: 358
+2021-03-23 19:29:10,602 fiona.ogrext DEBUG    Next index: 359
+2021-03-23 19:29:10,602 fiona.ogrext DEBUG    Next index: 360
+2021-03-23 19:29:10,602 fiona.ogrext DEBUG    Next index: 361
+2021-03-23 19:29:10,602 fiona.ogrext DEBUG    Next index: 362
+2021-03-23 19:29:10,602 fiona.ogrext DEBUG    Next index: 363
+2021-03-23 19:29:10,602 fiona.ogrext DEBUG    Next index: 364
+2021-03-23 19:29:10,641 fiona.collection DEBUG    Flushed buffer
+2021-03-23 19:29:10,641 fiona.collection DEBUG    Stopped session
+2021-03-23 19:29:10,641 fiona.env    DEBUG    Exiting env context: <fiona.env.Env object at 0x000002BBCECA6248>
+2021-03-23 19:29:10,641 fiona.env    DEBUG    Cleared existing <fiona._env.GDALEnv object at 0x000002BBCED4D988> options
+2021-03-23 19:29:10,641 fiona._env   DEBUG    Stopping GDALEnv <fiona._env.GDALEnv object at 0x000002BBCED4D988>.
+2021-03-23 19:29:10,641 fiona._env   DEBUG    Error handler popped.
+2021-03-23 19:29:10,641 fiona._env   DEBUG    Stopped GDALEnv <fiona._env.GDALEnv object at 0x000002BBCED4D988>.
+2021-03-23 19:29:10,641 fiona.env    DEBUG    Exiting outermost env
+2021-03-23 19:29:10,641 fiona.env    DEBUG    Exited env context: <fiona.env.Env object at 0x000002BBCECA6248>
+2021-03-23 19:29:11,067 rasterio.env DEBUG    Entering env context: <rasterio.env.Env object at 0x000002BBD09B1D88>
+2021-03-23 19:29:11,067 rasterio.env DEBUG    Starting outermost env
+2021-03-23 19:29:11,067 rasterio.env DEBUG    No GDAL environment exists
+2021-03-23 19:29:11,067 rasterio.env DEBUG    New GDAL environment <rasterio._env.GDALEnv object at 0x000002BBCED55448> created
+2021-03-23 19:29:11,072 rasterio._env DEBUG    GDAL_DATA found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\gdal'.
+2021-03-23 19:29:11,072 rasterio._env DEBUG    PROJ_LIB found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\proj'.
+2021-03-23 19:29:11,072 rasterio._env DEBUG    Started GDALEnv <rasterio._env.GDALEnv object at 0x000002BBCED55448>.
+2021-03-23 19:29:11,072 rasterio.env DEBUG    Entered env context: <rasterio.env.Env object at 0x000002BBD09B1D88>
+2021-03-23 19:29:11,112 rasterio.env DEBUG    Exiting env context: <rasterio.env.Env object at 0x000002BBD09B1D88>
+2021-03-23 19:29:11,112 rasterio.env DEBUG    Cleared existing <rasterio._env.GDALEnv object at 0x000002BBCED55448> options
+2021-03-23 19:29:11,112 rasterio._env DEBUG    Stopped GDALEnv <rasterio._env.GDALEnv object at 0x000002BBCED55448>.
+2021-03-23 19:29:11,112 rasterio.env DEBUG    Exiting outermost env
+2021-03-23 19:29:11,112 rasterio.env DEBUG    Exited env context: <rasterio.env.Env object at 0x000002BBD09B1D88>
+2021-03-23 19:29:11,121 eolearn.core.eoworkflow DEBUG    Removing intermediate result for TimeRaster
+2021-03-23 19:29:11,121 eolearn.core.eoworkflow DEBUG    Computing SaveTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(1, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(1, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+  }
+  scalar: {
+    COVERAGE: numpy.ndarray(shape=(1, 1), dtype=float64)
+  }
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {
+    0: numpy.ndarray(shape=(306, 357, 1), dtype=int16)
+  }
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+  }
+  bbox: BBox(((843952.2597114183, 7071009.689093189), (915284.5415499813, 7132127.523723509)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2019, 5, 15, 16, 25, 30)]
+),), **{'eopatch_folder': 'eopatch_1'})
+2021-03-23 19:29:11,203 eolearn.core.eoworkflow DEBUG    Removing intermediate result for SaveTask
+2021-03-23 19:29:11,203 eolearn.core.eoworkflow DEBUG    Workflow finished with WorkflowResults(
+  Dependency(SaveTask):
+    EOPatch(
+      data: {
+        BANDS: numpy.ndarray(shape=(1, 306, 357, 3), dtype=float32)
+      }
+      mask: {
+        CLM: numpy.ndarray(shape=(1, 306, 357, 1), dtype=uint8)
+        IS_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+        VALID_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+      }
+      scalar: {
+        COVERAGE: numpy.ndarray(shape=(1, 1), dtype=float64)
+      }
+      label: {}
+      vector: {}
+      data_timeless: {}
+      mask_timeless: {
+        0: numpy.ndarray(shape=(306, 357, 1), dtype=int16)
+      }
+      scalar_timeless: {}
+      label_timeless: {}
+      vector_timeless: {}
+      meta_info: {
+        maxcc: 0.8
+        service_type: 'processing'
+        size_x: 357
+        size_y: 306
+        time_difference: datetime.timedelta(seconds=7200)
+        time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+      }
+      bbox: BBox(((843952.2597114183, 7071009.689093189), (915284.5415499813, 7132127.523723509)), crs=CRS('32617'))
+      timestamp: [datetime.datetime(2019, 5, 15, 16, 25, 30)]
+    )
+)
+2021-03-23 19:29:11,203 root         DEBUG    EOWorkflow execution finished

@@ -1,0 +1,109 @@
+2021-03-23 19:29:18,262 eolearn.core.eoworkflow DEBUG    Computing SentinelHubInputTask(*(), **{'bbox': BBox(((772619.9778728553, 7009891.854462869), (843952.2597114183, 7071009.689093189)), crs=CRS('32617')), 'time_interval': ['2019-05-12', '2019-5-18']})
+2021-03-23 19:29:18,262 sentinelhub.ogc DEBUG    URL=https://services.sentinel-hub.com/ogc/wfs/8b62defc-8bf6-4075-9eaf-6e24383df20e?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=772619.9778728553%2C7009891.854462869%2C843952.2597114183%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2019-05-12T00%3A00%3A00%2F2019-05-18T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0
+2021-03-23 19:29:18,274 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:20,362 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "GET /ogc/wfs/8b62defc-8bf6-4075-9eaf-6e24383df20e?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=772619.9778728553%2C7009891.854462869%2C843952.2597114183%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2019-05-12T00%3A00%3A00%2F2019-05-18T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0 HTTP/1.1" 200 7417
+2021-03-23 19:29:20,362 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1031_0: Successful download from https://services.sentinel-hub.com/ogc/wfs/8b62defc-8bf6-4075-9eaf-6e24383df20e?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=772619.9778728553%2C7009891.854462869%2C843952.2597114183%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2019-05-12T00%3A00%3A00%2F2019-05-18T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0
+2021-03-23 19:29:20,372 eolearn.io.processing_api DEBUG    Downloading 3 requests of type DataCollection.SENTINEL2_L1C
+2021-03-23 19:29:20,372 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1032_1: Sleeping for 0.05
+2021-03-23 19:29:20,372 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:20,372 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1032_2: Sleeping for 0.05
+2021-03-23 19:29:20,432 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1032_1: Sleeping for 0.00
+2021-03-23 19:29:20,432 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1032_2: Sleeping for 0.00
+2021-03-23 19:29:20,452 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1032_1: Sleeping for 0.05
+2021-03-23 19:29:20,452 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:20,512 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-23 19:29:21,911 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-23 19:29:22,426 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-23 19:29:22,528 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-23 19:29:23,592 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1032_0: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-23 19:29:24,832 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1032_2: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-23 19:29:25,477 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-1032_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-23 19:29:25,491 eolearn.io.processing_api DEBUG    Downloads complete
+2021-03-23 19:29:25,525 eolearn.core.eoworkflow DEBUG    Computing AddValidDataMaskTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(3, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(3, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+  }
+  bbox: BBox(((772619.9778728553, 7009891.854462869), (843952.2597114183, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2019, 5, 15, 16, 25, 43), ..., datetime.datetime(2019, 5, 18, 16, 35, 46)], length=3
+),), **{})
+2021-03-23 19:29:25,526 eolearn.core.eoworkflow DEBUG    Removing intermediate result for AddValidDataMaskTask
+2021-03-23 19:29:25,527 eolearn.core.eoworkflow DEBUG    Computing AddValidDataCoverage(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(3, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(3, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+  }
+  bbox: BBox(((772619.9778728553, 7009891.854462869), (843952.2597114183, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2019, 5, 15, 16, 25, 43), ..., datetime.datetime(2019, 5, 18, 16, 35, 46)], length=3
+),), **{})
+2021-03-23 19:29:25,527 eolearn.core.eoworkflow DEBUG    Removing intermediate result for AddValidDataCoverage
+2021-03-23 19:29:25,528 eolearn.core.eoworkflow DEBUG    Computing SimpleFilterTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(3, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(3, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+  }
+  scalar: {
+    COVERAGE: numpy.ndarray(shape=(3, 1), dtype=float64)
+  }
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2019-05-12T00:00:00', '2019-05-18T23:59:59')
+  }
+  bbox: BBox(((772619.9778728553, 7009891.854462869), (843952.2597114183, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2019, 5, 15, 16, 25, 43), ..., datetime.datetime(2019, 5, 18, 16, 35, 46)], length=3
+),), **{})
+2021-03-23 19:29:25,530 root         DEBUG    EOWorkflow execution failed
