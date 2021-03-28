@@ -1,0 +1,1032 @@
+2021-03-27 18:52:48,824 eolearn.core.eoworkflow DEBUG    Computing SentinelHubInputTask(*(), **{'bbox': BBox(((-83367.40418990178, 7009891.854462869), (-12035.12235133868, 7071009.689093189)), crs=CRS('32617')), 'time_interval': ['2017-11-1', '2018-7-31']})
+2021-03-27 18:52:48,827 sentinelhub.ogc DEBUG    URL=https://services.sentinel-hub.com/ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-83367.40418990178%2C7009891.854462869%2C-12035.12235133868%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0
+2021-03-27 18:52:48,839 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:55,094 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "GET /ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-83367.40418990178%2C7009891.854462869%2C-12035.12235133868%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0 HTTP/1.1" 200 None
+2021-03-27 18:52:55,684 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10449_0: Successful download from https://services.sentinel-hub.com/ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-83367.40418990178%2C7009891.854462869%2C-12035.12235133868%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0
+2021-03-27 18:52:55,702 sentinelhub.ogc DEBUG    URL=https://services.sentinel-hub.com/ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-83367.40418990178%2C7009891.854462869%2C-12035.12235133868%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=100
+2021-03-27 18:52:55,714 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:56,656 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "GET /ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-83367.40418990178%2C7009891.854462869%2C-12035.12235133868%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=100 HTTP/1.1" 200 None
+2021-03-27 18:52:56,662 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10450_0: Successful download from https://services.sentinel-hub.com/ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-83367.40418990178%2C7009891.854462869%2C-12035.12235133868%2C7071009.689093189&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=100
+2021-03-27 18:52:56,849 eolearn.io.processing_api DEBUG    Downloading 74 requests of type DataCollection.SENTINEL2_L1C
+2021-03-27 18:52:56,861 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.05
+2021-03-27 18:52:56,872 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_2: Sleeping for 0.03
+2021-03-27 18:52:56,875 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:56,875 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.03
+2021-03-27 18:52:56,878 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Sleeping for 0.02
+2021-03-27 18:52:56,884 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.02
+2021-03-27 18:52:56,889 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Sleeping for 0.02
+2021-03-27 18:52:56,891 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Sleeping for 0.02
+2021-03-27 18:52:56,892 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_8: Sleeping for 0.02
+2021-03-27 18:52:56,894 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Sleeping for 0.00
+2021-03-27 18:52:56,895 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.00
+2021-03-27 18:52:56,896 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.00
+2021-03-27 18:52:56,897 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Sleeping for 0.00
+2021-03-27 18:52:56,899 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.00
+2021-03-27 18:52:56,900 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.00
+2021-03-27 18:52:56,901 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:56,902 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Sleeping for 0.00
+2021-03-27 18:52:56,902 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Sleeping for 0.00
+2021-03-27 18:52:56,902 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.00
+2021-03-27 18:52:56,902 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_14: Sleeping for 0.00
+2021-03-27 18:52:56,904 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.00
+2021-03-27 18:52:56,904 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.00
+2021-03-27 18:52:56,905 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.00
+2021-03-27 18:52:56,906 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:56,906 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.00
+2021-03-27 18:52:56,907 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Sleeping for 0.00
+2021-03-27 18:52:56,907 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:56,907 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Sleeping for 0.00
+2021-03-27 18:52:56,907 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:56,908 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.00
+2021-03-27 18:52:56,909 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_14: Sleeping for 0.05
+2021-03-27 18:52:56,910 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.05
+2021-03-27 18:52:56,910 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:56,910 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.05
+2021-03-27 18:52:56,910 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Sleeping for 0.05
+2021-03-27 18:52:56,916 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.05
+2021-03-27 18:52:56,916 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:56,916 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:56,916 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Sleeping for 0.05
+2021-03-27 18:52:56,916 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_8: Sleeping for 0.05
+2021-03-27 18:52:56,917 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:56,917 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.05
+2021-03-27 18:52:56,917 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Sleeping for 0.05
+2021-03-27 18:52:56,920 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:56,920 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.05
+2021-03-27 18:52:56,923 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:56,923 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Sleeping for 0.05
+2021-03-27 18:52:56,924 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.03
+2021-03-27 18:52:56,924 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.03
+2021-03-27 18:52:56,963 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:56,963 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.00
+2021-03-27 18:52:56,968 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:56,969 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.00
+2021-03-27 18:52:56,972 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.05
+2021-03-27 18:52:56,973 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:56,973 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:56,973 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:56,973 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.05
+2021-03-27 18:52:56,973 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Sleeping for 0.05
+2021-03-27 18:52:56,973 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.05
+2021-03-27 18:52:56,975 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Sleeping for 0.05
+2021-03-27 18:52:56,975 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:56,976 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.05
+2021-03-27 18:52:56,976 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.05
+2021-03-27 18:52:56,976 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:56,976 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_8: Sleeping for 0.05
+2021-03-27 18:52:56,977 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Sleeping for 0.05
+2021-03-27 18:52:56,977 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:56,977 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.05
+2021-03-27 18:52:56,978 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Sleeping for 0.05
+2021-03-27 18:52:56,979 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,024 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.00
+2021-03-27 18:52:57,028 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,029 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.00
+2021-03-27 18:52:57,031 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,033 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:57,034 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Sleeping for 0.05
+2021-03-27 18:52:57,034 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.05
+2021-03-27 18:52:57,034 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Sleeping for 0.05
+2021-03-27 18:52:57,034 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,034 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.05
+2021-03-27 18:52:57,035 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,035 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.05
+2021-03-27 18:52:57,035 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,035 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.05
+2021-03-27 18:52:57,035 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,036 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.05
+2021-03-27 18:52:57,036 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Sleeping for 0.05
+2021-03-27 18:52:57,036 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_8: Sleeping for 0.05
+2021-03-27 18:52:57,039 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Sleeping for 0.05
+2021-03-27 18:52:57,039 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,043 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,086 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.00
+2021-03-27 18:52:57,091 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.00
+2021-03-27 18:52:57,091 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Sleeping for 0.00
+2021-03-27 18:52:57,093 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Sleeping for 0.00
+2021-03-27 18:52:57,093 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.00
+2021-03-27 18:52:57,094 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,095 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,095 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.00
+2021-03-27 18:52:57,095 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.00
+2021-03-27 18:52:57,096 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:57,097 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,097 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Sleeping for 0.05
+2021-03-27 18:52:57,097 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.05
+2021-03-27 18:52:57,098 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.05
+2021-03-27 18:52:57,100 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.05
+2021-03-27 18:52:57,101 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Sleeping for 0.05
+2021-03-27 18:52:57,101 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,101 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Sleeping for 0.05
+2021-03-27 18:52:57,101 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_8: Sleeping for 0.05
+2021-03-27 18:52:57,101 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,101 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,101 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,103 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.05
+2021-03-27 18:52:57,104 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.05
+2021-03-27 18:52:57,105 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,152 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.00
+2021-03-27 18:52:57,155 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Sleeping for 0.00
+2021-03-27 18:52:57,155 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.00
+2021-03-27 18:52:57,156 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.00
+2021-03-27 18:52:57,156 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.00
+2021-03-27 18:52:57,157 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.00
+2021-03-27 18:52:57,157 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.00
+2021-03-27 18:52:57,158 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Sleeping for 0.05
+2021-03-27 18:52:57,158 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,159 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Sleeping for 0.05
+2021-03-27 18:52:57,159 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,159 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,159 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Sleeping for 0.05
+2021-03-27 18:52:57,159 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,159 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,160 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.05
+2021-03-27 18:52:57,160 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.05
+2021-03-27 18:52:57,160 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.05
+2021-03-27 18:52:57,163 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:57,163 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.05
+2021-03-27 18:52:57,163 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.05
+2021-03-27 18:52:57,165 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,209 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Sleeping for 0.00
+2021-03-27 18:52:57,213 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,215 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Sleeping for 0.00
+2021-03-27 18:52:57,215 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.00
+2021-03-27 18:52:57,216 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,216 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Sleeping for 0.00
+2021-03-27 18:52:57,216 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,216 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Sleeping for 0.00
+2021-03-27 18:52:57,217 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.00
+2021-03-27 18:52:57,217 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.00
+2021-03-27 18:52:57,217 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.00
+2021-03-27 18:52:57,217 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,218 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.00
+2021-03-27 18:52:57,218 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.00
+2021-03-27 18:52:57,219 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.00
+2021-03-27 18:52:57,220 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,223 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,227 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Sleeping for 0.05
+2021-03-27 18:52:57,228 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,235 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.05
+2021-03-27 18:52:57,236 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Sleeping for 0.03
+2021-03-27 18:52:57,237 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.03
+2021-03-27 18:52:57,240 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,243 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.03
+2021-03-27 18:52:57,244 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.03
+2021-03-27 18:52:57,246 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.03
+2021-03-27 18:52:57,246 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.03
+2021-03-27 18:52:57,247 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.03
+2021-03-27 18:52:57,247 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.03
+2021-03-27 18:52:57,248 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.03
+2021-03-27 18:52:57,285 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,287 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.05
+2021-03-27 18:52:57,288 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.05
+2021-03-27 18:52:57,289 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.05
+2021-03-27 18:52:57,289 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.05
+2021-03-27 18:52:57,289 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,289 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,290 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:57,292 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,296 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,297 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Sleeping for 0.05
+2021-03-27 18:52:57,299 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.03
+2021-03-27 18:52:57,299 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.03
+2021-03-27 18:52:57,335 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,336 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,336 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.00
+2021-03-27 18:52:57,340 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.00
+2021-03-27 18:52:57,340 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,341 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.00
+2021-03-27 18:52:57,341 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,342 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.00
+2021-03-27 18:52:57,343 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.00
+2021-03-27 18:52:57,343 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,343 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.00
+2021-03-27 18:52:57,344 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.00
+2021-03-27 18:52:57,344 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,345 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.00
+2021-03-27 18:52:57,347 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,347 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,351 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,351 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Sleeping for 0.05
+2021-03-27 18:52:57,351 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.05
+2021-03-27 18:52:57,351 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.05
+2021-03-27 18:52:57,352 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,352 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.05
+2021-03-27 18:52:57,353 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:57,353 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,355 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,356 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.05
+2021-03-27 18:52:57,405 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,406 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.00
+2021-03-27 18:52:57,409 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,409 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.05
+2021-03-27 18:52:57,409 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,409 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,409 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.05
+2021-03-27 18:52:57,414 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,415 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:57,415 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.05
+2021-03-27 18:52:57,415 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.05
+2021-03-27 18:52:57,416 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,418 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,460 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,466 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,466 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.00
+2021-03-27 18:52:57,468 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,468 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,469 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.00
+2021-03-27 18:52:57,470 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,470 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,470 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:57,470 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.05
+2021-03-27 18:52:57,471 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,471 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.05
+2021-03-27 18:52:57,473 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,474 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.05
+2021-03-27 18:52:57,474 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,475 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,522 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,523 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,525 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.00
+2021-03-27 18:52:57,526 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,526 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.00
+2021-03-27 18:52:57,526 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Sleeping for 0.00
+2021-03-27 18:52:57,527 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,527 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.00
+2021-03-27 18:52:57,527 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.00
+2021-03-27 18:52:57,527 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,528 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,529 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.00
+2021-03-27 18:52:57,531 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,532 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.00
+2021-03-27 18:52:57,534 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,538 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.05
+2021-03-27 18:52:57,539 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.05
+2021-03-27 18:52:57,539 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,540 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:57,540 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,541 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,544 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,545 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,592 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,596 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.05
+2021-03-27 18:52:57,600 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,601 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:57,601 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,601 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,601 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,602 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,608 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,681 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,684 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.05
+2021-03-27 18:52:57,685 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,685 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,685 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,685 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,688 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,736 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,739 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,739 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.05
+2021-03-27 18:52:57,739 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,739 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,740 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,742 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,791 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,792 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.00
+2021-03-27 18:52:57,792 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,794 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,794 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,794 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,795 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.00
+2021-03-27 18:52:57,796 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,798 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,798 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,798 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,800 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.05
+2021-03-27 18:52:57,801 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,802 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,803 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,803 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,853 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,854 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,855 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,855 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,857 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:52:57,858 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,859 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,860 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,862 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,868 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.05
+2021-03-27 18:52:57,868 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,872 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,920 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,921 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Sleeping for 0.00
+2021-03-27 18:52:57,922 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,925 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,926 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.05
+2021-03-27 18:52:57,932 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:57,977 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,980 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,981 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,984 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Sleeping for 0.00
+2021-03-27 18:52:57,985 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:57,992 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:52:57,997 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:58,045 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:52:58,059 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:58,133 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,177 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,221 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,386 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,407 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,489 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,540 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,565 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,644 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,695 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,746 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,750 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,911 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,914 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,954 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:58,968 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:59,041 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:59,149 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:59,239 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:59,434 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:52:59,680 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_14: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:52:59,745 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:52:59,844 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:52:59,910 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,021 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,080 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,130 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,162 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,363 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_0: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,393 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,426 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,460 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_2: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,461 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,486 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_2: Sleeping for 0.00
+2021-03-27 18:53:00,491 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_2: Sleeping for 0.00
+2021-03-27 18:53:00,496 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_2: Sleeping for 0.00
+2021-03-27 18:53:00,503 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,514 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,518 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,528 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,592 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,593 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:53:00,596 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.03
+2021-03-27 18:53:00,631 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.00
+2021-03-27 18:53:00,635 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.00
+2021-03-27 18:53:00,639 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Sleeping for 0.00
+2021-03-27 18:53:00,646 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:53:00,649 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,678 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,698 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:53:00,701 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Sleeping for 0.00
+2021-03-27 18:53:00,703 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:53:00,707 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.05
+2021-03-27 18:53:00,710 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,758 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:53:00,763 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:53:00,767 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.00
+2021-03-27 18:53:00,775 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,793 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,820 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Sleeping for 0.00
+2021-03-27 18:53:00,825 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_8: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,825 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Sleeping for 0.00
+2021-03-27 18:53:00,836 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,854 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_8: Sleeping for 0.03
+2021-03-27 18:53:00,889 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_8: Sleeping for 0.00
+2021-03-27 18:53:00,895 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:00,904 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:00,962 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,984 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:00,997 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:01,008 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:01,013 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:01,024 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.02
+2021-03-27 18:53:01,040 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.00
+2021-03-27 18:53:01,044 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.00
+2021-03-27 18:53:01,045 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Sleeping for 0.00
+2021-03-27 18:53:01,048 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.00
+2021-03-27 18:53:01,052 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.05
+2021-03-27 18:53:01,054 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:01,104 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.00
+2021-03-27 18:53:01,109 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Sleeping for 0.00
+2021-03-27 18:53:01,120 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:01,213 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:01,241 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:01,277 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:01,293 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.03
+2021-03-27 18:53:01,328 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Sleeping for 0.00
+2021-03-27 18:53:01,341 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:01,351 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:01,401 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:01,484 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:01,527 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:01,625 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:01,638 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:01,727 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:01,740 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:01,774 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:01,791 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:01,866 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:01,900 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:01,986 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:02,134 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:02,138 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:02,195 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:02,258 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:02,271 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:02,292 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:02,488 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:02,548 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:02,579 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:02,915 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:02,995 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:03,057 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:03,069 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:03,152 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_14: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:03,252 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:03,382 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:03,442 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:04,574 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:04,826 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:04,834 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:04,888 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:04,986 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_8: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:04,997 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:05,089 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:05,091 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Sleeping for 0.03
+2021-03-27 18:53:05,137 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:05,262 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:05,312 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:05,421 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_2: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:05,477 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:05,506 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_0: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:05,548 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:05,564 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:05,575 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:05,599 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.02
+2021-03-27 18:53:05,620 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.00
+2021-03-27 18:53:05,625 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.00
+2021-03-27 18:53:05,633 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:06,159 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:06,193 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:06,203 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:06,257 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:06,825 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:06,952 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:07,005 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:07,026 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:07,065 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:07,087 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:07,125 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:07,305 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:07,364 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:07,408 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:07,467 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:07,543 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:07,582 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:07,675 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:07,695 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:07,740 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:07,795 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:07,928 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:07,939 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:08,020 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:08,021 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Sleeping for 0.03
+2021-03-27 18:53:08,057 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Sleeping for 0.00
+2021-03-27 18:53:08,062 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Sleeping for 0.00
+2021-03-27 18:53:08,077 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:08,184 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:08,464 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:08,524 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:08,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:08,753 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:08,767 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:08,866 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:08,883 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:09,165 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:09,180 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:09,376 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:09,850 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:09,923 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:09,947 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_2: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:09,962 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:10,003 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_0: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:10,070 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:10,105 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:10,124 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_2: Sleeping for 0.02
+2021-03-27 18:53:10,137 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Sleeping for 0.00
+2021-03-27 18:53:10,147 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_2: Sleeping for 0.05
+2021-03-27 18:53:10,156 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:10,164 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_0: Sleeping for 0.03
+2021-03-27 18:53:10,185 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:10,199 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_0: Sleeping for 0.00
+2021-03-27 18:53:10,202 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_2: Sleeping for 0.00
+2021-03-27 18:53:10,204 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_0: Sleeping for 0.00
+2021-03-27 18:53:10,211 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_0: Sleeping for 0.05
+2021-03-27 18:53:10,218 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:10,246 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.02
+2021-03-27 18:53:10,263 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_0: Sleeping for 0.00
+2021-03-27 18:53:10,267 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_0: Sleeping for 0.00
+2021-03-27 18:53:10,267 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.00
+2021-03-27 18:53:10,272 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.05
+2021-03-27 18:53:10,281 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:10,324 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.00
+2021-03-27 18:53:10,328 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Sleeping for 0.00
+2021-03-27 18:53:10,342 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:10,384 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:10,421 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:10,721 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:10,782 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:10,920 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_8: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:10,973 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:10,985 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:11,024 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:11,161 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:11,222 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:11,291 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:11,315 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:11,317 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:11,344 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:11,421 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Sleeping for 0.03
+2021-03-27 18:53:11,422 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:11,467 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:11,516 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:11,567 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:11,662 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:11,768 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:11,781 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_14: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:11,883 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:53:11,887 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:11,892 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_15: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:12,053 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_4: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:12,106 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:12,117 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_13: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:12,129 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:12,275 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_9: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:12,289 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_19: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:12,523 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:12,582 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:12,584 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:12,596 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:12,741 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_5: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:13,050 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:53:13,522 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_11: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:13,796 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_10: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:13,922 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_2: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:13,935 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_16: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:13,984 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_0: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:14,154 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_12: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:14,403 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_7: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:14,458 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_18: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:14,616 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:14,698 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:15,032 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_17: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:15,385 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_8: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:15,537 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-10451_6: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:53:15,587 eolearn.io.processing_api DEBUG    Downloads complete
+2021-03-27 18:53:17,489 eolearn.core.eoworkflow DEBUG    Computing SimpleFilterTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(74, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(74, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(74, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-83367.40418990178, 7009891.854462869), (-12035.12235133868, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2017, 11, 2, 17, 35), ..., datetime.datetime(2018, 7, 31, 17, 49, 4)], length=74
+),), **{})
+2021-03-27 18:53:17,568 eolearn.core.eoworkflow DEBUG    Removing intermediate result for SimpleFilterTask
+2021-03-27 18:53:17,569 eolearn.core.eoworkflow DEBUG    Computing AddValidDataMaskTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(34, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(34, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(34, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-83367.40418990178, 7009891.854462869), (-12035.12235133868, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2018, 1, 29, 17, 45, 53), ..., datetime.datetime(2018, 7, 31, 17, 49, 4)], length=34
+),), **{})
+2021-03-27 18:53:17,591 eolearn.core.eoworkflow DEBUG    Removing intermediate result for AddValidDataMaskTask
+2021-03-27 18:53:17,592 eolearn.core.eoworkflow DEBUG    Computing AddValidDataCoverage(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(34, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(34, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(34, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(34, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-83367.40418990178, 7009891.854462869), (-12035.12235133868, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2018, 1, 29, 17, 45, 53), ..., datetime.datetime(2018, 7, 31, 17, 49, 4)], length=34
+),), **{})
+2021-03-27 18:53:17,595 eolearn.core.eoworkflow DEBUG    Removing intermediate result for AddValidDataCoverage
+2021-03-27 18:53:17,596 eolearn.core.eoworkflow DEBUG    Computing SimpleFilterTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(34, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(34, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(34, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(34, 306, 357, 1), dtype=bool)
+  }
+  scalar: {
+    COVERAGE: numpy.ndarray(shape=(34, 1), dtype=float64)
+  }
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-83367.40418990178, 7009891.854462869), (-12035.12235133868, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2018, 1, 29, 17, 45, 53), ..., datetime.datetime(2018, 7, 31, 17, 49, 4)], length=34
+),), **{})
+2021-03-27 18:53:17,612 eolearn.core.eoworkflow DEBUG    Removing intermediate result for SimpleFilterTask
+2021-03-27 18:53:17,613 eolearn.core.eoworkflow DEBUG    Computing TimeRaster(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(1, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(1, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+  }
+  scalar: {
+    COVERAGE: numpy.ndarray(shape=(1, 1), dtype=float64)
+  }
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-83367.40418990178, 7009891.854462869), (-12035.12235133868, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2018, 7, 23, 17, 45, 26)]
+),), **{})
+2021-03-27 18:53:17,635 fiona.env    DEBUG    Entering env context: <fiona.env.Env object at 0x000001DC6E624FC8>
+2021-03-27 18:53:17,635 fiona.env    DEBUG    Starting outermost env
+2021-03-27 18:53:17,636 fiona.env    DEBUG    No GDAL environment exists
+2021-03-27 18:53:17,636 fiona.env    DEBUG    New GDAL environment <fiona._env.GDALEnv object at 0x000001DC6E51DC48> created
+2021-03-27 18:53:17,636 fiona._env   DEBUG    Logging error handler pushed.
+2021-03-27 18:53:17,639 fiona._env   DEBUG    All drivers registered.
+2021-03-27 18:53:17,639 fiona._env   DEBUG    GDAL_DATA found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\gdal'.
+2021-03-27 18:53:17,639 fiona._env   DEBUG    PROJ_LIB found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\proj'.
+2021-03-27 18:53:17,640 fiona._env   DEBUG    Started GDALEnv <fiona._env.GDALEnv object at 0x000001DC6E51DC48>.
+2021-03-27 18:53:17,640 fiona.env    DEBUG    Updated existing <fiona._env.GDALEnv object at 0x000001DC6E51DC48> with options {}
+2021-03-27 18:53:17,641 fiona.env    DEBUG    Entered env context: <fiona.env.Env object at 0x000001DC6E624FC8>
+2021-03-27 18:53:18,134 fiona.ogrext DEBUG    Got coordinate system
+2021-03-27 18:53:18,142 fiona.ogrext INFO     Failed to auto identify EPSG: 7
+2021-03-27 18:53:18,142 fiona.ogrext DEBUG    NULL pointer error
+2021-03-27 18:53:18,143 fiona.ogrext DEBUG    Params: b'+proj=lcc +lat_0=40 +lon_0=-100 +lat_1=49 +lat_2=77 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs'
+2021-03-27 18:53:18,143 fiona.ogrext DEBUG    Got coordinate system
+2021-03-27 18:53:18,144 fiona.ogrext DEBUG    OLC_FASTSETNEXTBYINDEX: 1
+2021-03-27 18:53:18,144 fiona.ogrext DEBUG    OLC_FASTFEATURECOUNT: 1
+2021-03-27 18:53:18,145 fiona.ogrext DEBUG    Next index: 0
+2021-03-27 18:53:18,145 fiona.ogrext DEBUG    Next index: 1
+2021-03-27 18:53:18,146 fiona.ogrext DEBUG    Next index: 2
+2021-03-27 18:53:18,146 fiona.ogrext DEBUG    Next index: 3
+2021-03-27 18:53:18,147 fiona.ogrext DEBUG    Next index: 4
+2021-03-27 18:53:18,147 fiona.ogrext DEBUG    Next index: 5
+2021-03-27 18:53:18,149 fiona.ogrext DEBUG    Next index: 6
+2021-03-27 18:53:18,150 fiona.ogrext DEBUG    Next index: 7
+2021-03-27 18:53:18,151 fiona.ogrext DEBUG    Next index: 8
+2021-03-27 18:53:18,152 fiona.ogrext DEBUG    Next index: 9
+2021-03-27 18:53:18,152 fiona.ogrext DEBUG    Next index: 10
+2021-03-27 18:53:18,153 fiona.ogrext DEBUG    Next index: 11
+2021-03-27 18:53:18,154 fiona.ogrext DEBUG    Next index: 12
+2021-03-27 18:53:18,155 fiona.ogrext DEBUG    Next index: 13
+2021-03-27 18:53:18,155 fiona.ogrext DEBUG    Next index: 14
+2021-03-27 18:53:18,156 fiona.ogrext DEBUG    Next index: 15
+2021-03-27 18:53:18,157 fiona.ogrext DEBUG    Next index: 16
+2021-03-27 18:53:18,158 fiona.ogrext DEBUG    Next index: 17
+2021-03-27 18:53:18,158 fiona.ogrext DEBUG    Next index: 18
+2021-03-27 18:53:18,159 fiona.ogrext DEBUG    Next index: 19
+2021-03-27 18:53:18,162 fiona.ogrext DEBUG    Next index: 20
+2021-03-27 18:53:18,163 fiona.ogrext DEBUG    Next index: 21
+2021-03-27 18:53:18,163 fiona.ogrext DEBUG    Next index: 22
+2021-03-27 18:53:18,165 fiona.ogrext DEBUG    Next index: 23
+2021-03-27 18:53:18,172 fiona.ogrext DEBUG    Next index: 24
+2021-03-27 18:53:18,173 fiona.ogrext DEBUG    Next index: 25
+2021-03-27 18:53:18,174 fiona.ogrext DEBUG    Next index: 26
+2021-03-27 18:53:18,176 fiona.ogrext DEBUG    Next index: 27
+2021-03-27 18:53:18,176 fiona.ogrext DEBUG    Next index: 28
+2021-03-27 18:53:18,177 fiona.ogrext DEBUG    Next index: 29
+2021-03-27 18:53:18,178 fiona.ogrext DEBUG    Next index: 30
+2021-03-27 18:53:18,179 fiona.ogrext DEBUG    Next index: 31
+2021-03-27 18:53:18,180 fiona.ogrext DEBUG    Next index: 32
+2021-03-27 18:53:18,180 fiona.ogrext DEBUG    Next index: 33
+2021-03-27 18:53:18,184 fiona.ogrext DEBUG    Next index: 34
+2021-03-27 18:53:18,186 fiona.ogrext DEBUG    Next index: 35
+2021-03-27 18:53:18,186 fiona.ogrext DEBUG    Next index: 36
+2021-03-27 18:53:18,187 fiona.ogrext DEBUG    Next index: 37
+2021-03-27 18:53:18,187 fiona.ogrext DEBUG    Next index: 38
+2021-03-27 18:53:18,189 fiona.ogrext DEBUG    Next index: 39
+2021-03-27 18:53:18,190 fiona.ogrext DEBUG    Next index: 40
+2021-03-27 18:53:18,190 fiona.ogrext DEBUG    Next index: 41
+2021-03-27 18:53:18,191 fiona.ogrext DEBUG    Next index: 42
+2021-03-27 18:53:18,191 fiona.ogrext DEBUG    Next index: 43
+2021-03-27 18:53:18,192 fiona.ogrext DEBUG    Next index: 44
+2021-03-27 18:53:18,193 fiona.ogrext DEBUG    Next index: 45
+2021-03-27 18:53:18,193 fiona.ogrext DEBUG    Next index: 46
+2021-03-27 18:53:18,194 fiona.ogrext DEBUG    Next index: 47
+2021-03-27 18:53:18,195 fiona.ogrext DEBUG    Next index: 48
+2021-03-27 18:53:18,196 fiona.ogrext DEBUG    Next index: 49
+2021-03-27 18:53:18,197 fiona.ogrext DEBUG    Next index: 50
+2021-03-27 18:53:18,198 fiona.ogrext DEBUG    Next index: 51
+2021-03-27 18:53:18,198 fiona.ogrext DEBUG    Next index: 52
+2021-03-27 18:53:18,199 fiona.ogrext DEBUG    Next index: 53
+2021-03-27 18:53:18,199 fiona.ogrext DEBUG    Next index: 54
+2021-03-27 18:53:18,200 fiona.ogrext DEBUG    Next index: 55
+2021-03-27 18:53:18,201 fiona.ogrext DEBUG    Next index: 56
+2021-03-27 18:53:18,202 fiona.ogrext DEBUG    Next index: 57
+2021-03-27 18:53:18,205 fiona.ogrext DEBUG    Next index: 58
+2021-03-27 18:53:18,205 fiona.ogrext DEBUG    Next index: 59
+2021-03-27 18:53:18,205 fiona.ogrext DEBUG    Next index: 60
+2021-03-27 18:53:18,206 fiona.ogrext DEBUG    Next index: 61
+2021-03-27 18:53:18,206 fiona.ogrext DEBUG    Next index: 62
+2021-03-27 18:53:18,207 fiona.ogrext DEBUG    Next index: 63
+2021-03-27 18:53:18,207 fiona.ogrext DEBUG    Next index: 64
+2021-03-27 18:53:18,208 fiona.ogrext DEBUG    Next index: 65
+2021-03-27 18:53:18,209 fiona.ogrext DEBUG    Next index: 66
+2021-03-27 18:53:18,209 fiona.ogrext DEBUG    Next index: 67
+2021-03-27 18:53:18,210 fiona.ogrext DEBUG    Next index: 68
+2021-03-27 18:53:18,211 fiona.ogrext DEBUG    Next index: 69
+2021-03-27 18:53:18,212 fiona.ogrext DEBUG    Next index: 70
+2021-03-27 18:53:18,213 fiona.ogrext DEBUG    Next index: 71
+2021-03-27 18:53:18,214 fiona.ogrext DEBUG    Next index: 72
+2021-03-27 18:53:18,229 fiona.ogrext DEBUG    Next index: 73
+2021-03-27 18:53:18,237 fiona.ogrext DEBUG    Next index: 74
+2021-03-27 18:53:18,238 fiona.ogrext DEBUG    Next index: 75
+2021-03-27 18:53:18,239 fiona.ogrext DEBUG    Next index: 76
+2021-03-27 18:53:18,239 fiona.ogrext DEBUG    Next index: 77
+2021-03-27 18:53:18,240 fiona.ogrext DEBUG    Next index: 78
+2021-03-27 18:53:18,240 fiona.ogrext DEBUG    Next index: 79
+2021-03-27 18:53:18,241 fiona.ogrext DEBUG    Next index: 80
+2021-03-27 18:53:18,241 fiona.ogrext DEBUG    Next index: 81
+2021-03-27 18:53:18,245 fiona.ogrext DEBUG    Next index: 82
+2021-03-27 18:53:18,247 fiona.ogrext DEBUG    Next index: 83
+2021-03-27 18:53:18,248 fiona.ogrext DEBUG    Next index: 84
+2021-03-27 18:53:18,250 fiona.ogrext DEBUG    Next index: 85
+2021-03-27 18:53:18,250 fiona.ogrext DEBUG    Next index: 86
+2021-03-27 18:53:18,251 fiona.ogrext DEBUG    Next index: 87
+2021-03-27 18:53:18,251 fiona.ogrext DEBUG    Next index: 88
+2021-03-27 18:53:18,252 fiona.ogrext DEBUG    Next index: 89
+2021-03-27 18:53:18,253 fiona.ogrext DEBUG    Next index: 90
+2021-03-27 18:53:18,254 fiona.ogrext DEBUG    Next index: 91
+2021-03-27 18:53:18,254 fiona.ogrext DEBUG    Next index: 92
+2021-03-27 18:53:18,258 fiona.ogrext DEBUG    Next index: 93
+2021-03-27 18:53:18,259 fiona.ogrext DEBUG    Next index: 94
+2021-03-27 18:53:18,260 fiona.ogrext DEBUG    Next index: 95
+2021-03-27 18:53:18,261 fiona.ogrext DEBUG    Next index: 96
+2021-03-27 18:53:18,261 fiona.ogrext DEBUG    Next index: 97
+2021-03-27 18:53:18,262 fiona.ogrext DEBUG    Next index: 98
+2021-03-27 18:53:18,263 fiona.ogrext DEBUG    Next index: 99
+2021-03-27 18:53:18,264 fiona.ogrext DEBUG    Next index: 100
+2021-03-27 18:53:18,265 fiona.ogrext DEBUG    Next index: 101
+2021-03-27 18:53:18,266 fiona.ogrext DEBUG    Next index: 102
+2021-03-27 18:53:18,266 fiona.ogrext DEBUG    Next index: 103
+2021-03-27 18:53:18,267 fiona.ogrext DEBUG    Next index: 104
+2021-03-27 18:53:18,268 fiona.ogrext DEBUG    Next index: 105
+2021-03-27 18:53:18,268 fiona.ogrext DEBUG    Next index: 106
+2021-03-27 18:53:18,269 fiona.ogrext DEBUG    Next index: 107
+2021-03-27 18:53:18,270 fiona.ogrext DEBUG    Next index: 108
+2021-03-27 18:53:18,270 fiona.ogrext DEBUG    Next index: 109
+2021-03-27 18:53:18,271 fiona.ogrext DEBUG    Next index: 110
+2021-03-27 18:53:18,278 fiona.ogrext DEBUG    Next index: 111
+2021-03-27 18:53:18,279 fiona.ogrext DEBUG    Next index: 112
+2021-03-27 18:53:18,280 fiona.ogrext DEBUG    Next index: 113
+2021-03-27 18:53:18,281 fiona.ogrext DEBUG    Next index: 114
+2021-03-27 18:53:18,282 fiona.ogrext DEBUG    Next index: 115
+2021-03-27 18:53:18,283 fiona.ogrext DEBUG    Next index: 116
+2021-03-27 18:53:18,284 fiona.ogrext DEBUG    Next index: 117
+2021-03-27 18:53:18,285 fiona.ogrext DEBUG    Next index: 118
+2021-03-27 18:53:18,285 fiona.ogrext DEBUG    Next index: 119
+2021-03-27 18:53:18,286 fiona.ogrext DEBUG    Next index: 120
+2021-03-27 18:53:18,287 fiona.ogrext DEBUG    Next index: 121
+2021-03-27 18:53:18,288 fiona.ogrext DEBUG    Next index: 122
+2021-03-27 18:53:18,289 fiona.ogrext DEBUG    Next index: 123
+2021-03-27 18:53:18,290 fiona.ogrext DEBUG    Next index: 124
+2021-03-27 18:53:18,290 fiona.ogrext DEBUG    Next index: 125
+2021-03-27 18:53:18,291 fiona.ogrext DEBUG    Next index: 126
+2021-03-27 18:53:18,292 fiona.ogrext DEBUG    Next index: 127
+2021-03-27 18:53:18,293 fiona.ogrext DEBUG    Next index: 128
+2021-03-27 18:53:18,293 fiona.ogrext DEBUG    Next index: 129
+2021-03-27 18:53:18,294 fiona.ogrext DEBUG    Next index: 130
+2021-03-27 18:53:18,294 fiona.ogrext DEBUG    Next index: 131
+2021-03-27 18:53:18,295 fiona.ogrext DEBUG    Next index: 132
+2021-03-27 18:53:18,296 fiona.ogrext DEBUG    Next index: 133
+2021-03-27 18:53:18,297 fiona.ogrext DEBUG    Next index: 134
+2021-03-27 18:53:18,297 fiona.ogrext DEBUG    Next index: 135
+2021-03-27 18:53:18,298 fiona.ogrext DEBUG    Next index: 136
+2021-03-27 18:53:18,299 fiona.ogrext DEBUG    Next index: 137
+2021-03-27 18:53:18,299 fiona.ogrext DEBUG    Next index: 138
+2021-03-27 18:53:18,300 fiona.ogrext DEBUG    Next index: 139
+2021-03-27 18:53:18,300 fiona.ogrext DEBUG    Next index: 140
+2021-03-27 18:53:18,301 fiona.ogrext DEBUG    Next index: 141
+2021-03-27 18:53:18,302 fiona.ogrext DEBUG    Next index: 142
+2021-03-27 18:53:18,302 fiona.ogrext DEBUG    Next index: 143
+2021-03-27 18:53:18,303 fiona.ogrext DEBUG    Next index: 144
+2021-03-27 18:53:18,303 fiona.ogrext DEBUG    Next index: 145
+2021-03-27 18:53:18,304 fiona.ogrext DEBUG    Next index: 146
+2021-03-27 18:53:18,305 fiona.ogrext DEBUG    Next index: 147
+2021-03-27 18:53:18,305 fiona.ogrext DEBUG    Next index: 148
+2021-03-27 18:53:18,306 fiona.ogrext DEBUG    Next index: 149
+2021-03-27 18:53:18,307 fiona.ogrext DEBUG    Next index: 150
+2021-03-27 18:53:18,307 fiona.ogrext DEBUG    Next index: 151
+2021-03-27 18:53:18,308 fiona.ogrext DEBUG    Next index: 152
+2021-03-27 18:53:18,308 fiona.ogrext DEBUG    Next index: 153
+2021-03-27 18:53:18,309 fiona.ogrext DEBUG    Next index: 154
+2021-03-27 18:53:18,310 fiona.ogrext DEBUG    Next index: 155
+2021-03-27 18:53:18,310 fiona.ogrext DEBUG    Next index: 156
+2021-03-27 18:53:18,311 fiona.ogrext DEBUG    Next index: 157
+2021-03-27 18:53:18,311 fiona.ogrext DEBUG    Next index: 158
+2021-03-27 18:53:18,314 fiona.ogrext DEBUG    Next index: 159
+2021-03-27 18:53:18,315 fiona.ogrext DEBUG    Next index: 160
+2021-03-27 18:53:18,316 fiona.ogrext DEBUG    Next index: 161
+2021-03-27 18:53:18,316 fiona.ogrext DEBUG    Next index: 162
+2021-03-27 18:53:18,317 fiona.ogrext DEBUG    Next index: 163
+2021-03-27 18:53:18,318 fiona.ogrext DEBUG    Next index: 164
+2021-03-27 18:53:18,319 fiona.ogrext DEBUG    Next index: 165
+2021-03-27 18:53:18,319 fiona.ogrext DEBUG    Next index: 166
+2021-03-27 18:53:18,320 fiona.ogrext DEBUG    Next index: 167
+2021-03-27 18:53:18,321 fiona.ogrext DEBUG    Next index: 168
+2021-03-27 18:53:18,321 fiona.ogrext DEBUG    Next index: 169
+2021-03-27 18:53:18,322 fiona.ogrext DEBUG    Next index: 170
+2021-03-27 18:53:18,332 fiona.ogrext DEBUG    Next index: 171
+2021-03-27 18:53:18,334 fiona.ogrext DEBUG    Next index: 172
+2021-03-27 18:53:18,335 fiona.ogrext DEBUG    Next index: 173
+2021-03-27 18:53:18,336 fiona.ogrext DEBUG    Next index: 174
+2021-03-27 18:53:18,337 fiona.ogrext DEBUG    Next index: 175
+2021-03-27 18:53:18,338 fiona.ogrext DEBUG    Next index: 176
+2021-03-27 18:53:18,338 fiona.ogrext DEBUG    Next index: 177
+2021-03-27 18:53:18,339 fiona.ogrext DEBUG    Next index: 178
+2021-03-27 18:53:18,340 fiona.ogrext DEBUG    Next index: 179
+2021-03-27 18:53:18,341 fiona.ogrext DEBUG    Next index: 180
+2021-03-27 18:53:18,342 fiona.ogrext DEBUG    Next index: 181
+2021-03-27 18:53:18,416 fiona.collection DEBUG    Flushed buffer
+2021-03-27 18:53:18,417 fiona.collection DEBUG    Stopped session
+2021-03-27 18:53:18,417 fiona.env    DEBUG    Exiting env context: <fiona.env.Env object at 0x000001DC6E624FC8>
+2021-03-27 18:53:18,417 fiona.env    DEBUG    Cleared existing <fiona._env.GDALEnv object at 0x000001DC6E51DC48> options
+2021-03-27 18:53:18,418 fiona._env   DEBUG    Stopping GDALEnv <fiona._env.GDALEnv object at 0x000001DC6E51DC48>.
+2021-03-27 18:53:18,418 fiona._env   DEBUG    Error handler popped.
+2021-03-27 18:53:18,418 fiona._env   DEBUG    Stopped GDALEnv <fiona._env.GDALEnv object at 0x000001DC6E51DC48>.
+2021-03-27 18:53:18,419 fiona.env    DEBUG    Exiting outermost env
+2021-03-27 18:53:18,419 fiona.env    DEBUG    Exited env context: <fiona.env.Env object at 0x000001DC6E624FC8>
+2021-03-27 18:53:19,442 rasterio.env DEBUG    Entering env context: <rasterio.env.Env object at 0x000001DC6C5EEA08>
+2021-03-27 18:53:19,443 rasterio.env DEBUG    Starting outermost env
+2021-03-27 18:53:19,443 rasterio.env DEBUG    No GDAL environment exists
+2021-03-27 18:53:19,444 rasterio.env DEBUG    New GDAL environment <rasterio._env.GDALEnv object at 0x000001DC76DBC988> created
+2021-03-27 18:53:19,447 rasterio._env DEBUG    GDAL_DATA found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\gdal'.
+2021-03-27 18:53:19,447 rasterio._env DEBUG    PROJ_LIB found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\proj'.
+2021-03-27 18:53:19,448 rasterio._env DEBUG    Started GDALEnv <rasterio._env.GDALEnv object at 0x000001DC76DBC988>.
+2021-03-27 18:53:19,448 rasterio.env DEBUG    Entered env context: <rasterio.env.Env object at 0x000001DC6C5EEA08>
+2021-03-27 18:53:19,538 rasterio.env DEBUG    Exiting env context: <rasterio.env.Env object at 0x000001DC6C5EEA08>
+2021-03-27 18:53:19,539 rasterio.env DEBUG    Cleared existing <rasterio._env.GDALEnv object at 0x000001DC76DBC988> options
+2021-03-27 18:53:19,539 rasterio._env DEBUG    Stopped GDALEnv <rasterio._env.GDALEnv object at 0x000001DC76DBC988>.
+2021-03-27 18:53:19,540 rasterio.env DEBUG    Exiting outermost env
+2021-03-27 18:53:19,540 rasterio.env DEBUG    Exited env context: <rasterio.env.Env object at 0x000001DC6C5EEA08>
+2021-03-27 18:53:19,543 eolearn.core.eoworkflow DEBUG    Removing intermediate result for TimeRaster
+2021-03-27 18:53:19,544 eolearn.core.eoworkflow DEBUG    Computing SaveImages(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(1, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(1, 306, 357, 1), dtype=uint8)
+    ICE_CHART: numpy.ndarray(shape=(1, 306, 357, 1), dtype=int16)
+    IS_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+  }
+  scalar: {
+    COVERAGE: numpy.ndarray(shape=(1, 1), dtype=float64)
+  }
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {
+    TEMP: numpy.ndarray(shape=(306, 357, 1), dtype=int16)
+  }
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-83367.40418990178, 7009891.854462869), (-12035.12235133868, 7071009.689093189)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2018, 7, 23, 17, 45, 26)]
+),), **{'patch_id': 37})
+2021-03-27 18:53:19,581 eolearn.core.eoworkflow DEBUG    Removing intermediate result for SaveImages
+2021-03-27 18:53:19,582 eolearn.core.eoworkflow DEBUG    Workflow finished with WorkflowResults(
+  Dependency(SaveImages):
+    EOPatch(
+      data: {
+        BANDS: numpy.ndarray(shape=(1, 306, 357, 3), dtype=float32)
+      }
+      mask: {
+        CLM: numpy.ndarray(shape=(1, 306, 357, 1), dtype=uint8)
+        ICE_CHART: numpy.ndarray(shape=(1, 306, 357, 1), dtype=int16)
+        IS_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+        VALID_DATA: numpy.ndarray(shape=(1, 306, 357, 1), dtype=bool)
+      }
+      scalar: {
+        COVERAGE: numpy.ndarray(shape=(1, 1), dtype=float64)
+      }
+      label: {}
+      vector: {}
+      data_timeless: {}
+      mask_timeless: {
+        TEMP: numpy.ndarray(shape=(306, 357, 1), dtype=int16)
+      }
+      scalar_timeless: {}
+      label_timeless: {}
+      vector_timeless: {}
+      meta_info: {
+        maxcc: 0.8
+        service_type: 'processing'
+        size_x: 357
+        size_y: 306
+        time_difference: datetime.timedelta(seconds=7200)
+        time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+      }
+      bbox: BBox(((-83367.40418990178, 7009891.854462869), (-12035.12235133868, 7071009.689093189)), crs=CRS('32617'))
+      timestamp: [datetime.datetime(2018, 7, 23, 17, 45, 26)]
+    )
+)
+2021-03-27 18:53:19,583 root         DEBUG    EOWorkflow execution finished

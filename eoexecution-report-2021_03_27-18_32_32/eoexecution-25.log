@@ -1,0 +1,2289 @@
+2021-03-27 18:44:43,852 eolearn.core.eoworkflow DEBUG    Computing SentinelHubInputTask(*(), **{'bbox': BBox(((-154699.68602846484, 6887656.18520223), (-83367.40418990178, 6948774.01983255)), crs=CRS('32617')), 'time_interval': ['2017-11-1', '2018-7-31']})
+2021-03-27 18:44:43,854 sentinelhub.ogc DEBUG    URL=https://services.sentinel-hub.com/ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-154699.68602846484%2C6887656.18520223%2C-83367.40418990178%2C6948774.01983255&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0
+2021-03-27 18:44:43,861 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:44,796 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "GET /ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-154699.68602846484%2C6887656.18520223%2C-83367.40418990178%2C6948774.01983255&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0 HTTP/1.1" 200 None
+2021-03-27 18:44:45,675 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6949_0: Successful download from https://services.sentinel-hub.com/ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-154699.68602846484%2C6887656.18520223%2C-83367.40418990178%2C6948774.01983255&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=0
+2021-03-27 18:44:45,682 sentinelhub.ogc DEBUG    URL=https://services.sentinel-hub.com/ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-154699.68602846484%2C6887656.18520223%2C-83367.40418990178%2C6948774.01983255&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=100
+2021-03-27 18:44:45,689 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:46,499 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "GET /ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-154699.68602846484%2C6887656.18520223%2C-83367.40418990178%2C6948774.01983255&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=100 HTTP/1.1" 200 None
+2021-03-27 18:44:47,224 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6950_0: Successful download from https://services.sentinel-hub.com/ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-154699.68602846484%2C6887656.18520223%2C-83367.40418990178%2C6948774.01983255&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=100
+2021-03-27 18:44:47,231 sentinelhub.ogc DEBUG    URL=https://services.sentinel-hub.com/ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-154699.68602846484%2C6887656.18520223%2C-83367.40418990178%2C6948774.01983255&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=200
+2021-03-27 18:44:47,236 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:47,939 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "GET /ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-154699.68602846484%2C6887656.18520223%2C-83367.40418990178%2C6948774.01983255&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=200 HTTP/1.1" 200 None
+2021-03-27 18:44:48,530 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6951_0: Successful download from https://services.sentinel-hub.com/ogc/wfs/b6fce5d9-6d40-4fec-a46e-d9bd2844abea?SERVICE=wfs&WARNINGS=False&REQUEST=GetFeature&TYPENAMES=DSS1&BBOX=-154699.68602846484%2C6887656.18520223%2C-83367.40418990178%2C6948774.01983255&OUTPUTFORMAT=application%2Fjson&SRSNAME=EPSG%3A32617&TIME=2017-11-01T00%3A00%3A00%2F2018-07-31T23%3A59%3A59&MAXCC=80.0&MAXFEATURES=100&FEATURE_OFFSET=200
+2021-03-27 18:44:48,627 eolearn.io.processing_api DEBUG    Downloading 88 requests of type DataCollection.SENTINEL2_L1C
+2021-03-27 18:44:48,630 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Sleeping for 0.05
+2021-03-27 18:44:48,632 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:48,633 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:48,633 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:48,634 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.05
+2021-03-27 18:44:48,635 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:48,636 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_6: Sleeping for 0.05
+2021-03-27 18:44:48,638 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:48,639 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Sleeping for 0.05
+2021-03-27 18:44:48,640 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.05
+2021-03-27 18:44:48,641 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.05
+2021-03-27 18:44:48,642 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.03
+2021-03-27 18:44:48,643 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.03
+2021-03-27 18:44:48,644 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.03
+2021-03-27 18:44:48,646 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_14: Sleeping for 0.03
+2021-03-27 18:44:48,647 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Sleeping for 0.03
+2021-03-27 18:44:48,648 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.03
+2021-03-27 18:44:48,649 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.03
+2021-03-27 18:44:48,650 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_18: Sleeping for 0.03
+2021-03-27 18:44:48,651 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.03
+2021-03-27 18:44:48,678 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.00
+2021-03-27 18:44:48,680 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.00
+2021-03-27 18:44:48,682 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:48,688 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Sleeping for 0.00
+2021-03-27 18:44:48,693 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.05
+2021-03-27 18:44:48,694 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:48,694 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:48,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Sleeping for 0.05
+2021-03-27 18:44:48,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.05
+2021-03-27 18:44:48,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:48,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:48,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.05
+2021-03-27 18:44:48,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_18: Sleeping for 0.05
+2021-03-27 18:44:48,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.05
+2021-03-27 18:44:48,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:48,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:48,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_6: Sleeping for 0.05
+2021-03-27 18:44:48,696 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:48,696 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Sleeping for 0.05
+2021-03-27 18:44:48,696 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.05
+2021-03-27 18:44:48,696 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.05
+2021-03-27 18:44:48,696 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.05
+2021-03-27 18:44:48,696 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Sleeping for 0.05
+2021-03-27 18:44:48,744 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:48,749 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:48,750 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:48,751 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:48,751 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.00
+2021-03-27 18:44:48,751 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Sleeping for 0.00
+2021-03-27 18:44:48,752 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:48,752 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:48,752 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.05
+2021-03-27 18:44:48,752 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_18: Sleeping for 0.05
+2021-03-27 18:44:48,752 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.05
+2021-03-27 18:44:48,753 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:48,755 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.05
+2021-03-27 18:44:48,755 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Sleeping for 0.05
+2021-03-27 18:44:48,755 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:48,755 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.05
+2021-03-27 18:44:48,755 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.05
+2021-03-27 18:44:48,755 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:48,756 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Sleeping for 0.05
+2021-03-27 18:44:48,756 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.05
+2021-03-27 18:44:48,757 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:48,757 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.05
+2021-03-27 18:44:48,758 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Sleeping for 0.05
+2021-03-27 18:44:48,758 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:48,806 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:48,808 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:48,809 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:48,809 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.00
+2021-03-27 18:44:48,809 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_18: Sleeping for 0.00
+2021-03-27 18:44:48,809 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.00
+2021-03-27 18:44:48,810 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.00
+2021-03-27 18:44:48,810 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Sleeping for 0.00
+2021-03-27 18:44:48,810 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:48,810 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.00
+2021-03-27 18:44:48,810 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:48,810 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:48,810 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Sleeping for 0.00
+2021-03-27 18:44:48,810 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.00
+2021-03-27 18:44:48,811 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:48,811 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:48,811 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Sleeping for 0.00
+2021-03-27 18:44:48,811 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.00
+2021-03-27 18:44:48,813 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:48,814 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.05
+2021-03-27 18:44:48,814 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:48,814 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.05
+2021-03-27 18:44:48,816 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Sleeping for 0.05
+2021-03-27 18:44:48,816 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.05
+2021-03-27 18:44:48,816 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Sleeping for 0.05
+2021-03-27 18:44:48,816 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.05
+2021-03-27 18:44:48,817 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Sleeping for 0.05
+2021-03-27 18:44:48,817 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:48,818 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:48,818 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.05
+2021-03-27 18:44:48,818 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:48,818 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:48,818 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.05
+2021-03-27 18:44:48,818 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.05
+2021-03-27 18:44:48,819 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:48,820 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:48,866 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.00
+2021-03-27 18:44:48,866 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:48,868 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.00
+2021-03-27 18:44:48,871 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.00
+2021-03-27 18:44:48,871 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:48,872 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Sleeping for 0.00
+2021-03-27 18:44:48,872 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:48,872 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Sleeping for 0.00
+2021-03-27 18:44:48,872 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.00
+2021-03-27 18:44:48,872 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Sleeping for 0.00
+2021-03-27 18:44:48,873 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:48,873 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.00
+2021-03-27 18:44:48,874 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:48,874 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.00
+2021-03-27 18:44:48,874 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:48,875 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.00
+2021-03-27 18:44:48,875 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:48,875 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.00
+2021-03-27 18:44:48,875 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:48,876 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:48,876 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.00
+2021-03-27 18:44:48,878 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.05
+2021-03-27 18:44:48,878 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Sleeping for 0.05
+2021-03-27 18:44:48,878 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Sleeping for 0.05
+2021-03-27 18:44:48,880 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Sleeping for 0.05
+2021-03-27 18:44:48,880 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:48,880 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.05
+2021-03-27 18:44:48,880 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.05
+2021-03-27 18:44:48,880 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:48,881 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:48,881 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:48,881 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.05
+2021-03-27 18:44:48,881 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:48,881 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.05
+2021-03-27 18:44:48,881 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:48,882 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.05
+2021-03-27 18:44:48,883 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:48,944 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Sleeping for 0.05
+2021-03-27 18:44:48,944 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Sleeping for 0.05
+2021-03-27 18:44:48,944 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Sleeping for 0.05
+2021-03-27 18:44:48,944 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.05
+2021-03-27 18:44:48,944 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.05
+2021-03-27 18:44:48,944 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:48,944 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.05
+2021-03-27 18:44:48,944 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:48,945 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.05
+2021-03-27 18:44:48,945 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:48,945 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:48,945 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:48,945 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.05
+2021-03-27 18:44:48,945 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:48,947 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,023 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Sleeping for 0.05
+2021-03-27 18:44:49,023 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.05
+2021-03-27 18:44:49,023 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.05
+2021-03-27 18:44:49,023 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Sleeping for 0.05
+2021-03-27 18:44:49,023 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:49,023 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.05
+2021-03-27 18:44:49,023 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:49,024 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.05
+2021-03-27 18:44:49,024 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:49,024 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:49,024 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.05
+2021-03-27 18:44:49,024 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,024 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:49,026 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,088 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,107 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.03
+2021-03-27 18:44:49,110 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.03
+2021-03-27 18:44:49,118 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Sleeping for 0.02
+2021-03-27 18:44:49,136 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,155 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.05
+2021-03-27 18:44:49,155 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,155 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:49,155 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:49,155 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.05
+2021-03-27 18:44:49,155 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.05
+2021-03-27 18:44:49,156 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:49,156 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:49,156 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.05
+2021-03-27 18:44:49,156 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:49,156 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,156 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.05
+2021-03-27 18:44:49,210 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.05
+2021-03-27 18:44:49,210 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.05
+2021-03-27 18:44:49,210 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:49,210 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:49,210 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.05
+2021-03-27 18:44:49,210 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,210 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:49,210 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.05
+2021-03-27 18:44:49,211 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:49,211 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:49,214 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,263 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.00
+2021-03-27 18:44:49,266 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,266 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.00
+2021-03-27 18:44:49,267 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:49,267 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,267 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.00
+2021-03-27 18:44:49,267 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:49,267 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.00
+2021-03-27 18:44:49,267 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,267 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.00
+2021-03-27 18:44:49,267 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,270 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:49,272 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:49,273 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:49,273 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:49,273 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.05
+2021-03-27 18:44:49,273 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,273 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.05
+2021-03-27 18:44:49,273 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:49,273 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.05
+2021-03-27 18:44:49,276 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,324 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,325 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,326 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.00
+2021-03-27 18:44:49,326 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,326 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.00
+2021-03-27 18:44:49,326 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,326 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:49,327 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.00
+2021-03-27 18:44:49,327 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:49,328 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,329 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,333 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:49,333 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:49,333 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:49,333 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.05
+2021-03-27 18:44:49,333 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:49,333 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.05
+2021-03-27 18:44:49,333 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,333 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:49,334 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,385 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.00
+2021-03-27 18:44:49,385 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,385 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:49,385 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,386 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,386 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.00
+2021-03-27 18:44:49,386 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:49,386 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,389 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,389 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:49,389 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Sleeping for 0.00
+2021-03-27 18:44:49,390 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.00
+2021-03-27 18:44:49,390 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,390 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,391 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,391 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:49,394 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:49,394 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:49,394 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.05
+2021-03-27 18:44:49,394 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:49,394 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:49,395 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,395 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:49,397 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,446 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,447 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.00
+2021-03-27 18:44:49,447 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:49,448 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,448 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:49,448 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,448 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,450 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,451 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Sleeping for 0.00
+2021-03-27 18:44:49,451 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:49,452 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,452 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:49,453 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,453 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,454 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,455 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:49,456 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,456 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:49,457 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:49,457 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:49,458 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,458 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:49,506 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:49,507 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,508 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:49,509 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,509 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,509 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,510 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:49,511 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,512 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:49,513 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,513 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,513 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,514 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:49,515 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,516 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:49,517 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,517 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,517 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,519 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,520 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.05
+2021-03-27 18:44:49,521 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:49,521 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:49,521 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:49,521 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,571 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,572 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:49,573 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,573 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,573 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,575 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,576 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Sleeping for 0.00
+2021-03-27 18:44:49,577 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,577 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,577 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,579 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,581 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:49,581 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:49,581 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:49,583 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,583 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,632 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,634 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,634 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,634 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,636 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,638 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,638 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,639 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:49,640 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,642 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,642 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,644 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:49,646 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.05
+2021-03-27 18:44:49,646 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,647 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,697 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,698 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,698 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,701 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,702 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,702 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Sleeping for 0.00
+2021-03-27 18:44:49,705 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,706 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,708 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,709 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.05
+2021-03-27 18:44:49,756 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,759 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,760 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,763 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Sleeping for 0.00
+2021-03-27 18:44:49,764 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,771 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:49,771 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.05
+2021-03-27 18:44:49,779 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:49,824 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,828 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Sleeping for 0.00
+2021-03-27 18:44:49,835 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:50,279 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:50,301 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:50,344 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:50,355 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:50,415 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:50,439 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:50,495 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:50,708 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:50,821 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:50,936 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:50,937 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:50,956 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:51,227 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:51,248 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:51,400 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:51,581 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:51,630 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:51,732 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:51,961 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:52,715 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:52,736 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:52,936 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:52,958 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:53,321 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:53,342 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:53,516 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:53,540 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:53,579 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:53,597 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:53,675 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:53,741 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:53,916 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:54,172 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:54,213 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:54,237 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:54,394 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:54,442 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:54,462 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:54,518 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:54,538 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:54,589 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:54,672 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:54,793 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:54,812 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:54,939 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:54,960 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:54,988 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:55,238 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:55,314 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:55,334 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:55,351 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:55,369 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Sleeping for 0.02
+2021-03-27 18:44:55,391 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Sleeping for 0.00
+2021-03-27 18:44:55,397 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:55,568 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:55,589 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:55,756 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:55,760 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_14: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:55,763 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:55,766 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:55,784 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:55,812 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_14: Sleeping for 0.05
+2021-03-27 18:44:55,814 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.03
+2021-03-27 18:44:55,814 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:55,849 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.00
+2021-03-27 18:44:55,853 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.00
+2021-03-27 18:44:55,857 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Sleeping for 0.00
+2021-03-27 18:44:55,863 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:55,864 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_14: Sleeping for 0.05
+2021-03-27 18:44:55,916 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_14: Sleeping for 0.00
+2021-03-27 18:44:55,920 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_14: Sleeping for 0.00
+2021-03-27 18:44:55,923 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_14: Sleeping for 0.00
+2021-03-27 18:44:55,929 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:56,060 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_0: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:56,082 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:56,297 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:56,344 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:56,362 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:56,429 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:56,513 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_6: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:56,535 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:56,775 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:56,795 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:56,869 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:56,921 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:57,084 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:57,103 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:57,168 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:57,229 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:57,288 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:57,304 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:57,312 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:57,325 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:57,329 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.03
+2021-03-27 18:44:57,343 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Sleeping for 0.02
+2021-03-27 18:44:57,354 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:57,366 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.05
+2021-03-27 18:44:57,367 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:57,391 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:57,417 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:57,421 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Sleeping for 0.00
+2021-03-27 18:44:57,428 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:57,612 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:57,685 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:57,716 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:57,771 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:57,790 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:57,905 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_18: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:57,925 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:58,111 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:58,145 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:58,164 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:58,279 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:58,294 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:58,300 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:58,325 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:58,343 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Sleeping for 0.00
+2021-03-27 18:44:58,350 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:58,546 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:58,553 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:58,635 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:58,658 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:58,836 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:58,961 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:59,037 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:59,428 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:59,448 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:59,467 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:59,526 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_14: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:59,545 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:59,575 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:59,588 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.00
+2021-03-27 18:44:59,594 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Sleeping for 0.00
+2021-03-27 18:44:59,601 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:59,658 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:59,674 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:59,696 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:59,769 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:59,786 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_0: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:59,798 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:59,800 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:59,807 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:44:59,810 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:59,833 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:44:59,847 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_0: Sleeping for 0.00
+2021-03-27 18:44:59,851 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_0: Sleeping for 0.00
+2021-03-27 18:44:59,852 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:59,852 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:59,855 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_0: Sleeping for 0.00
+2021-03-27 18:44:59,856 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:59,856 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:59,859 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_0: Sleeping for 0.00
+2021-03-27 18:44:59,860 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:59,860 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:59,864 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.05
+2021-03-27 18:44:59,865 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.05
+2021-03-27 18:44:59,865 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:59,915 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:59,916 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:59,920 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Sleeping for 0.00
+2021-03-27 18:44:59,921 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:59,925 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.05
+2021-03-27 18:44:59,926 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:44:59,977 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:59,981 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:59,985 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.00
+2021-03-27 18:44:59,991 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:00,214 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_6: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:00,233 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:00,408 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:00,429 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:00,695 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:00,715 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:00,790 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:00,801 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:00,803 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:00,825 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:00,867 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:00,915 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:00,941 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:00,957 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:00,977 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:01,092 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:01,104 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:01,126 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:01,156 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_18: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:01,177 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:01,220 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:01,330 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:01,396 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:01,415 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:01,434 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:01,469 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:01,489 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:01,568 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:01,588 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:01,622 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:01,853 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:01,982 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:02,005 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:02,166 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:02,226 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:02,279 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:02,303 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:02,375 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:02,392 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:02,525 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:02,605 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:02,847 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:02,866 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:02,915 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:02,934 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:03,056 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:03,076 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:03,123 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:03,143 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:03,221 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:03,242 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:03,254 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:03,288 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_14: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:03,309 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:03,317 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_0: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:03,335 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_0: Sleeping for 0.02
+2021-03-27 18:45:03,355 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_0: Sleeping for 0.00
+2021-03-27 18:45:03,359 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_0: Sleeping for 0.00
+2021-03-27 18:45:03,367 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:03,670 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:03,688 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:03,795 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:03,814 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:03,825 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:03,843 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Sleeping for 0.02
+2021-03-27 18:45:03,865 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:03,917 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:03,936 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:04,001 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:04,007 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:04,024 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:04,045 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:04,183 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:04,208 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:04,218 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_6: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:04,236 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_6: Sleeping for 0.03
+2021-03-27 18:45:04,275 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:04,322 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:04,416 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:04,512 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:04,750 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:04,792 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:04,912 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:04,928 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:04,933 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:04,987 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:05,005 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:05,046 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:05,070 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:05,073 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:05,130 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:05,148 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:05,212 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_18: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:05,217 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:05,233 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): services.sentinel-hub.com:443
+2021-03-27 18:45:05,447 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:05,575 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:05,596 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_4: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:05,915 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_16: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:06,051 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:06,081 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:06,344 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_14: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:07,315 urllib3.connectionpool DEBUG    https://services.sentinel-hub.com:443 "POST /api/v1/process HTTP/1.1" 200 None
+2021-03-27 18:45:07,463 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_15: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:07,481 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_7: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:07,642 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_9: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:07,789 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_13: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:07,956 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_12: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:08,071 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_5: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:08,204 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_11: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:08,226 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_6: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:08,230 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_10: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:08,234 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_1: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:08,246 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_2: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:08,265 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_0: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:08,537 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_19: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:08,849 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_8: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:09,272 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_17: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:10,189 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_18: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:10,793 sentinelhub.download.sentinelhub_client DEBUG    ThreadPoolExecutor-6952_3: Successful download from https://services.sentinel-hub.com/api/v1/process
+2021-03-27 18:45:10,810 eolearn.io.processing_api DEBUG    Downloads complete
+2021-03-27 18:45:11,964 eolearn.core.eoworkflow DEBUG    Computing SimpleFilterTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(88, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(88, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(88, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-154699.68602846484, 6887656.18520223), (-83367.40418990178, 6948774.01983255)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2017, 11, 2, 17, 35), ..., datetime.datetime(2018, 7, 31, 17, 49, 4)], length=88
+),), **{})
+2021-03-27 18:45:12,016 eolearn.core.eoworkflow DEBUG    Removing intermediate result for SimpleFilterTask
+2021-03-27 18:45:12,017 eolearn.core.eoworkflow DEBUG    Computing AddValidDataMaskTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(39, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(39, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(39, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-154699.68602846484, 6887656.18520223), (-83367.40418990178, 6948774.01983255)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2017, 11, 20, 17, 46, 21), ..., datetime.datetime(2018, 7, 31, 17, 49, 4)], length=39
+),), **{})
+2021-03-27 18:45:12,031 eolearn.core.eoworkflow DEBUG    Removing intermediate result for AddValidDataMaskTask
+2021-03-27 18:45:12,031 eolearn.core.eoworkflow DEBUG    Computing AddValidDataCoverage(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(39, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(39, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(39, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(39, 306, 357, 1), dtype=bool)
+  }
+  scalar: {}
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-154699.68602846484, 6887656.18520223), (-83367.40418990178, 6948774.01983255)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2017, 11, 20, 17, 46, 21), ..., datetime.datetime(2018, 7, 31, 17, 49, 4)], length=39
+),), **{})
+2021-03-27 18:45:12,033 eolearn.core.eoworkflow DEBUG    Removing intermediate result for AddValidDataCoverage
+2021-03-27 18:45:12,034 eolearn.core.eoworkflow DEBUG    Computing SimpleFilterTask(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(39, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(39, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(39, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(39, 306, 357, 1), dtype=bool)
+  }
+  scalar: {
+    COVERAGE: numpy.ndarray(shape=(39, 1), dtype=float64)
+  }
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-154699.68602846484, 6887656.18520223), (-83367.40418990178, 6948774.01983255)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2017, 11, 20, 17, 46, 21), ..., datetime.datetime(2018, 7, 31, 17, 49, 4)], length=39
+),), **{})
+2021-03-27 18:45:12,046 eolearn.core.eoworkflow DEBUG    Removing intermediate result for SimpleFilterTask
+2021-03-27 18:45:12,046 eolearn.core.eoworkflow DEBUG    Computing TimeRaster(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(3, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(3, 306, 357, 1), dtype=uint8)
+    IS_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+  }
+  scalar: {
+    COVERAGE: numpy.ndarray(shape=(3, 1), dtype=float64)
+  }
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {}
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-154699.68602846484, 6887656.18520223), (-83367.40418990178, 6948774.01983255)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2018, 4, 24, 17, 40, 23), ..., datetime.datetime(2018, 7, 3, 17, 42, 22)], length=3
+),), **{})
+2021-03-27 18:45:12,060 fiona.env    DEBUG    Entering env context: <fiona.env.Env object at 0x000001DC6E639988>
+2021-03-27 18:45:12,060 fiona.env    DEBUG    Starting outermost env
+2021-03-27 18:45:12,061 fiona.env    DEBUG    No GDAL environment exists
+2021-03-27 18:45:12,061 fiona.env    DEBUG    New GDAL environment <fiona._env.GDALEnv object at 0x000001DC69D73888> created
+2021-03-27 18:45:12,061 fiona._env   DEBUG    Logging error handler pushed.
+2021-03-27 18:45:12,062 fiona._env   DEBUG    All drivers registered.
+2021-03-27 18:45:12,062 fiona._env   DEBUG    GDAL_DATA found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\gdal'.
+2021-03-27 18:45:12,063 fiona._env   DEBUG    PROJ_LIB found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\proj'.
+2021-03-27 18:45:12,063 fiona._env   DEBUG    Started GDALEnv <fiona._env.GDALEnv object at 0x000001DC69D73888>.
+2021-03-27 18:45:12,063 fiona.env    DEBUG    Updated existing <fiona._env.GDALEnv object at 0x000001DC69D73888> with options {}
+2021-03-27 18:45:12,063 fiona.env    DEBUG    Entered env context: <fiona.env.Env object at 0x000001DC6E639988>
+2021-03-27 18:45:12,319 fiona.ogrext DEBUG    Got coordinate system
+2021-03-27 18:45:12,323 fiona.ogrext INFO     Failed to auto identify EPSG: 7
+2021-03-27 18:45:12,323 fiona.ogrext DEBUG    NULL pointer error
+2021-03-27 18:45:12,324 fiona.ogrext DEBUG    Params: b'+proj=lcc +lat_0=40 +lon_0=-100 +lat_1=49 +lat_2=77 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs'
+2021-03-27 18:45:12,324 fiona.ogrext DEBUG    Got coordinate system
+2021-03-27 18:45:12,324 fiona.ogrext DEBUG    OLC_FASTSETNEXTBYINDEX: 1
+2021-03-27 18:45:12,325 fiona.ogrext DEBUG    OLC_FASTFEATURECOUNT: 1
+2021-03-27 18:45:12,325 fiona.ogrext DEBUG    Next index: 0
+2021-03-27 18:45:12,325 fiona.ogrext DEBUG    Next index: 1
+2021-03-27 18:45:12,326 fiona.ogrext DEBUG    Next index: 2
+2021-03-27 18:45:12,327 fiona.ogrext DEBUG    Next index: 3
+2021-03-27 18:45:12,327 fiona.ogrext DEBUG    Next index: 4
+2021-03-27 18:45:12,328 fiona.ogrext DEBUG    Next index: 5
+2021-03-27 18:45:12,328 fiona.ogrext DEBUG    Next index: 6
+2021-03-27 18:45:12,329 fiona.ogrext DEBUG    Next index: 7
+2021-03-27 18:45:12,330 fiona.ogrext DEBUG    Next index: 8
+2021-03-27 18:45:12,331 fiona.ogrext DEBUG    Next index: 9
+2021-03-27 18:45:12,332 fiona.ogrext DEBUG    Next index: 10
+2021-03-27 18:45:12,333 fiona.ogrext DEBUG    Next index: 11
+2021-03-27 18:45:12,334 fiona.ogrext DEBUG    Next index: 12
+2021-03-27 18:45:12,335 fiona.ogrext DEBUG    Next index: 13
+2021-03-27 18:45:12,335 fiona.ogrext DEBUG    Next index: 14
+2021-03-27 18:45:12,336 fiona.ogrext DEBUG    Next index: 15
+2021-03-27 18:45:12,337 fiona.ogrext DEBUG    Next index: 16
+2021-03-27 18:45:12,343 fiona.ogrext DEBUG    Next index: 17
+2021-03-27 18:45:12,344 fiona.ogrext DEBUG    Next index: 18
+2021-03-27 18:45:12,345 fiona.ogrext DEBUG    Next index: 19
+2021-03-27 18:45:12,345 fiona.ogrext DEBUG    Next index: 20
+2021-03-27 18:45:12,345 fiona.ogrext DEBUG    Next index: 21
+2021-03-27 18:45:12,345 fiona.ogrext DEBUG    Next index: 22
+2021-03-27 18:45:12,346 fiona.ogrext DEBUG    Next index: 23
+2021-03-27 18:45:12,347 fiona.ogrext DEBUG    Next index: 24
+2021-03-27 18:45:12,347 fiona.ogrext DEBUG    Next index: 25
+2021-03-27 18:45:12,349 fiona.ogrext DEBUG    Next index: 26
+2021-03-27 18:45:12,350 fiona.ogrext DEBUG    Next index: 27
+2021-03-27 18:45:12,350 fiona.ogrext DEBUG    Next index: 28
+2021-03-27 18:45:12,351 fiona.ogrext DEBUG    Next index: 29
+2021-03-27 18:45:12,352 fiona.ogrext DEBUG    Next index: 30
+2021-03-27 18:45:12,352 fiona.ogrext DEBUG    Next index: 31
+2021-03-27 18:45:12,353 fiona.ogrext DEBUG    Next index: 32
+2021-03-27 18:45:12,353 fiona.ogrext DEBUG    Next index: 33
+2021-03-27 18:45:12,354 fiona.ogrext DEBUG    Next index: 34
+2021-03-27 18:45:12,355 fiona.ogrext DEBUG    Next index: 35
+2021-03-27 18:45:12,355 fiona.ogrext DEBUG    Next index: 36
+2021-03-27 18:45:12,356 fiona.ogrext DEBUG    Next index: 37
+2021-03-27 18:45:12,356 fiona.ogrext DEBUG    Next index: 38
+2021-03-27 18:45:12,356 fiona.ogrext DEBUG    Next index: 39
+2021-03-27 18:45:12,357 fiona.ogrext DEBUG    Next index: 40
+2021-03-27 18:45:12,357 fiona.ogrext DEBUG    Next index: 41
+2021-03-27 18:45:12,358 fiona.ogrext DEBUG    Next index: 42
+2021-03-27 18:45:12,358 fiona.ogrext DEBUG    Next index: 43
+2021-03-27 18:45:12,359 fiona.ogrext DEBUG    Next index: 44
+2021-03-27 18:45:12,359 fiona.ogrext DEBUG    Next index: 45
+2021-03-27 18:45:12,360 fiona.ogrext DEBUG    Next index: 46
+2021-03-27 18:45:12,360 fiona.ogrext DEBUG    Next index: 47
+2021-03-27 18:45:12,361 fiona.ogrext DEBUG    Next index: 48
+2021-03-27 18:45:12,362 fiona.ogrext DEBUG    Next index: 49
+2021-03-27 18:45:12,362 fiona.ogrext DEBUG    Next index: 50
+2021-03-27 18:45:12,363 fiona.ogrext DEBUG    Next index: 51
+2021-03-27 18:45:12,363 fiona.ogrext DEBUG    Next index: 52
+2021-03-27 18:45:12,364 fiona.ogrext DEBUG    Next index: 53
+2021-03-27 18:45:12,364 fiona.ogrext DEBUG    Next index: 54
+2021-03-27 18:45:12,364 fiona.ogrext DEBUG    Next index: 55
+2021-03-27 18:45:12,365 fiona.ogrext DEBUG    Next index: 56
+2021-03-27 18:45:12,365 fiona.ogrext DEBUG    Next index: 57
+2021-03-27 18:45:12,366 fiona.ogrext DEBUG    Next index: 58
+2021-03-27 18:45:12,366 fiona.ogrext DEBUG    Next index: 59
+2021-03-27 18:45:12,366 fiona.ogrext DEBUG    Next index: 60
+2021-03-27 18:45:12,367 fiona.ogrext DEBUG    Next index: 61
+2021-03-27 18:45:12,367 fiona.ogrext DEBUG    Next index: 62
+2021-03-27 18:45:12,368 fiona.ogrext DEBUG    Next index: 63
+2021-03-27 18:45:12,368 fiona.ogrext DEBUG    Next index: 64
+2021-03-27 18:45:12,368 fiona.ogrext DEBUG    Next index: 65
+2021-03-27 18:45:12,369 fiona.ogrext DEBUG    Next index: 66
+2021-03-27 18:45:12,369 fiona.ogrext DEBUG    Next index: 67
+2021-03-27 18:45:12,370 fiona.ogrext DEBUG    Next index: 68
+2021-03-27 18:45:12,371 fiona.ogrext DEBUG    Next index: 69
+2021-03-27 18:45:12,371 fiona.ogrext DEBUG    Next index: 70
+2021-03-27 18:45:12,372 fiona.ogrext DEBUG    Next index: 71
+2021-03-27 18:45:12,372 fiona.ogrext DEBUG    Next index: 72
+2021-03-27 18:45:12,373 fiona.ogrext DEBUG    Next index: 73
+2021-03-27 18:45:12,373 fiona.ogrext DEBUG    Next index: 74
+2021-03-27 18:45:12,373 fiona.ogrext DEBUG    Next index: 75
+2021-03-27 18:45:12,374 fiona.ogrext DEBUG    Next index: 76
+2021-03-27 18:45:12,374 fiona.ogrext DEBUG    Next index: 77
+2021-03-27 18:45:12,374 fiona.ogrext DEBUG    Next index: 78
+2021-03-27 18:45:12,375 fiona.ogrext DEBUG    Next index: 79
+2021-03-27 18:45:12,375 fiona.ogrext DEBUG    Next index: 80
+2021-03-27 18:45:12,375 fiona.ogrext DEBUG    Next index: 81
+2021-03-27 18:45:12,376 fiona.ogrext DEBUG    Next index: 82
+2021-03-27 18:45:12,376 fiona.ogrext DEBUG    Next index: 83
+2021-03-27 18:45:12,376 fiona.ogrext DEBUG    Next index: 84
+2021-03-27 18:45:12,377 fiona.ogrext DEBUG    Next index: 85
+2021-03-27 18:45:12,377 fiona.ogrext DEBUG    Next index: 86
+2021-03-27 18:45:12,377 fiona.ogrext DEBUG    Next index: 87
+2021-03-27 18:45:12,378 fiona.ogrext DEBUG    Next index: 88
+2021-03-27 18:45:12,378 fiona.ogrext DEBUG    Next index: 89
+2021-03-27 18:45:12,379 fiona.ogrext DEBUG    Next index: 90
+2021-03-27 18:45:12,379 fiona.ogrext DEBUG    Next index: 91
+2021-03-27 18:45:12,379 fiona.ogrext DEBUG    Next index: 92
+2021-03-27 18:45:12,380 fiona.ogrext DEBUG    Next index: 93
+2021-03-27 18:45:12,380 fiona.ogrext DEBUG    Next index: 94
+2021-03-27 18:45:12,380 fiona.ogrext DEBUG    Next index: 95
+2021-03-27 18:45:12,381 fiona.ogrext DEBUG    Next index: 96
+2021-03-27 18:45:12,381 fiona.ogrext DEBUG    Next index: 97
+2021-03-27 18:45:12,381 fiona.ogrext DEBUG    Next index: 98
+2021-03-27 18:45:12,382 fiona.ogrext DEBUG    Next index: 99
+2021-03-27 18:45:12,382 fiona.ogrext DEBUG    Next index: 100
+2021-03-27 18:45:12,382 fiona.ogrext DEBUG    Next index: 101
+2021-03-27 18:45:12,383 fiona.ogrext DEBUG    Next index: 102
+2021-03-27 18:45:12,383 fiona.ogrext DEBUG    Next index: 103
+2021-03-27 18:45:12,383 fiona.ogrext DEBUG    Next index: 104
+2021-03-27 18:45:12,384 fiona.ogrext DEBUG    Next index: 105
+2021-03-27 18:45:12,384 fiona.ogrext DEBUG    Next index: 106
+2021-03-27 18:45:12,385 fiona.ogrext DEBUG    Next index: 107
+2021-03-27 18:45:12,385 fiona.ogrext DEBUG    Next index: 108
+2021-03-27 18:45:12,385 fiona.ogrext DEBUG    Next index: 109
+2021-03-27 18:45:12,386 fiona.ogrext DEBUG    Next index: 110
+2021-03-27 18:45:12,386 fiona.ogrext DEBUG    Next index: 111
+2021-03-27 18:45:12,387 fiona.ogrext DEBUG    Next index: 112
+2021-03-27 18:45:12,387 fiona.ogrext DEBUG    Next index: 113
+2021-03-27 18:45:12,387 fiona.ogrext DEBUG    Next index: 114
+2021-03-27 18:45:12,388 fiona.ogrext DEBUG    Next index: 115
+2021-03-27 18:45:12,388 fiona.ogrext DEBUG    Next index: 116
+2021-03-27 18:45:12,389 fiona.ogrext DEBUG    Next index: 117
+2021-03-27 18:45:12,389 fiona.ogrext DEBUG    Next index: 118
+2021-03-27 18:45:12,389 fiona.ogrext DEBUG    Next index: 119
+2021-03-27 18:45:12,390 fiona.ogrext DEBUG    Next index: 120
+2021-03-27 18:45:12,390 fiona.ogrext DEBUG    Next index: 121
+2021-03-27 18:45:12,390 fiona.ogrext DEBUG    Next index: 122
+2021-03-27 18:45:12,391 fiona.ogrext DEBUG    Next index: 123
+2021-03-27 18:45:12,391 fiona.ogrext DEBUG    Next index: 124
+2021-03-27 18:45:12,392 fiona.ogrext DEBUG    Next index: 125
+2021-03-27 18:45:12,392 fiona.ogrext DEBUG    Next index: 126
+2021-03-27 18:45:12,392 fiona.ogrext DEBUG    Next index: 127
+2021-03-27 18:45:12,393 fiona.ogrext DEBUG    Next index: 128
+2021-03-27 18:45:12,393 fiona.ogrext DEBUG    Next index: 129
+2021-03-27 18:45:12,393 fiona.ogrext DEBUG    Next index: 130
+2021-03-27 18:45:12,394 fiona.ogrext DEBUG    Next index: 131
+2021-03-27 18:45:12,394 fiona.ogrext DEBUG    Next index: 132
+2021-03-27 18:45:12,394 fiona.ogrext DEBUG    Next index: 133
+2021-03-27 18:45:12,395 fiona.ogrext DEBUG    Next index: 134
+2021-03-27 18:45:12,395 fiona.ogrext DEBUG    Next index: 135
+2021-03-27 18:45:12,395 fiona.ogrext DEBUG    Next index: 136
+2021-03-27 18:45:12,396 fiona.ogrext DEBUG    Next index: 137
+2021-03-27 18:45:12,396 fiona.ogrext DEBUG    Next index: 138
+2021-03-27 18:45:12,396 fiona.ogrext DEBUG    Next index: 139
+2021-03-27 18:45:12,397 fiona.ogrext DEBUG    Next index: 140
+2021-03-27 18:45:12,397 fiona.ogrext DEBUG    Next index: 141
+2021-03-27 18:45:12,397 fiona.ogrext DEBUG    Next index: 142
+2021-03-27 18:45:12,398 fiona.ogrext DEBUG    Next index: 143
+2021-03-27 18:45:12,398 fiona.ogrext DEBUG    Next index: 144
+2021-03-27 18:45:12,398 fiona.ogrext DEBUG    Next index: 145
+2021-03-27 18:45:12,399 fiona.ogrext DEBUG    Next index: 146
+2021-03-27 18:45:12,399 fiona.ogrext DEBUG    Next index: 147
+2021-03-27 18:45:12,399 fiona.ogrext DEBUG    Next index: 148
+2021-03-27 18:45:12,400 fiona.ogrext DEBUG    Next index: 149
+2021-03-27 18:45:12,400 fiona.ogrext DEBUG    Next index: 150
+2021-03-27 18:45:12,400 fiona.ogrext DEBUG    Next index: 151
+2021-03-27 18:45:12,401 fiona.ogrext DEBUG    Next index: 152
+2021-03-27 18:45:12,401 fiona.ogrext DEBUG    Next index: 153
+2021-03-27 18:45:12,402 fiona.ogrext DEBUG    Next index: 154
+2021-03-27 18:45:12,402 fiona.ogrext DEBUG    Next index: 155
+2021-03-27 18:45:12,402 fiona.ogrext DEBUG    Next index: 156
+2021-03-27 18:45:12,403 fiona.ogrext DEBUG    Next index: 157
+2021-03-27 18:45:12,403 fiona.ogrext DEBUG    Next index: 158
+2021-03-27 18:45:12,403 fiona.ogrext DEBUG    Next index: 159
+2021-03-27 18:45:12,404 fiona.ogrext DEBUG    Next index: 160
+2021-03-27 18:45:12,404 fiona.ogrext DEBUG    Next index: 161
+2021-03-27 18:45:12,405 fiona.ogrext DEBUG    Next index: 162
+2021-03-27 18:45:12,405 fiona.ogrext DEBUG    Next index: 163
+2021-03-27 18:45:12,405 fiona.ogrext DEBUG    Next index: 164
+2021-03-27 18:45:12,406 fiona.ogrext DEBUG    Next index: 165
+2021-03-27 18:45:12,406 fiona.ogrext DEBUG    Next index: 166
+2021-03-27 18:45:12,407 fiona.ogrext DEBUG    Next index: 167
+2021-03-27 18:45:12,407 fiona.ogrext DEBUG    Next index: 168
+2021-03-27 18:45:12,407 fiona.ogrext DEBUG    Next index: 169
+2021-03-27 18:45:12,408 fiona.ogrext DEBUG    Next index: 170
+2021-03-27 18:45:12,408 fiona.ogrext DEBUG    Next index: 171
+2021-03-27 18:45:12,408 fiona.ogrext DEBUG    Next index: 172
+2021-03-27 18:45:12,409 fiona.ogrext DEBUG    Next index: 173
+2021-03-27 18:45:12,409 fiona.ogrext DEBUG    Next index: 174
+2021-03-27 18:45:12,410 fiona.ogrext DEBUG    Next index: 175
+2021-03-27 18:45:12,410 fiona.ogrext DEBUG    Next index: 176
+2021-03-27 18:45:12,410 fiona.ogrext DEBUG    Next index: 177
+2021-03-27 18:45:12,411 fiona.ogrext DEBUG    Next index: 178
+2021-03-27 18:45:12,411 fiona.ogrext DEBUG    Next index: 179
+2021-03-27 18:45:12,412 fiona.ogrext DEBUG    Next index: 180
+2021-03-27 18:45:12,412 fiona.ogrext DEBUG    Next index: 181
+2021-03-27 18:45:12,412 fiona.ogrext DEBUG    Next index: 182
+2021-03-27 18:45:12,413 fiona.ogrext DEBUG    Next index: 183
+2021-03-27 18:45:12,413 fiona.ogrext DEBUG    Next index: 184
+2021-03-27 18:45:12,413 fiona.ogrext DEBUG    Next index: 185
+2021-03-27 18:45:12,414 fiona.ogrext DEBUG    Next index: 186
+2021-03-27 18:45:12,414 fiona.ogrext DEBUG    Next index: 187
+2021-03-27 18:45:12,414 fiona.ogrext DEBUG    Next index: 188
+2021-03-27 18:45:12,415 fiona.ogrext DEBUG    Next index: 189
+2021-03-27 18:45:12,415 fiona.ogrext DEBUG    Next index: 190
+2021-03-27 18:45:12,415 fiona.ogrext DEBUG    Next index: 191
+2021-03-27 18:45:12,416 fiona.ogrext DEBUG    Next index: 192
+2021-03-27 18:45:12,416 fiona.ogrext DEBUG    Next index: 193
+2021-03-27 18:45:12,416 fiona.ogrext DEBUG    Next index: 194
+2021-03-27 18:45:12,417 fiona.ogrext DEBUG    Next index: 195
+2021-03-27 18:45:12,417 fiona.ogrext DEBUG    Next index: 196
+2021-03-27 18:45:12,417 fiona.ogrext DEBUG    Next index: 197
+2021-03-27 18:45:12,417 fiona.ogrext DEBUG    Next index: 198
+2021-03-27 18:45:12,420 fiona.ogrext DEBUG    Next index: 199
+2021-03-27 18:45:12,420 fiona.ogrext DEBUG    Next index: 200
+2021-03-27 18:45:12,421 fiona.ogrext DEBUG    Next index: 201
+2021-03-27 18:45:12,421 fiona.ogrext DEBUG    Next index: 202
+2021-03-27 18:45:12,422 fiona.ogrext DEBUG    Next index: 203
+2021-03-27 18:45:12,422 fiona.ogrext DEBUG    Next index: 204
+2021-03-27 18:45:12,422 fiona.ogrext DEBUG    Next index: 205
+2021-03-27 18:45:12,423 fiona.ogrext DEBUG    Next index: 206
+2021-03-27 18:45:12,423 fiona.ogrext DEBUG    Next index: 207
+2021-03-27 18:45:12,424 fiona.ogrext DEBUG    Next index: 208
+2021-03-27 18:45:12,424 fiona.ogrext DEBUG    Next index: 209
+2021-03-27 18:45:12,424 fiona.ogrext DEBUG    Next index: 210
+2021-03-27 18:45:12,425 fiona.ogrext DEBUG    Next index: 211
+2021-03-27 18:45:12,425 fiona.ogrext DEBUG    Next index: 212
+2021-03-27 18:45:12,425 fiona.ogrext DEBUG    Next index: 213
+2021-03-27 18:45:12,426 fiona.ogrext DEBUG    Next index: 214
+2021-03-27 18:45:12,426 fiona.ogrext DEBUG    Next index: 215
+2021-03-27 18:45:12,427 fiona.ogrext DEBUG    Next index: 216
+2021-03-27 18:45:12,427 fiona.ogrext DEBUG    Next index: 217
+2021-03-27 18:45:12,427 fiona.ogrext DEBUG    Next index: 218
+2021-03-27 18:45:12,428 fiona.ogrext DEBUG    Next index: 219
+2021-03-27 18:45:12,428 fiona.ogrext DEBUG    Next index: 220
+2021-03-27 18:45:12,429 fiona.ogrext DEBUG    Next index: 221
+2021-03-27 18:45:12,429 fiona.ogrext DEBUG    Next index: 222
+2021-03-27 18:45:12,430 fiona.ogrext DEBUG    Next index: 223
+2021-03-27 18:45:12,430 fiona.ogrext DEBUG    Next index: 224
+2021-03-27 18:45:12,430 fiona.ogrext DEBUG    Next index: 225
+2021-03-27 18:45:12,431 fiona.ogrext DEBUG    Next index: 226
+2021-03-27 18:45:12,431 fiona.ogrext DEBUG    Next index: 227
+2021-03-27 18:45:12,431 fiona.ogrext DEBUG    Next index: 228
+2021-03-27 18:45:12,432 fiona.ogrext DEBUG    Next index: 229
+2021-03-27 18:45:12,432 fiona.ogrext DEBUG    Next index: 230
+2021-03-27 18:45:12,433 fiona.ogrext DEBUG    Next index: 231
+2021-03-27 18:45:12,433 fiona.ogrext DEBUG    Next index: 232
+2021-03-27 18:45:12,434 fiona.ogrext DEBUG    Next index: 233
+2021-03-27 18:45:12,434 fiona.ogrext DEBUG    Next index: 234
+2021-03-27 18:45:12,435 fiona.ogrext DEBUG    Next index: 235
+2021-03-27 18:45:12,435 fiona.ogrext DEBUG    Next index: 236
+2021-03-27 18:45:12,436 fiona.ogrext DEBUG    Next index: 237
+2021-03-27 18:45:12,437 fiona.ogrext DEBUG    Next index: 238
+2021-03-27 18:45:12,437 fiona.ogrext DEBUG    Next index: 239
+2021-03-27 18:45:12,438 fiona.ogrext DEBUG    Next index: 240
+2021-03-27 18:45:12,438 fiona.ogrext DEBUG    Next index: 241
+2021-03-27 18:45:12,439 fiona.ogrext DEBUG    Next index: 242
+2021-03-27 18:45:12,439 fiona.ogrext DEBUG    Next index: 243
+2021-03-27 18:45:12,452 fiona.ogrext DEBUG    Next index: 244
+2021-03-27 18:45:12,454 fiona.ogrext DEBUG    Next index: 245
+2021-03-27 18:45:12,454 fiona.ogrext DEBUG    Next index: 246
+2021-03-27 18:45:12,455 fiona.ogrext DEBUG    Next index: 247
+2021-03-27 18:45:12,455 fiona.ogrext DEBUG    Next index: 248
+2021-03-27 18:45:12,456 fiona.ogrext DEBUG    Next index: 249
+2021-03-27 18:45:12,456 fiona.ogrext DEBUG    Next index: 250
+2021-03-27 18:45:12,457 fiona.ogrext DEBUG    Next index: 251
+2021-03-27 18:45:12,458 fiona.ogrext DEBUG    Next index: 252
+2021-03-27 18:45:12,459 fiona.ogrext DEBUG    Next index: 253
+2021-03-27 18:45:12,459 fiona.ogrext DEBUG    Next index: 254
+2021-03-27 18:45:12,460 fiona.ogrext DEBUG    Next index: 255
+2021-03-27 18:45:12,460 fiona.ogrext DEBUG    Next index: 256
+2021-03-27 18:45:12,461 fiona.ogrext DEBUG    Next index: 257
+2021-03-27 18:45:12,461 fiona.ogrext DEBUG    Next index: 258
+2021-03-27 18:45:12,462 fiona.ogrext DEBUG    Next index: 259
+2021-03-27 18:45:12,462 fiona.ogrext DEBUG    Next index: 260
+2021-03-27 18:45:12,463 fiona.ogrext DEBUG    Next index: 261
+2021-03-27 18:45:12,463 fiona.ogrext DEBUG    Next index: 262
+2021-03-27 18:45:12,464 fiona.ogrext DEBUG    Next index: 263
+2021-03-27 18:45:12,465 fiona.ogrext DEBUG    Next index: 264
+2021-03-27 18:45:12,465 fiona.ogrext DEBUG    Next index: 265
+2021-03-27 18:45:12,466 fiona.ogrext DEBUG    Next index: 266
+2021-03-27 18:45:12,466 fiona.ogrext DEBUG    Next index: 267
+2021-03-27 18:45:12,467 fiona.ogrext DEBUG    Next index: 268
+2021-03-27 18:45:12,467 fiona.ogrext DEBUG    Next index: 269
+2021-03-27 18:45:12,468 fiona.ogrext DEBUG    Next index: 270
+2021-03-27 18:45:12,469 fiona.ogrext DEBUG    Next index: 271
+2021-03-27 18:45:12,469 fiona.ogrext DEBUG    Next index: 272
+2021-03-27 18:45:12,470 fiona.ogrext DEBUG    Next index: 273
+2021-03-27 18:45:12,470 fiona.ogrext DEBUG    Next index: 274
+2021-03-27 18:45:12,471 fiona.ogrext DEBUG    Next index: 275
+2021-03-27 18:45:12,471 fiona.ogrext DEBUG    Next index: 276
+2021-03-27 18:45:12,471 fiona.ogrext DEBUG    Next index: 277
+2021-03-27 18:45:12,472 fiona.ogrext DEBUG    Next index: 278
+2021-03-27 18:45:12,472 fiona.ogrext DEBUG    Next index: 279
+2021-03-27 18:45:12,472 fiona.ogrext DEBUG    Next index: 280
+2021-03-27 18:45:12,473 fiona.ogrext DEBUG    Next index: 281
+2021-03-27 18:45:12,473 fiona.ogrext DEBUG    Next index: 282
+2021-03-27 18:45:12,473 fiona.ogrext DEBUG    Next index: 283
+2021-03-27 18:45:12,474 fiona.ogrext DEBUG    Next index: 284
+2021-03-27 18:45:12,474 fiona.ogrext DEBUG    Next index: 285
+2021-03-27 18:45:12,475 fiona.ogrext DEBUG    Next index: 286
+2021-03-27 18:45:12,475 fiona.ogrext DEBUG    Next index: 287
+2021-03-27 18:45:12,475 fiona.ogrext DEBUG    Next index: 288
+2021-03-27 18:45:12,476 fiona.ogrext DEBUG    Next index: 289
+2021-03-27 18:45:12,476 fiona.ogrext DEBUG    Next index: 290
+2021-03-27 18:45:12,476 fiona.ogrext DEBUG    Next index: 291
+2021-03-27 18:45:12,477 fiona.ogrext DEBUG    Next index: 292
+2021-03-27 18:45:12,477 fiona.ogrext DEBUG    Next index: 293
+2021-03-27 18:45:12,477 fiona.ogrext DEBUG    Next index: 294
+2021-03-27 18:45:12,477 fiona.ogrext DEBUG    Next index: 295
+2021-03-27 18:45:12,478 fiona.ogrext DEBUG    Next index: 296
+2021-03-27 18:45:12,478 fiona.ogrext DEBUG    Next index: 297
+2021-03-27 18:45:12,478 fiona.ogrext DEBUG    Next index: 298
+2021-03-27 18:45:12,479 fiona.ogrext DEBUG    Next index: 299
+2021-03-27 18:45:12,479 fiona.ogrext DEBUG    Next index: 300
+2021-03-27 18:45:12,479 fiona.ogrext DEBUG    Next index: 301
+2021-03-27 18:45:12,480 fiona.ogrext DEBUG    Next index: 302
+2021-03-27 18:45:12,480 fiona.ogrext DEBUG    Next index: 303
+2021-03-27 18:45:12,480 fiona.ogrext DEBUG    Next index: 304
+2021-03-27 18:45:12,481 fiona.ogrext DEBUG    Next index: 305
+2021-03-27 18:45:12,481 fiona.ogrext DEBUG    Next index: 306
+2021-03-27 18:45:12,481 fiona.ogrext DEBUG    Next index: 307
+2021-03-27 18:45:12,482 fiona.ogrext DEBUG    Next index: 308
+2021-03-27 18:45:12,482 fiona.ogrext DEBUG    Next index: 309
+2021-03-27 18:45:12,482 fiona.ogrext DEBUG    Next index: 310
+2021-03-27 18:45:12,483 fiona.ogrext DEBUG    Next index: 311
+2021-03-27 18:45:12,483 fiona.ogrext DEBUG    Next index: 312
+2021-03-27 18:45:12,483 fiona.ogrext DEBUG    Next index: 313
+2021-03-27 18:45:12,484 fiona.ogrext DEBUG    Next index: 314
+2021-03-27 18:45:12,484 fiona.ogrext DEBUG    Next index: 315
+2021-03-27 18:45:12,485 fiona.ogrext DEBUG    Next index: 316
+2021-03-27 18:45:12,486 fiona.ogrext DEBUG    Next index: 317
+2021-03-27 18:45:12,486 fiona.ogrext DEBUG    Next index: 318
+2021-03-27 18:45:12,487 fiona.ogrext DEBUG    Next index: 319
+2021-03-27 18:45:12,487 fiona.ogrext DEBUG    Next index: 320
+2021-03-27 18:45:12,487 fiona.ogrext DEBUG    Next index: 321
+2021-03-27 18:45:12,488 fiona.ogrext DEBUG    Next index: 322
+2021-03-27 18:45:12,488 fiona.ogrext DEBUG    Next index: 323
+2021-03-27 18:45:12,488 fiona.ogrext DEBUG    Next index: 324
+2021-03-27 18:45:12,489 fiona.ogrext DEBUG    Next index: 325
+2021-03-27 18:45:12,489 fiona.ogrext DEBUG    Next index: 326
+2021-03-27 18:45:12,489 fiona.ogrext DEBUG    Next index: 327
+2021-03-27 18:45:12,490 fiona.ogrext DEBUG    Next index: 328
+2021-03-27 18:45:12,490 fiona.ogrext DEBUG    Next index: 329
+2021-03-27 18:45:12,491 fiona.ogrext DEBUG    Next index: 330
+2021-03-27 18:45:12,491 fiona.ogrext DEBUG    Next index: 331
+2021-03-27 18:45:12,491 fiona.ogrext DEBUG    Next index: 332
+2021-03-27 18:45:12,492 fiona.ogrext DEBUG    Next index: 333
+2021-03-27 18:45:12,492 fiona.ogrext DEBUG    Next index: 334
+2021-03-27 18:45:12,492 fiona.ogrext DEBUG    Next index: 335
+2021-03-27 18:45:12,493 fiona.ogrext DEBUG    Next index: 336
+2021-03-27 18:45:12,493 fiona.ogrext DEBUG    Next index: 337
+2021-03-27 18:45:12,493 fiona.ogrext DEBUG    Next index: 338
+2021-03-27 18:45:12,494 fiona.ogrext DEBUG    Next index: 339
+2021-03-27 18:45:12,494 fiona.ogrext DEBUG    Next index: 340
+2021-03-27 18:45:12,494 fiona.ogrext DEBUG    Next index: 341
+2021-03-27 18:45:12,495 fiona.ogrext DEBUG    Next index: 342
+2021-03-27 18:45:12,495 fiona.ogrext DEBUG    Next index: 343
+2021-03-27 18:45:12,496 fiona.ogrext DEBUG    Next index: 344
+2021-03-27 18:45:12,496 fiona.ogrext DEBUG    Next index: 345
+2021-03-27 18:45:12,496 fiona.ogrext DEBUG    Next index: 346
+2021-03-27 18:45:12,497 fiona.ogrext DEBUG    Next index: 347
+2021-03-27 18:45:12,497 fiona.ogrext DEBUG    Next index: 348
+2021-03-27 18:45:12,498 fiona.ogrext DEBUG    Next index: 349
+2021-03-27 18:45:12,499 fiona.ogrext DEBUG    Next index: 350
+2021-03-27 18:45:12,499 fiona.ogrext DEBUG    Next index: 351
+2021-03-27 18:45:12,499 fiona.ogrext DEBUG    Next index: 352
+2021-03-27 18:45:12,500 fiona.ogrext DEBUG    Next index: 353
+2021-03-27 18:45:12,500 fiona.ogrext DEBUG    Next index: 354
+2021-03-27 18:45:12,500 fiona.ogrext DEBUG    Next index: 355
+2021-03-27 18:45:12,501 fiona.ogrext DEBUG    Next index: 356
+2021-03-27 18:45:12,501 fiona.ogrext DEBUG    Next index: 357
+2021-03-27 18:45:12,501 fiona.ogrext DEBUG    Next index: 358
+2021-03-27 18:45:12,502 fiona.ogrext DEBUG    Next index: 359
+2021-03-27 18:45:12,502 fiona.ogrext DEBUG    Next index: 360
+2021-03-27 18:45:12,503 fiona.ogrext DEBUG    Next index: 361
+2021-03-27 18:45:12,503 fiona.ogrext DEBUG    Next index: 362
+2021-03-27 18:45:12,503 fiona.ogrext DEBUG    Next index: 363
+2021-03-27 18:45:12,504 fiona.ogrext DEBUG    Next index: 364
+2021-03-27 18:45:12,504 fiona.ogrext DEBUG    Next index: 365
+2021-03-27 18:45:12,504 fiona.ogrext DEBUG    Next index: 366
+2021-03-27 18:45:12,505 fiona.ogrext DEBUG    Next index: 367
+2021-03-27 18:45:12,505 fiona.ogrext DEBUG    Next index: 368
+2021-03-27 18:45:12,505 fiona.ogrext DEBUG    Next index: 369
+2021-03-27 18:45:12,506 fiona.ogrext DEBUG    Next index: 370
+2021-03-27 18:45:12,506 fiona.ogrext DEBUG    Next index: 371
+2021-03-27 18:45:12,506 fiona.ogrext DEBUG    Next index: 372
+2021-03-27 18:45:12,507 fiona.ogrext DEBUG    Next index: 373
+2021-03-27 18:45:12,507 fiona.ogrext DEBUG    Next index: 374
+2021-03-27 18:45:12,507 fiona.ogrext DEBUG    Next index: 375
+2021-03-27 18:45:12,508 fiona.ogrext DEBUG    Next index: 376
+2021-03-27 18:45:12,508 fiona.ogrext DEBUG    Next index: 377
+2021-03-27 18:45:12,508 fiona.ogrext DEBUG    Next index: 378
+2021-03-27 18:45:12,509 fiona.ogrext DEBUG    Next index: 379
+2021-03-27 18:45:12,509 fiona.ogrext DEBUG    Next index: 380
+2021-03-27 18:45:12,509 fiona.ogrext DEBUG    Next index: 381
+2021-03-27 18:45:12,510 fiona.ogrext DEBUG    Next index: 382
+2021-03-27 18:45:12,510 fiona.ogrext DEBUG    Next index: 383
+2021-03-27 18:45:12,510 fiona.ogrext DEBUG    Next index: 384
+2021-03-27 18:45:12,511 fiona.ogrext DEBUG    Next index: 385
+2021-03-27 18:45:12,511 fiona.ogrext DEBUG    Next index: 386
+2021-03-27 18:45:12,511 fiona.ogrext DEBUG    Next index: 387
+2021-03-27 18:45:12,512 fiona.ogrext DEBUG    Next index: 388
+2021-03-27 18:45:12,512 fiona.ogrext DEBUG    Next index: 389
+2021-03-27 18:45:12,512 fiona.ogrext DEBUG    Next index: 390
+2021-03-27 18:45:12,513 fiona.ogrext DEBUG    Next index: 391
+2021-03-27 18:45:12,513 fiona.ogrext DEBUG    Next index: 392
+2021-03-27 18:45:12,514 fiona.ogrext DEBUG    Next index: 393
+2021-03-27 18:45:12,514 fiona.ogrext DEBUG    Next index: 394
+2021-03-27 18:45:12,514 fiona.ogrext DEBUG    Next index: 395
+2021-03-27 18:45:12,515 fiona.ogrext DEBUG    Next index: 396
+2021-03-27 18:45:12,515 fiona.ogrext DEBUG    Next index: 397
+2021-03-27 18:45:12,515 fiona.ogrext DEBUG    Next index: 398
+2021-03-27 18:45:12,516 fiona.ogrext DEBUG    Next index: 399
+2021-03-27 18:45:12,516 fiona.ogrext DEBUG    Next index: 400
+2021-03-27 18:45:12,516 fiona.ogrext DEBUG    Next index: 401
+2021-03-27 18:45:12,517 fiona.ogrext DEBUG    Next index: 402
+2021-03-27 18:45:12,517 fiona.ogrext DEBUG    Next index: 403
+2021-03-27 18:45:12,517 fiona.ogrext DEBUG    Next index: 404
+2021-03-27 18:45:12,518 fiona.ogrext DEBUG    Next index: 405
+2021-03-27 18:45:12,518 fiona.ogrext DEBUG    Next index: 406
+2021-03-27 18:45:12,518 fiona.ogrext DEBUG    Next index: 407
+2021-03-27 18:45:12,518 fiona.ogrext DEBUG    Next index: 408
+2021-03-27 18:45:12,518 fiona.ogrext DEBUG    Next index: 409
+2021-03-27 18:45:12,519 fiona.ogrext DEBUG    Next index: 410
+2021-03-27 18:45:12,519 fiona.ogrext DEBUG    Next index: 411
+2021-03-27 18:45:12,519 fiona.ogrext DEBUG    Next index: 412
+2021-03-27 18:45:12,520 fiona.ogrext DEBUG    Next index: 413
+2021-03-27 18:45:12,520 fiona.ogrext DEBUG    Next index: 414
+2021-03-27 18:45:12,520 fiona.ogrext DEBUG    Next index: 415
+2021-03-27 18:45:12,521 fiona.ogrext DEBUG    Next index: 416
+2021-03-27 18:45:12,521 fiona.ogrext DEBUG    Next index: 417
+2021-03-27 18:45:12,521 fiona.ogrext DEBUG    Next index: 418
+2021-03-27 18:45:12,522 fiona.ogrext DEBUG    Next index: 419
+2021-03-27 18:45:12,522 fiona.ogrext DEBUG    Next index: 420
+2021-03-27 18:45:12,522 fiona.ogrext DEBUG    Next index: 421
+2021-03-27 18:45:12,523 fiona.ogrext DEBUG    Next index: 422
+2021-03-27 18:45:12,523 fiona.ogrext DEBUG    Next index: 423
+2021-03-27 18:45:12,523 fiona.ogrext DEBUG    Next index: 424
+2021-03-27 18:45:12,524 fiona.ogrext DEBUG    Next index: 425
+2021-03-27 18:45:12,524 fiona.ogrext DEBUG    Next index: 426
+2021-03-27 18:45:12,524 fiona.ogrext DEBUG    Next index: 427
+2021-03-27 18:45:12,525 fiona.ogrext DEBUG    Next index: 428
+2021-03-27 18:45:12,525 fiona.ogrext DEBUG    Next index: 429
+2021-03-27 18:45:12,525 fiona.ogrext DEBUG    Next index: 430
+2021-03-27 18:45:12,526 fiona.ogrext DEBUG    Next index: 431
+2021-03-27 18:45:12,526 fiona.ogrext DEBUG    Next index: 432
+2021-03-27 18:45:12,526 fiona.ogrext DEBUG    Next index: 433
+2021-03-27 18:45:12,527 fiona.ogrext DEBUG    Next index: 434
+2021-03-27 18:45:12,527 fiona.ogrext DEBUG    Next index: 435
+2021-03-27 18:45:12,529 fiona.ogrext DEBUG    Next index: 436
+2021-03-27 18:45:12,530 fiona.ogrext DEBUG    Next index: 437
+2021-03-27 18:45:12,530 fiona.ogrext DEBUG    Next index: 438
+2021-03-27 18:45:12,530 fiona.ogrext DEBUG    Next index: 439
+2021-03-27 18:45:12,531 fiona.ogrext DEBUG    Next index: 440
+2021-03-27 18:45:12,531 fiona.ogrext DEBUG    Next index: 441
+2021-03-27 18:45:12,531 fiona.ogrext DEBUG    Next index: 442
+2021-03-27 18:45:12,532 fiona.ogrext DEBUG    Next index: 443
+2021-03-27 18:45:12,532 fiona.ogrext DEBUG    Next index: 444
+2021-03-27 18:45:12,532 fiona.ogrext DEBUG    Next index: 445
+2021-03-27 18:45:12,533 fiona.ogrext DEBUG    Next index: 446
+2021-03-27 18:45:12,533 fiona.ogrext DEBUG    Next index: 447
+2021-03-27 18:45:12,533 fiona.ogrext DEBUG    Next index: 448
+2021-03-27 18:45:12,534 fiona.ogrext DEBUG    Next index: 449
+2021-03-27 18:45:12,534 fiona.ogrext DEBUG    Next index: 450
+2021-03-27 18:45:12,534 fiona.ogrext DEBUG    Next index: 451
+2021-03-27 18:45:12,535 fiona.ogrext DEBUG    Next index: 452
+2021-03-27 18:45:12,535 fiona.ogrext DEBUG    Next index: 453
+2021-03-27 18:45:12,535 fiona.ogrext DEBUG    Next index: 454
+2021-03-27 18:45:12,536 fiona.ogrext DEBUG    Next index: 455
+2021-03-27 18:45:12,536 fiona.ogrext DEBUG    Next index: 456
+2021-03-27 18:45:12,536 fiona.ogrext DEBUG    Next index: 457
+2021-03-27 18:45:12,537 fiona.ogrext DEBUG    Next index: 458
+2021-03-27 18:45:12,537 fiona.ogrext DEBUG    Next index: 459
+2021-03-27 18:45:12,537 fiona.ogrext DEBUG    Next index: 460
+2021-03-27 18:45:12,538 fiona.ogrext DEBUG    Next index: 461
+2021-03-27 18:45:12,538 fiona.ogrext DEBUG    Next index: 462
+2021-03-27 18:45:12,539 fiona.ogrext DEBUG    Next index: 463
+2021-03-27 18:45:12,539 fiona.ogrext DEBUG    Next index: 464
+2021-03-27 18:45:12,539 fiona.ogrext DEBUG    Next index: 465
+2021-03-27 18:45:12,540 fiona.ogrext DEBUG    Next index: 466
+2021-03-27 18:45:12,540 fiona.ogrext DEBUG    Next index: 467
+2021-03-27 18:45:12,540 fiona.ogrext DEBUG    Next index: 468
+2021-03-27 18:45:12,576 fiona.collection DEBUG    Flushed buffer
+2021-03-27 18:45:12,577 fiona.collection DEBUG    Stopped session
+2021-03-27 18:45:12,577 fiona.env    DEBUG    Exiting env context: <fiona.env.Env object at 0x000001DC6E639988>
+2021-03-27 18:45:12,577 fiona.env    DEBUG    Cleared existing <fiona._env.GDALEnv object at 0x000001DC69D73888> options
+2021-03-27 18:45:12,577 fiona._env   DEBUG    Stopping GDALEnv <fiona._env.GDALEnv object at 0x000001DC69D73888>.
+2021-03-27 18:45:12,577 fiona._env   DEBUG    Error handler popped.
+2021-03-27 18:45:12,578 fiona._env   DEBUG    Stopped GDALEnv <fiona._env.GDALEnv object at 0x000001DC69D73888>.
+2021-03-27 18:45:12,578 fiona.env    DEBUG    Exiting outermost env
+2021-03-27 18:45:12,578 fiona.env    DEBUG    Exited env context: <fiona.env.Env object at 0x000001DC6E639988>
+2021-03-27 18:45:13,070 rasterio.env DEBUG    Entering env context: <rasterio.env.Env object at 0x000001DC69D54A88>
+2021-03-27 18:45:13,070 rasterio.env DEBUG    Starting outermost env
+2021-03-27 18:45:13,071 rasterio.env DEBUG    No GDAL environment exists
+2021-03-27 18:45:13,071 rasterio.env DEBUG    New GDAL environment <rasterio._env.GDALEnv object at 0x000001DC6A7DFCC8> created
+2021-03-27 18:45:13,072 rasterio._env DEBUG    GDAL_DATA found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\gdal'.
+2021-03-27 18:45:13,072 rasterio._env DEBUG    PROJ_LIB found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\proj'.
+2021-03-27 18:45:13,073 rasterio._env DEBUG    Started GDALEnv <rasterio._env.GDALEnv object at 0x000001DC6A7DFCC8>.
+2021-03-27 18:45:13,073 rasterio.env DEBUG    Entered env context: <rasterio.env.Env object at 0x000001DC69D54A88>
+2021-03-27 18:45:13,120 rasterio.env DEBUG    Exiting env context: <rasterio.env.Env object at 0x000001DC69D54A88>
+2021-03-27 18:45:13,121 rasterio.env DEBUG    Cleared existing <rasterio._env.GDALEnv object at 0x000001DC6A7DFCC8> options
+2021-03-27 18:45:13,121 rasterio._env DEBUG    Stopped GDALEnv <rasterio._env.GDALEnv object at 0x000001DC6A7DFCC8>.
+2021-03-27 18:45:13,121 rasterio.env DEBUG    Exiting outermost env
+2021-03-27 18:45:13,122 rasterio.env DEBUG    Exited env context: <rasterio.env.Env object at 0x000001DC69D54A88>
+2021-03-27 18:45:13,122 fiona.env    DEBUG    Entering env context: <fiona.env.Env object at 0x000001DC69D43188>
+2021-03-27 18:45:13,122 fiona.env    DEBUG    Starting outermost env
+2021-03-27 18:45:13,123 fiona.env    DEBUG    No GDAL environment exists
+2021-03-27 18:45:13,123 fiona.env    DEBUG    New GDAL environment <fiona._env.GDALEnv object at 0x000001DC64B81A08> created
+2021-03-27 18:45:13,123 fiona._env   DEBUG    Logging error handler pushed.
+2021-03-27 18:45:13,124 fiona._env   DEBUG    All drivers registered.
+2021-03-27 18:45:13,125 fiona._env   DEBUG    GDAL_DATA found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\gdal'.
+2021-03-27 18:45:13,125 fiona._env   DEBUG    PROJ_LIB found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\proj'.
+2021-03-27 18:45:13,125 fiona._env   DEBUG    Started GDALEnv <fiona._env.GDALEnv object at 0x000001DC64B81A08>.
+2021-03-27 18:45:13,126 fiona.env    DEBUG    Updated existing <fiona._env.GDALEnv object at 0x000001DC64B81A08> with options {}
+2021-03-27 18:45:13,126 fiona.env    DEBUG    Entered env context: <fiona.env.Env object at 0x000001DC69D43188>
+2021-03-27 18:45:13,374 fiona.ogrext DEBUG    Got coordinate system
+2021-03-27 18:45:13,378 fiona.ogrext INFO     Failed to auto identify EPSG: 7
+2021-03-27 18:45:13,378 fiona.ogrext DEBUG    NULL pointer error
+2021-03-27 18:45:13,378 fiona.ogrext DEBUG    Params: b'+proj=lcc +lat_0=40 +lon_0=-100 +lat_1=49 +lat_2=77 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs'
+2021-03-27 18:45:13,379 fiona.ogrext DEBUG    Got coordinate system
+2021-03-27 18:45:13,379 fiona.ogrext DEBUG    OLC_FASTSETNEXTBYINDEX: 1
+2021-03-27 18:45:13,379 fiona.ogrext DEBUG    OLC_FASTFEATURECOUNT: 1
+2021-03-27 18:45:13,379 fiona.ogrext DEBUG    Next index: 0
+2021-03-27 18:45:13,379 fiona.ogrext DEBUG    Next index: 1
+2021-03-27 18:45:13,380 fiona.ogrext DEBUG    Next index: 2
+2021-03-27 18:45:13,381 fiona.ogrext DEBUG    Next index: 3
+2021-03-27 18:45:13,382 fiona.ogrext DEBUG    Next index: 4
+2021-03-27 18:45:13,383 fiona.ogrext DEBUG    Next index: 5
+2021-03-27 18:45:13,383 fiona.ogrext DEBUG    Next index: 6
+2021-03-27 18:45:13,384 fiona.ogrext DEBUG    Next index: 7
+2021-03-27 18:45:13,385 fiona.ogrext DEBUG    Next index: 8
+2021-03-27 18:45:13,385 fiona.ogrext DEBUG    Next index: 9
+2021-03-27 18:45:13,386 fiona.ogrext DEBUG    Next index: 10
+2021-03-27 18:45:13,387 fiona.ogrext DEBUG    Next index: 11
+2021-03-27 18:45:13,388 fiona.ogrext DEBUG    Next index: 12
+2021-03-27 18:45:13,388 fiona.ogrext DEBUG    Next index: 13
+2021-03-27 18:45:13,393 fiona.ogrext DEBUG    Next index: 14
+2021-03-27 18:45:13,394 fiona.ogrext DEBUG    Next index: 15
+2021-03-27 18:45:13,395 fiona.ogrext DEBUG    Next index: 16
+2021-03-27 18:45:13,396 fiona.ogrext DEBUG    Next index: 17
+2021-03-27 18:45:13,396 fiona.ogrext DEBUG    Next index: 18
+2021-03-27 18:45:13,397 fiona.ogrext DEBUG    Next index: 19
+2021-03-27 18:45:13,397 fiona.ogrext DEBUG    Next index: 20
+2021-03-27 18:45:13,398 fiona.ogrext DEBUG    Next index: 21
+2021-03-27 18:45:13,399 fiona.ogrext DEBUG    Next index: 22
+2021-03-27 18:45:13,401 fiona.ogrext DEBUG    Next index: 23
+2021-03-27 18:45:13,402 fiona.ogrext DEBUG    Next index: 24
+2021-03-27 18:45:13,403 fiona.ogrext DEBUG    Next index: 25
+2021-03-27 18:45:13,403 fiona.ogrext DEBUG    Next index: 26
+2021-03-27 18:45:13,404 fiona.ogrext DEBUG    Next index: 27
+2021-03-27 18:45:13,404 fiona.ogrext DEBUG    Next index: 28
+2021-03-27 18:45:13,405 fiona.ogrext DEBUG    Next index: 29
+2021-03-27 18:45:13,405 fiona.ogrext DEBUG    Next index: 30
+2021-03-27 18:45:13,406 fiona.ogrext DEBUG    Next index: 31
+2021-03-27 18:45:13,407 fiona.ogrext DEBUG    Next index: 32
+2021-03-27 18:45:13,407 fiona.ogrext DEBUG    Next index: 33
+2021-03-27 18:45:13,407 fiona.ogrext DEBUG    Next index: 34
+2021-03-27 18:45:13,408 fiona.ogrext DEBUG    Next index: 35
+2021-03-27 18:45:13,408 fiona.ogrext DEBUG    Next index: 36
+2021-03-27 18:45:13,409 fiona.ogrext DEBUG    Next index: 37
+2021-03-27 18:45:13,410 fiona.ogrext DEBUG    Next index: 38
+2021-03-27 18:45:13,410 fiona.ogrext DEBUG    Next index: 39
+2021-03-27 18:45:13,411 fiona.ogrext DEBUG    Next index: 40
+2021-03-27 18:45:13,411 fiona.ogrext DEBUG    Next index: 41
+2021-03-27 18:45:13,412 fiona.ogrext DEBUG    Next index: 42
+2021-03-27 18:45:13,412 fiona.ogrext DEBUG    Next index: 43
+2021-03-27 18:45:13,413 fiona.ogrext DEBUG    Next index: 44
+2021-03-27 18:45:13,413 fiona.ogrext DEBUG    Next index: 45
+2021-03-27 18:45:13,414 fiona.ogrext DEBUG    Next index: 46
+2021-03-27 18:45:13,414 fiona.ogrext DEBUG    Next index: 47
+2021-03-27 18:45:13,415 fiona.ogrext DEBUG    Next index: 48
+2021-03-27 18:45:13,415 fiona.ogrext DEBUG    Next index: 49
+2021-03-27 18:45:13,416 fiona.ogrext DEBUG    Next index: 50
+2021-03-27 18:45:13,416 fiona.ogrext DEBUG    Next index: 51
+2021-03-27 18:45:13,417 fiona.ogrext DEBUG    Next index: 52
+2021-03-27 18:45:13,417 fiona.ogrext DEBUG    Next index: 53
+2021-03-27 18:45:13,418 fiona.ogrext DEBUG    Next index: 54
+2021-03-27 18:45:13,418 fiona.ogrext DEBUG    Next index: 55
+2021-03-27 18:45:13,419 fiona.ogrext DEBUG    Next index: 56
+2021-03-27 18:45:13,419 fiona.ogrext DEBUG    Next index: 57
+2021-03-27 18:45:13,420 fiona.ogrext DEBUG    Next index: 58
+2021-03-27 18:45:13,420 fiona.ogrext DEBUG    Next index: 59
+2021-03-27 18:45:13,421 fiona.ogrext DEBUG    Next index: 60
+2021-03-27 18:45:13,421 fiona.ogrext DEBUG    Next index: 61
+2021-03-27 18:45:13,422 fiona.ogrext DEBUG    Next index: 62
+2021-03-27 18:45:13,422 fiona.ogrext DEBUG    Next index: 63
+2021-03-27 18:45:13,423 fiona.ogrext DEBUG    Next index: 64
+2021-03-27 18:45:13,423 fiona.ogrext DEBUG    Next index: 65
+2021-03-27 18:45:13,424 fiona.ogrext DEBUG    Next index: 66
+2021-03-27 18:45:13,424 fiona.ogrext DEBUG    Next index: 67
+2021-03-27 18:45:13,425 fiona.ogrext DEBUG    Next index: 68
+2021-03-27 18:45:13,425 fiona.ogrext DEBUG    Next index: 69
+2021-03-27 18:45:13,427 fiona.ogrext DEBUG    Next index: 70
+2021-03-27 18:45:13,428 fiona.ogrext DEBUG    Next index: 71
+2021-03-27 18:45:13,428 fiona.ogrext DEBUG    Next index: 72
+2021-03-27 18:45:13,429 fiona.ogrext DEBUG    Next index: 73
+2021-03-27 18:45:13,429 fiona.ogrext DEBUG    Next index: 74
+2021-03-27 18:45:13,429 fiona.ogrext DEBUG    Next index: 75
+2021-03-27 18:45:13,430 fiona.ogrext DEBUG    Next index: 76
+2021-03-27 18:45:13,430 fiona.ogrext DEBUG    Next index: 77
+2021-03-27 18:45:13,431 fiona.ogrext DEBUG    Next index: 78
+2021-03-27 18:45:13,431 fiona.ogrext DEBUG    Next index: 79
+2021-03-27 18:45:13,431 fiona.ogrext DEBUG    Next index: 80
+2021-03-27 18:45:13,432 fiona.ogrext DEBUG    Next index: 81
+2021-03-27 18:45:13,432 fiona.ogrext DEBUG    Next index: 82
+2021-03-27 18:45:13,432 fiona.ogrext DEBUG    Next index: 83
+2021-03-27 18:45:13,433 fiona.ogrext DEBUG    Next index: 84
+2021-03-27 18:45:13,433 fiona.ogrext DEBUG    Next index: 85
+2021-03-27 18:45:13,434 fiona.ogrext DEBUG    Next index: 86
+2021-03-27 18:45:13,434 fiona.ogrext DEBUG    Next index: 87
+2021-03-27 18:45:13,434 fiona.ogrext DEBUG    Next index: 88
+2021-03-27 18:45:13,435 fiona.ogrext DEBUG    Next index: 89
+2021-03-27 18:45:13,435 fiona.ogrext DEBUG    Next index: 90
+2021-03-27 18:45:13,435 fiona.ogrext DEBUG    Next index: 91
+2021-03-27 18:45:13,435 fiona.ogrext DEBUG    Next index: 92
+2021-03-27 18:45:13,436 fiona.ogrext DEBUG    Next index: 93
+2021-03-27 18:45:13,436 fiona.ogrext DEBUG    Next index: 94
+2021-03-27 18:45:13,436 fiona.ogrext DEBUG    Next index: 95
+2021-03-27 18:45:13,437 fiona.ogrext DEBUG    Next index: 96
+2021-03-27 18:45:13,437 fiona.ogrext DEBUG    Next index: 97
+2021-03-27 18:45:13,437 fiona.ogrext DEBUG    Next index: 98
+2021-03-27 18:45:13,438 fiona.ogrext DEBUG    Next index: 99
+2021-03-27 18:45:13,438 fiona.ogrext DEBUG    Next index: 100
+2021-03-27 18:45:13,438 fiona.ogrext DEBUG    Next index: 101
+2021-03-27 18:45:13,439 fiona.ogrext DEBUG    Next index: 102
+2021-03-27 18:45:13,439 fiona.ogrext DEBUG    Next index: 103
+2021-03-27 18:45:13,439 fiona.ogrext DEBUG    Next index: 104
+2021-03-27 18:45:13,440 fiona.ogrext DEBUG    Next index: 105
+2021-03-27 18:45:13,440 fiona.ogrext DEBUG    Next index: 106
+2021-03-27 18:45:13,440 fiona.ogrext DEBUG    Next index: 107
+2021-03-27 18:45:13,441 fiona.ogrext DEBUG    Next index: 108
+2021-03-27 18:45:13,441 fiona.ogrext DEBUG    Next index: 109
+2021-03-27 18:45:13,441 fiona.ogrext DEBUG    Next index: 110
+2021-03-27 18:45:13,442 fiona.ogrext DEBUG    Next index: 111
+2021-03-27 18:45:13,442 fiona.ogrext DEBUG    Next index: 112
+2021-03-27 18:45:13,442 fiona.ogrext DEBUG    Next index: 113
+2021-03-27 18:45:13,443 fiona.ogrext DEBUG    Next index: 114
+2021-03-27 18:45:13,443 fiona.ogrext DEBUG    Next index: 115
+2021-03-27 18:45:13,444 fiona.ogrext DEBUG    Next index: 116
+2021-03-27 18:45:13,444 fiona.ogrext DEBUG    Next index: 117
+2021-03-27 18:45:13,445 fiona.ogrext DEBUG    Next index: 118
+2021-03-27 18:45:13,445 fiona.ogrext DEBUG    Next index: 119
+2021-03-27 18:45:13,445 fiona.ogrext DEBUG    Next index: 120
+2021-03-27 18:45:13,446 fiona.ogrext DEBUG    Next index: 121
+2021-03-27 18:45:13,446 fiona.ogrext DEBUG    Next index: 122
+2021-03-27 18:45:13,447 fiona.ogrext DEBUG    Next index: 123
+2021-03-27 18:45:13,447 fiona.ogrext DEBUG    Next index: 124
+2021-03-27 18:45:13,448 fiona.ogrext DEBUG    Next index: 125
+2021-03-27 18:45:13,448 fiona.ogrext DEBUG    Next index: 126
+2021-03-27 18:45:13,448 fiona.ogrext DEBUG    Next index: 127
+2021-03-27 18:45:13,449 fiona.ogrext DEBUG    Next index: 128
+2021-03-27 18:45:13,449 fiona.ogrext DEBUG    Next index: 129
+2021-03-27 18:45:13,449 fiona.ogrext DEBUG    Next index: 130
+2021-03-27 18:45:13,450 fiona.ogrext DEBUG    Next index: 131
+2021-03-27 18:45:13,450 fiona.ogrext DEBUG    Next index: 132
+2021-03-27 18:45:13,450 fiona.ogrext DEBUG    Next index: 133
+2021-03-27 18:45:13,451 fiona.ogrext DEBUG    Next index: 134
+2021-03-27 18:45:13,451 fiona.ogrext DEBUG    Next index: 135
+2021-03-27 18:45:13,452 fiona.ogrext DEBUG    Next index: 136
+2021-03-27 18:45:13,452 fiona.ogrext DEBUG    Next index: 137
+2021-03-27 18:45:13,452 fiona.ogrext DEBUG    Next index: 138
+2021-03-27 18:45:13,453 fiona.ogrext DEBUG    Next index: 139
+2021-03-27 18:45:13,453 fiona.ogrext DEBUG    Next index: 140
+2021-03-27 18:45:13,454 fiona.ogrext DEBUG    Next index: 141
+2021-03-27 18:45:13,455 fiona.ogrext DEBUG    Next index: 142
+2021-03-27 18:45:13,455 fiona.ogrext DEBUG    Next index: 143
+2021-03-27 18:45:13,456 fiona.ogrext DEBUG    Next index: 144
+2021-03-27 18:45:13,457 fiona.ogrext DEBUG    Next index: 145
+2021-03-27 18:45:13,458 fiona.ogrext DEBUG    Next index: 146
+2021-03-27 18:45:13,458 fiona.ogrext DEBUG    Next index: 147
+2021-03-27 18:45:13,459 fiona.ogrext DEBUG    Next index: 148
+2021-03-27 18:45:13,460 fiona.ogrext DEBUG    Next index: 149
+2021-03-27 18:45:13,460 fiona.ogrext DEBUG    Next index: 150
+2021-03-27 18:45:13,461 fiona.ogrext DEBUG    Next index: 151
+2021-03-27 18:45:13,461 fiona.ogrext DEBUG    Next index: 152
+2021-03-27 18:45:13,462 fiona.ogrext DEBUG    Next index: 153
+2021-03-27 18:45:13,462 fiona.ogrext DEBUG    Next index: 154
+2021-03-27 18:45:13,463 fiona.ogrext DEBUG    Next index: 155
+2021-03-27 18:45:13,464 fiona.ogrext DEBUG    Next index: 156
+2021-03-27 18:45:13,465 fiona.ogrext DEBUG    Next index: 157
+2021-03-27 18:45:13,465 fiona.ogrext DEBUG    Next index: 158
+2021-03-27 18:45:13,466 fiona.ogrext DEBUG    Next index: 159
+2021-03-27 18:45:13,467 fiona.ogrext DEBUG    Next index: 160
+2021-03-27 18:45:13,469 fiona.ogrext DEBUG    Next index: 161
+2021-03-27 18:45:13,470 fiona.ogrext DEBUG    Next index: 162
+2021-03-27 18:45:13,470 fiona.ogrext DEBUG    Next index: 163
+2021-03-27 18:45:13,471 fiona.ogrext DEBUG    Next index: 164
+2021-03-27 18:45:13,471 fiona.ogrext DEBUG    Next index: 165
+2021-03-27 18:45:13,472 fiona.ogrext DEBUG    Next index: 166
+2021-03-27 18:45:13,472 fiona.ogrext DEBUG    Next index: 167
+2021-03-27 18:45:13,473 fiona.ogrext DEBUG    Next index: 168
+2021-03-27 18:45:13,473 fiona.ogrext DEBUG    Next index: 169
+2021-03-27 18:45:13,474 fiona.ogrext DEBUG    Next index: 170
+2021-03-27 18:45:13,474 fiona.ogrext DEBUG    Next index: 171
+2021-03-27 18:45:13,475 fiona.ogrext DEBUG    Next index: 172
+2021-03-27 18:45:13,475 fiona.ogrext DEBUG    Next index: 173
+2021-03-27 18:45:13,476 fiona.ogrext DEBUG    Next index: 174
+2021-03-27 18:45:13,476 fiona.ogrext DEBUG    Next index: 175
+2021-03-27 18:45:13,477 fiona.ogrext DEBUG    Next index: 176
+2021-03-27 18:45:13,478 fiona.ogrext DEBUG    Next index: 177
+2021-03-27 18:45:13,478 fiona.ogrext DEBUG    Next index: 178
+2021-03-27 18:45:13,478 fiona.ogrext DEBUG    Next index: 179
+2021-03-27 18:45:13,479 fiona.ogrext DEBUG    Next index: 180
+2021-03-27 18:45:13,479 fiona.ogrext DEBUG    Next index: 181
+2021-03-27 18:45:13,480 fiona.ogrext DEBUG    Next index: 182
+2021-03-27 18:45:13,480 fiona.ogrext DEBUG    Next index: 183
+2021-03-27 18:45:13,480 fiona.ogrext DEBUG    Next index: 184
+2021-03-27 18:45:13,481 fiona.ogrext DEBUG    Next index: 185
+2021-03-27 18:45:13,481 fiona.ogrext DEBUG    Next index: 186
+2021-03-27 18:45:13,482 fiona.ogrext DEBUG    Next index: 187
+2021-03-27 18:45:13,482 fiona.ogrext DEBUG    Next index: 188
+2021-03-27 18:45:13,483 fiona.ogrext DEBUG    Next index: 189
+2021-03-27 18:45:13,483 fiona.ogrext DEBUG    Next index: 190
+2021-03-27 18:45:13,483 fiona.ogrext DEBUG    Next index: 191
+2021-03-27 18:45:13,484 fiona.ogrext DEBUG    Next index: 192
+2021-03-27 18:45:13,485 fiona.ogrext DEBUG    Next index: 193
+2021-03-27 18:45:13,486 fiona.ogrext DEBUG    Next index: 194
+2021-03-27 18:45:13,486 fiona.ogrext DEBUG    Next index: 195
+2021-03-27 18:45:13,489 fiona.ogrext DEBUG    Next index: 196
+2021-03-27 18:45:13,489 fiona.ogrext DEBUG    Next index: 197
+2021-03-27 18:45:13,490 fiona.ogrext DEBUG    Next index: 198
+2021-03-27 18:45:13,490 fiona.ogrext DEBUG    Next index: 199
+2021-03-27 18:45:13,490 fiona.ogrext DEBUG    Next index: 200
+2021-03-27 18:45:13,491 fiona.ogrext DEBUG    Next index: 201
+2021-03-27 18:45:13,491 fiona.ogrext DEBUG    Next index: 202
+2021-03-27 18:45:13,492 fiona.ogrext DEBUG    Next index: 203
+2021-03-27 18:45:13,492 fiona.ogrext DEBUG    Next index: 204
+2021-03-27 18:45:13,493 fiona.ogrext DEBUG    Next index: 205
+2021-03-27 18:45:13,494 fiona.ogrext DEBUG    Next index: 206
+2021-03-27 18:45:13,494 fiona.ogrext DEBUG    Next index: 207
+2021-03-27 18:45:13,495 fiona.ogrext DEBUG    Next index: 208
+2021-03-27 18:45:13,495 fiona.ogrext DEBUG    Next index: 209
+2021-03-27 18:45:13,495 fiona.ogrext DEBUG    Next index: 210
+2021-03-27 18:45:13,496 fiona.ogrext DEBUG    Next index: 211
+2021-03-27 18:45:13,497 fiona.ogrext DEBUG    Next index: 212
+2021-03-27 18:45:13,497 fiona.ogrext DEBUG    Next index: 213
+2021-03-27 18:45:13,497 fiona.ogrext DEBUG    Next index: 214
+2021-03-27 18:45:13,498 fiona.ogrext DEBUG    Next index: 215
+2021-03-27 18:45:13,498 fiona.ogrext DEBUG    Next index: 216
+2021-03-27 18:45:13,498 fiona.ogrext DEBUG    Next index: 217
+2021-03-27 18:45:13,499 fiona.ogrext DEBUG    Next index: 218
+2021-03-27 18:45:13,499 fiona.ogrext DEBUG    Next index: 219
+2021-03-27 18:45:13,500 fiona.ogrext DEBUG    Next index: 220
+2021-03-27 18:45:13,501 fiona.ogrext DEBUG    Next index: 221
+2021-03-27 18:45:13,501 fiona.ogrext DEBUG    Next index: 222
+2021-03-27 18:45:13,502 fiona.ogrext DEBUG    Next index: 223
+2021-03-27 18:45:13,502 fiona.ogrext DEBUG    Next index: 224
+2021-03-27 18:45:13,503 fiona.ogrext DEBUG    Next index: 225
+2021-03-27 18:45:13,503 fiona.ogrext DEBUG    Next index: 226
+2021-03-27 18:45:13,504 fiona.ogrext DEBUG    Next index: 227
+2021-03-27 18:45:13,505 fiona.ogrext DEBUG    Next index: 228
+2021-03-27 18:45:13,505 fiona.ogrext DEBUG    Next index: 229
+2021-03-27 18:45:13,505 fiona.ogrext DEBUG    Next index: 230
+2021-03-27 18:45:13,506 fiona.ogrext DEBUG    Next index: 231
+2021-03-27 18:45:13,506 fiona.ogrext DEBUG    Next index: 232
+2021-03-27 18:45:13,506 fiona.ogrext DEBUG    Next index: 233
+2021-03-27 18:45:13,507 fiona.ogrext DEBUG    Next index: 234
+2021-03-27 18:45:13,507 fiona.ogrext DEBUG    Next index: 235
+2021-03-27 18:45:13,507 fiona.ogrext DEBUG    Next index: 236
+2021-03-27 18:45:13,508 fiona.ogrext DEBUG    Next index: 237
+2021-03-27 18:45:13,508 fiona.ogrext DEBUG    Next index: 238
+2021-03-27 18:45:13,508 fiona.ogrext DEBUG    Next index: 239
+2021-03-27 18:45:13,509 fiona.ogrext DEBUG    Next index: 240
+2021-03-27 18:45:13,509 fiona.ogrext DEBUG    Next index: 241
+2021-03-27 18:45:13,516 fiona.ogrext DEBUG    Next index: 242
+2021-03-27 18:45:13,517 fiona.ogrext DEBUG    Next index: 243
+2021-03-27 18:45:13,517 fiona.ogrext DEBUG    Next index: 244
+2021-03-27 18:45:13,518 fiona.ogrext DEBUG    Next index: 245
+2021-03-27 18:45:13,518 fiona.ogrext DEBUG    Next index: 246
+2021-03-27 18:45:13,519 fiona.ogrext DEBUG    Next index: 247
+2021-03-27 18:45:13,519 fiona.ogrext DEBUG    Next index: 248
+2021-03-27 18:45:13,520 fiona.ogrext DEBUG    Next index: 249
+2021-03-27 18:45:13,520 fiona.ogrext DEBUG    Next index: 250
+2021-03-27 18:45:13,521 fiona.ogrext DEBUG    Next index: 251
+2021-03-27 18:45:13,521 fiona.ogrext DEBUG    Next index: 252
+2021-03-27 18:45:13,522 fiona.ogrext DEBUG    Next index: 253
+2021-03-27 18:45:13,522 fiona.ogrext DEBUG    Next index: 254
+2021-03-27 18:45:13,522 fiona.ogrext DEBUG    Next index: 255
+2021-03-27 18:45:13,523 fiona.ogrext DEBUG    Next index: 256
+2021-03-27 18:45:13,523 fiona.ogrext DEBUG    Next index: 257
+2021-03-27 18:45:13,524 fiona.ogrext DEBUG    Next index: 258
+2021-03-27 18:45:13,524 fiona.ogrext DEBUG    Next index: 259
+2021-03-27 18:45:13,524 fiona.ogrext DEBUG    Next index: 260
+2021-03-27 18:45:13,525 fiona.ogrext DEBUG    Next index: 261
+2021-03-27 18:45:13,526 fiona.ogrext DEBUG    Next index: 262
+2021-03-27 18:45:13,526 fiona.ogrext DEBUG    Next index: 263
+2021-03-27 18:45:13,527 fiona.ogrext DEBUG    Next index: 264
+2021-03-27 18:45:13,527 fiona.ogrext DEBUG    Next index: 265
+2021-03-27 18:45:13,527 fiona.ogrext DEBUG    Next index: 266
+2021-03-27 18:45:13,528 fiona.ogrext DEBUG    Next index: 267
+2021-03-27 18:45:13,528 fiona.ogrext DEBUG    Next index: 268
+2021-03-27 18:45:13,528 fiona.ogrext DEBUG    Next index: 269
+2021-03-27 18:45:13,529 fiona.ogrext DEBUG    Next index: 270
+2021-03-27 18:45:13,529 fiona.ogrext DEBUG    Next index: 271
+2021-03-27 18:45:13,530 fiona.ogrext DEBUG    Next index: 272
+2021-03-27 18:45:13,530 fiona.ogrext DEBUG    Next index: 273
+2021-03-27 18:45:13,530 fiona.ogrext DEBUG    Next index: 274
+2021-03-27 18:45:13,531 fiona.ogrext DEBUG    Next index: 275
+2021-03-27 18:45:13,531 fiona.ogrext DEBUG    Next index: 276
+2021-03-27 18:45:13,531 fiona.ogrext DEBUG    Next index: 277
+2021-03-27 18:45:13,532 fiona.ogrext DEBUG    Next index: 278
+2021-03-27 18:45:13,532 fiona.ogrext DEBUG    Next index: 279
+2021-03-27 18:45:13,532 fiona.ogrext DEBUG    Next index: 280
+2021-03-27 18:45:13,533 fiona.ogrext DEBUG    Next index: 281
+2021-03-27 18:45:13,533 fiona.ogrext DEBUG    Next index: 282
+2021-03-27 18:45:13,533 fiona.ogrext DEBUG    Next index: 283
+2021-03-27 18:45:13,534 fiona.ogrext DEBUG    Next index: 284
+2021-03-27 18:45:13,534 fiona.ogrext DEBUG    Next index: 285
+2021-03-27 18:45:13,534 fiona.ogrext DEBUG    Next index: 286
+2021-03-27 18:45:13,534 fiona.ogrext DEBUG    Next index: 287
+2021-03-27 18:45:13,535 fiona.ogrext DEBUG    Next index: 288
+2021-03-27 18:45:13,535 fiona.ogrext DEBUG    Next index: 289
+2021-03-27 18:45:13,536 fiona.ogrext DEBUG    Next index: 290
+2021-03-27 18:45:13,536 fiona.ogrext DEBUG    Next index: 291
+2021-03-27 18:45:13,536 fiona.ogrext DEBUG    Next index: 292
+2021-03-27 18:45:13,537 fiona.ogrext DEBUG    Next index: 293
+2021-03-27 18:45:13,537 fiona.ogrext DEBUG    Next index: 294
+2021-03-27 18:45:13,537 fiona.ogrext DEBUG    Next index: 295
+2021-03-27 18:45:13,537 fiona.ogrext DEBUG    Next index: 296
+2021-03-27 18:45:13,538 fiona.ogrext DEBUG    Next index: 297
+2021-03-27 18:45:13,538 fiona.ogrext DEBUG    Next index: 298
+2021-03-27 18:45:13,539 fiona.ogrext DEBUG    Next index: 299
+2021-03-27 18:45:13,539 fiona.ogrext DEBUG    Next index: 300
+2021-03-27 18:45:13,539 fiona.ogrext DEBUG    Next index: 301
+2021-03-27 18:45:13,540 fiona.ogrext DEBUG    Next index: 302
+2021-03-27 18:45:13,540 fiona.ogrext DEBUG    Next index: 303
+2021-03-27 18:45:13,540 fiona.ogrext DEBUG    Next index: 304
+2021-03-27 18:45:13,541 fiona.ogrext DEBUG    Next index: 305
+2021-03-27 18:45:13,541 fiona.ogrext DEBUG    Next index: 306
+2021-03-27 18:45:13,541 fiona.ogrext DEBUG    Next index: 307
+2021-03-27 18:45:13,542 fiona.ogrext DEBUG    Next index: 308
+2021-03-27 18:45:13,542 fiona.ogrext DEBUG    Next index: 309
+2021-03-27 18:45:13,542 fiona.ogrext DEBUG    Next index: 310
+2021-03-27 18:45:13,543 fiona.ogrext DEBUG    Next index: 311
+2021-03-27 18:45:13,543 fiona.ogrext DEBUG    Next index: 312
+2021-03-27 18:45:13,543 fiona.ogrext DEBUG    Next index: 313
+2021-03-27 18:45:13,544 fiona.ogrext DEBUG    Next index: 314
+2021-03-27 18:45:13,544 fiona.ogrext DEBUG    Next index: 315
+2021-03-27 18:45:13,544 fiona.ogrext DEBUG    Next index: 316
+2021-03-27 18:45:13,545 fiona.ogrext DEBUG    Next index: 317
+2021-03-27 18:45:13,545 fiona.ogrext DEBUG    Next index: 318
+2021-03-27 18:45:13,545 fiona.ogrext DEBUG    Next index: 319
+2021-03-27 18:45:13,546 fiona.ogrext DEBUG    Next index: 320
+2021-03-27 18:45:13,547 fiona.ogrext DEBUG    Next index: 321
+2021-03-27 18:45:13,547 fiona.ogrext DEBUG    Next index: 322
+2021-03-27 18:45:13,548 fiona.ogrext DEBUG    Next index: 323
+2021-03-27 18:45:13,548 fiona.ogrext DEBUG    Next index: 324
+2021-03-27 18:45:13,549 fiona.ogrext DEBUG    Next index: 325
+2021-03-27 18:45:13,549 fiona.ogrext DEBUG    Next index: 326
+2021-03-27 18:45:13,549 fiona.ogrext DEBUG    Next index: 327
+2021-03-27 18:45:13,550 fiona.ogrext DEBUG    Next index: 328
+2021-03-27 18:45:13,550 fiona.ogrext DEBUG    Next index: 329
+2021-03-27 18:45:13,550 fiona.ogrext DEBUG    Next index: 330
+2021-03-27 18:45:13,551 fiona.ogrext DEBUG    Next index: 331
+2021-03-27 18:45:13,551 fiona.ogrext DEBUG    Next index: 332
+2021-03-27 18:45:13,551 fiona.ogrext DEBUG    Next index: 333
+2021-03-27 18:45:13,552 fiona.ogrext DEBUG    Next index: 334
+2021-03-27 18:45:13,552 fiona.ogrext DEBUG    Next index: 335
+2021-03-27 18:45:13,553 fiona.ogrext DEBUG    Next index: 336
+2021-03-27 18:45:13,553 fiona.ogrext DEBUG    Next index: 337
+2021-03-27 18:45:13,553 fiona.ogrext DEBUG    Next index: 338
+2021-03-27 18:45:13,554 fiona.ogrext DEBUG    Next index: 339
+2021-03-27 18:45:13,554 fiona.ogrext DEBUG    Next index: 340
+2021-03-27 18:45:13,554 fiona.ogrext DEBUG    Next index: 341
+2021-03-27 18:45:13,555 fiona.ogrext DEBUG    Next index: 342
+2021-03-27 18:45:13,555 fiona.ogrext DEBUG    Next index: 343
+2021-03-27 18:45:13,556 fiona.ogrext DEBUG    Next index: 344
+2021-03-27 18:45:13,556 fiona.ogrext DEBUG    Next index: 345
+2021-03-27 18:45:13,556 fiona.ogrext DEBUG    Next index: 346
+2021-03-27 18:45:13,557 fiona.ogrext DEBUG    Next index: 347
+2021-03-27 18:45:13,557 fiona.ogrext DEBUG    Next index: 348
+2021-03-27 18:45:13,557 fiona.ogrext DEBUG    Next index: 349
+2021-03-27 18:45:13,558 fiona.ogrext DEBUG    Next index: 350
+2021-03-27 18:45:13,558 fiona.ogrext DEBUG    Next index: 351
+2021-03-27 18:45:13,559 fiona.ogrext DEBUG    Next index: 352
+2021-03-27 18:45:13,560 fiona.ogrext DEBUG    Next index: 353
+2021-03-27 18:45:13,560 fiona.ogrext DEBUG    Next index: 354
+2021-03-27 18:45:13,560 fiona.ogrext DEBUG    Next index: 355
+2021-03-27 18:45:13,561 fiona.ogrext DEBUG    Next index: 356
+2021-03-27 18:45:13,561 fiona.ogrext DEBUG    Next index: 357
+2021-03-27 18:45:13,561 fiona.ogrext DEBUG    Next index: 358
+2021-03-27 18:45:13,562 fiona.ogrext DEBUG    Next index: 359
+2021-03-27 18:45:13,562 fiona.ogrext DEBUG    Next index: 360
+2021-03-27 18:45:13,562 fiona.ogrext DEBUG    Next index: 361
+2021-03-27 18:45:13,563 fiona.ogrext DEBUG    Next index: 362
+2021-03-27 18:45:13,563 fiona.ogrext DEBUG    Next index: 363
+2021-03-27 18:45:13,564 fiona.ogrext DEBUG    Next index: 364
+2021-03-27 18:45:13,564 fiona.ogrext DEBUG    Next index: 365
+2021-03-27 18:45:13,564 fiona.ogrext DEBUG    Next index: 366
+2021-03-27 18:45:13,565 fiona.ogrext DEBUG    Next index: 367
+2021-03-27 18:45:13,565 fiona.ogrext DEBUG    Next index: 368
+2021-03-27 18:45:13,565 fiona.ogrext DEBUG    Next index: 369
+2021-03-27 18:45:13,566 fiona.ogrext DEBUG    Next index: 370
+2021-03-27 18:45:13,566 fiona.ogrext DEBUG    Next index: 371
+2021-03-27 18:45:13,567 fiona.ogrext DEBUG    Next index: 372
+2021-03-27 18:45:13,567 fiona.ogrext DEBUG    Next index: 373
+2021-03-27 18:45:13,567 fiona.ogrext DEBUG    Next index: 374
+2021-03-27 18:45:13,568 fiona.ogrext DEBUG    Next index: 375
+2021-03-27 18:45:13,568 fiona.ogrext DEBUG    Next index: 376
+2021-03-27 18:45:13,569 fiona.ogrext DEBUG    Next index: 377
+2021-03-27 18:45:13,569 fiona.ogrext DEBUG    Next index: 378
+2021-03-27 18:45:13,569 fiona.ogrext DEBUG    Next index: 379
+2021-03-27 18:45:13,570 fiona.ogrext DEBUG    Next index: 380
+2021-03-27 18:45:13,570 fiona.ogrext DEBUG    Next index: 381
+2021-03-27 18:45:13,570 fiona.ogrext DEBUG    Next index: 382
+2021-03-27 18:45:13,571 fiona.ogrext DEBUG    Next index: 383
+2021-03-27 18:45:13,571 fiona.ogrext DEBUG    Next index: 384
+2021-03-27 18:45:13,571 fiona.ogrext DEBUG    Next index: 385
+2021-03-27 18:45:13,572 fiona.ogrext DEBUG    Next index: 386
+2021-03-27 18:45:13,572 fiona.ogrext DEBUG    Next index: 387
+2021-03-27 18:45:13,573 fiona.ogrext DEBUG    Next index: 388
+2021-03-27 18:45:13,573 fiona.ogrext DEBUG    Next index: 389
+2021-03-27 18:45:13,573 fiona.ogrext DEBUG    Next index: 390
+2021-03-27 18:45:13,574 fiona.ogrext DEBUG    Next index: 391
+2021-03-27 18:45:13,574 fiona.ogrext DEBUG    Next index: 392
+2021-03-27 18:45:13,575 fiona.ogrext DEBUG    Next index: 393
+2021-03-27 18:45:13,575 fiona.ogrext DEBUG    Next index: 394
+2021-03-27 18:45:13,576 fiona.ogrext DEBUG    Next index: 395
+2021-03-27 18:45:13,576 fiona.ogrext DEBUG    Next index: 396
+2021-03-27 18:45:13,576 fiona.ogrext DEBUG    Next index: 397
+2021-03-27 18:45:13,577 fiona.ogrext DEBUG    Next index: 398
+2021-03-27 18:45:13,577 fiona.ogrext DEBUG    Next index: 399
+2021-03-27 18:45:13,577 fiona.ogrext DEBUG    Next index: 400
+2021-03-27 18:45:13,578 fiona.ogrext DEBUG    Next index: 401
+2021-03-27 18:45:13,578 fiona.ogrext DEBUG    Next index: 402
+2021-03-27 18:45:13,578 fiona.ogrext DEBUG    Next index: 403
+2021-03-27 18:45:13,579 fiona.ogrext DEBUG    Next index: 404
+2021-03-27 18:45:13,579 fiona.ogrext DEBUG    Next index: 405
+2021-03-27 18:45:13,579 fiona.ogrext DEBUG    Next index: 406
+2021-03-27 18:45:13,580 fiona.ogrext DEBUG    Next index: 407
+2021-03-27 18:45:13,580 fiona.ogrext DEBUG    Next index: 408
+2021-03-27 18:45:13,581 fiona.ogrext DEBUG    Next index: 409
+2021-03-27 18:45:13,581 fiona.ogrext DEBUG    Next index: 410
+2021-03-27 18:45:13,581 fiona.ogrext DEBUG    Next index: 411
+2021-03-27 18:45:13,582 fiona.ogrext DEBUG    Next index: 412
+2021-03-27 18:45:13,582 fiona.ogrext DEBUG    Next index: 413
+2021-03-27 18:45:13,582 fiona.ogrext DEBUG    Next index: 414
+2021-03-27 18:45:13,582 fiona.ogrext DEBUG    Next index: 415
+2021-03-27 18:45:13,583 fiona.ogrext DEBUG    Next index: 416
+2021-03-27 18:45:13,583 fiona.ogrext DEBUG    Next index: 417
+2021-03-27 18:45:13,583 fiona.ogrext DEBUG    Next index: 418
+2021-03-27 18:45:13,584 fiona.ogrext DEBUG    Next index: 419
+2021-03-27 18:45:13,584 fiona.ogrext DEBUG    Next index: 420
+2021-03-27 18:45:13,584 fiona.ogrext DEBUG    Next index: 421
+2021-03-27 18:45:13,585 fiona.ogrext DEBUG    Next index: 422
+2021-03-27 18:45:13,585 fiona.ogrext DEBUG    Next index: 423
+2021-03-27 18:45:13,585 fiona.ogrext DEBUG    Next index: 424
+2021-03-27 18:45:13,586 fiona.ogrext DEBUG    Next index: 425
+2021-03-27 18:45:13,586 fiona.ogrext DEBUG    Next index: 426
+2021-03-27 18:45:13,587 fiona.ogrext DEBUG    Next index: 427
+2021-03-27 18:45:13,587 fiona.ogrext DEBUG    Next index: 428
+2021-03-27 18:45:13,587 fiona.ogrext DEBUG    Next index: 429
+2021-03-27 18:45:13,588 fiona.ogrext DEBUG    Next index: 430
+2021-03-27 18:45:13,590 fiona.ogrext DEBUG    Next index: 431
+2021-03-27 18:45:13,590 fiona.ogrext DEBUG    Next index: 432
+2021-03-27 18:45:13,591 fiona.ogrext DEBUG    Next index: 433
+2021-03-27 18:45:13,591 fiona.ogrext DEBUG    Next index: 434
+2021-03-27 18:45:13,591 fiona.ogrext DEBUG    Next index: 435
+2021-03-27 18:45:13,592 fiona.ogrext DEBUG    Next index: 436
+2021-03-27 18:45:13,592 fiona.ogrext DEBUG    Next index: 437
+2021-03-27 18:45:13,593 fiona.ogrext DEBUG    Next index: 438
+2021-03-27 18:45:13,593 fiona.ogrext DEBUG    Next index: 439
+2021-03-27 18:45:13,594 fiona.ogrext DEBUG    Next index: 440
+2021-03-27 18:45:13,594 fiona.ogrext DEBUG    Next index: 441
+2021-03-27 18:45:13,594 fiona.ogrext DEBUG    Next index: 442
+2021-03-27 18:45:13,595 fiona.ogrext DEBUG    Next index: 443
+2021-03-27 18:45:13,595 fiona.ogrext DEBUG    Next index: 444
+2021-03-27 18:45:13,596 fiona.ogrext DEBUG    Next index: 445
+2021-03-27 18:45:13,596 fiona.ogrext DEBUG    Next index: 446
+2021-03-27 18:45:13,596 fiona.ogrext DEBUG    Next index: 447
+2021-03-27 18:45:13,598 fiona.ogrext DEBUG    Next index: 448
+2021-03-27 18:45:13,598 fiona.ogrext DEBUG    Next index: 449
+2021-03-27 18:45:13,598 fiona.ogrext DEBUG    Next index: 450
+2021-03-27 18:45:13,599 fiona.ogrext DEBUG    Next index: 451
+2021-03-27 18:45:13,599 fiona.ogrext DEBUG    Next index: 452
+2021-03-27 18:45:13,599 fiona.ogrext DEBUG    Next index: 453
+2021-03-27 18:45:13,599 fiona.ogrext DEBUG    Next index: 454
+2021-03-27 18:45:13,599 fiona.ogrext DEBUG    Next index: 455
+2021-03-27 18:45:13,600 fiona.ogrext DEBUG    Next index: 456
+2021-03-27 18:45:13,639 fiona.collection DEBUG    Flushed buffer
+2021-03-27 18:45:13,639 fiona.collection DEBUG    Stopped session
+2021-03-27 18:45:13,639 fiona.env    DEBUG    Exiting env context: <fiona.env.Env object at 0x000001DC69D43188>
+2021-03-27 18:45:13,639 fiona.env    DEBUG    Cleared existing <fiona._env.GDALEnv object at 0x000001DC64B81A08> options
+2021-03-27 18:45:13,640 fiona._env   DEBUG    Stopping GDALEnv <fiona._env.GDALEnv object at 0x000001DC64B81A08>.
+2021-03-27 18:45:13,640 fiona._env   DEBUG    Error handler popped.
+2021-03-27 18:45:13,640 fiona._env   DEBUG    Stopped GDALEnv <fiona._env.GDALEnv object at 0x000001DC64B81A08>.
+2021-03-27 18:45:13,640 fiona.env    DEBUG    Exiting outermost env
+2021-03-27 18:45:13,640 fiona.env    DEBUG    Exited env context: <fiona.env.Env object at 0x000001DC69D43188>
+2021-03-27 18:45:14,062 rasterio.env DEBUG    Entering env context: <rasterio.env.Env object at 0x000001DC727A2C48>
+2021-03-27 18:45:14,062 rasterio.env DEBUG    Starting outermost env
+2021-03-27 18:45:14,062 rasterio.env DEBUG    No GDAL environment exists
+2021-03-27 18:45:14,063 rasterio.env DEBUG    New GDAL environment <rasterio._env.GDALEnv object at 0x000001DC6A7DFCC8> created
+2021-03-27 18:45:14,064 rasterio._env DEBUG    GDAL_DATA found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\gdal'.
+2021-03-27 18:45:14,065 rasterio._env DEBUG    PROJ_LIB found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\proj'.
+2021-03-27 18:45:14,065 rasterio._env DEBUG    Started GDALEnv <rasterio._env.GDALEnv object at 0x000001DC6A7DFCC8>.
+2021-03-27 18:45:14,066 rasterio.env DEBUG    Entered env context: <rasterio.env.Env object at 0x000001DC727A2C48>
+2021-03-27 18:45:14,113 rasterio.env DEBUG    Exiting env context: <rasterio.env.Env object at 0x000001DC727A2C48>
+2021-03-27 18:45:14,114 rasterio.env DEBUG    Cleared existing <rasterio._env.GDALEnv object at 0x000001DC6A7DFCC8> options
+2021-03-27 18:45:14,114 rasterio._env DEBUG    Stopped GDALEnv <rasterio._env.GDALEnv object at 0x000001DC6A7DFCC8>.
+2021-03-27 18:45:14,114 rasterio.env DEBUG    Exiting outermost env
+2021-03-27 18:45:14,114 rasterio.env DEBUG    Exited env context: <rasterio.env.Env object at 0x000001DC727A2C48>
+2021-03-27 18:45:14,115 fiona.env    DEBUG    Entering env context: <fiona.env.Env object at 0x000001DC64B48548>
+2021-03-27 18:45:14,115 fiona.env    DEBUG    Starting outermost env
+2021-03-27 18:45:14,115 fiona.env    DEBUG    No GDAL environment exists
+2021-03-27 18:45:14,116 fiona.env    DEBUG    New GDAL environment <fiona._env.GDALEnv object at 0x000001DC727D5648> created
+2021-03-27 18:45:14,116 fiona._env   DEBUG    Logging error handler pushed.
+2021-03-27 18:45:14,117 fiona._env   DEBUG    All drivers registered.
+2021-03-27 18:45:14,118 fiona._env   DEBUG    GDAL_DATA found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\gdal'.
+2021-03-27 18:45:14,118 fiona._env   DEBUG    PROJ_LIB found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\proj'.
+2021-03-27 18:45:14,118 fiona._env   DEBUG    Started GDALEnv <fiona._env.GDALEnv object at 0x000001DC727D5648>.
+2021-03-27 18:45:14,118 fiona.env    DEBUG    Updated existing <fiona._env.GDALEnv object at 0x000001DC727D5648> with options {}
+2021-03-27 18:45:14,118 fiona.env    DEBUG    Entered env context: <fiona.env.Env object at 0x000001DC64B48548>
+2021-03-27 18:45:14,369 fiona.ogrext DEBUG    Got coordinate system
+2021-03-27 18:45:14,373 fiona.ogrext INFO     Failed to auto identify EPSG: 7
+2021-03-27 18:45:14,373 fiona.ogrext DEBUG    NULL pointer error
+2021-03-27 18:45:14,373 fiona.ogrext DEBUG    Params: b'+proj=lcc +lat_0=40 +lon_0=-100 +lat_1=49 +lat_2=77 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs'
+2021-03-27 18:45:14,374 fiona.ogrext DEBUG    Got coordinate system
+2021-03-27 18:45:14,374 fiona.ogrext DEBUG    OLC_FASTSETNEXTBYINDEX: 1
+2021-03-27 18:45:14,374 fiona.ogrext DEBUG    OLC_FASTFEATURECOUNT: 1
+2021-03-27 18:45:14,374 fiona.ogrext DEBUG    Next index: 0
+2021-03-27 18:45:14,374 fiona.ogrext DEBUG    Next index: 1
+2021-03-27 18:45:14,375 fiona.ogrext DEBUG    Next index: 2
+2021-03-27 18:45:14,375 fiona.ogrext DEBUG    Next index: 3
+2021-03-27 18:45:14,375 fiona.ogrext DEBUG    Next index: 4
+2021-03-27 18:45:14,376 fiona.ogrext DEBUG    Next index: 5
+2021-03-27 18:45:14,376 fiona.ogrext DEBUG    Next index: 6
+2021-03-27 18:45:14,376 fiona.ogrext DEBUG    Next index: 7
+2021-03-27 18:45:14,378 fiona.ogrext DEBUG    Next index: 8
+2021-03-27 18:45:14,378 fiona.ogrext DEBUG    Next index: 9
+2021-03-27 18:45:14,379 fiona.ogrext DEBUG    Next index: 10
+2021-03-27 18:45:14,379 fiona.ogrext DEBUG    Next index: 11
+2021-03-27 18:45:14,380 fiona.ogrext DEBUG    Next index: 12
+2021-03-27 18:45:14,380 fiona.ogrext DEBUG    Next index: 13
+2021-03-27 18:45:14,380 fiona.ogrext DEBUG    Next index: 14
+2021-03-27 18:45:14,381 fiona.ogrext DEBUG    Next index: 15
+2021-03-27 18:45:14,381 fiona.ogrext DEBUG    Next index: 16
+2021-03-27 18:45:14,382 fiona.ogrext DEBUG    Next index: 17
+2021-03-27 18:45:14,382 fiona.ogrext DEBUG    Next index: 18
+2021-03-27 18:45:14,383 fiona.ogrext DEBUG    Next index: 19
+2021-03-27 18:45:14,383 fiona.ogrext DEBUG    Next index: 20
+2021-03-27 18:45:14,383 fiona.ogrext DEBUG    Next index: 21
+2021-03-27 18:45:14,384 fiona.ogrext DEBUG    Next index: 22
+2021-03-27 18:45:14,385 fiona.ogrext DEBUG    Next index: 23
+2021-03-27 18:45:14,385 fiona.ogrext DEBUG    Next index: 24
+2021-03-27 18:45:14,386 fiona.ogrext DEBUG    Next index: 25
+2021-03-27 18:45:14,386 fiona.ogrext DEBUG    Next index: 26
+2021-03-27 18:45:14,387 fiona.ogrext DEBUG    Next index: 27
+2021-03-27 18:45:14,387 fiona.ogrext DEBUG    Next index: 28
+2021-03-27 18:45:14,387 fiona.ogrext DEBUG    Next index: 29
+2021-03-27 18:45:14,388 fiona.ogrext DEBUG    Next index: 30
+2021-03-27 18:45:14,388 fiona.ogrext DEBUG    Next index: 31
+2021-03-27 18:45:14,389 fiona.ogrext DEBUG    Next index: 32
+2021-03-27 18:45:14,389 fiona.ogrext DEBUG    Next index: 33
+2021-03-27 18:45:14,390 fiona.ogrext DEBUG    Next index: 34
+2021-03-27 18:45:14,390 fiona.ogrext DEBUG    Next index: 35
+2021-03-27 18:45:14,390 fiona.ogrext DEBUG    Next index: 36
+2021-03-27 18:45:14,390 fiona.ogrext DEBUG    Next index: 37
+2021-03-27 18:45:14,391 fiona.ogrext DEBUG    Next index: 38
+2021-03-27 18:45:14,391 fiona.ogrext DEBUG    Next index: 39
+2021-03-27 18:45:14,392 fiona.ogrext DEBUG    Next index: 40
+2021-03-27 18:45:14,392 fiona.ogrext DEBUG    Next index: 41
+2021-03-27 18:45:14,393 fiona.ogrext DEBUG    Next index: 42
+2021-03-27 18:45:14,393 fiona.ogrext DEBUG    Next index: 43
+2021-03-27 18:45:14,394 fiona.ogrext DEBUG    Next index: 44
+2021-03-27 18:45:14,395 fiona.ogrext DEBUG    Next index: 45
+2021-03-27 18:45:14,395 fiona.ogrext DEBUG    Next index: 46
+2021-03-27 18:45:14,396 fiona.ogrext DEBUG    Next index: 47
+2021-03-27 18:45:14,396 fiona.ogrext DEBUG    Next index: 48
+2021-03-27 18:45:14,397 fiona.ogrext DEBUG    Next index: 49
+2021-03-27 18:45:14,397 fiona.ogrext DEBUG    Next index: 50
+2021-03-27 18:45:14,397 fiona.ogrext DEBUG    Next index: 51
+2021-03-27 18:45:14,398 fiona.ogrext DEBUG    Next index: 52
+2021-03-27 18:45:14,398 fiona.ogrext DEBUG    Next index: 53
+2021-03-27 18:45:14,398 fiona.ogrext DEBUG    Next index: 54
+2021-03-27 18:45:14,399 fiona.ogrext DEBUG    Next index: 55
+2021-03-27 18:45:14,399 fiona.ogrext DEBUG    Next index: 56
+2021-03-27 18:45:14,400 fiona.ogrext DEBUG    Next index: 57
+2021-03-27 18:45:14,400 fiona.ogrext DEBUG    Next index: 58
+2021-03-27 18:45:14,401 fiona.ogrext DEBUG    Next index: 59
+2021-03-27 18:45:14,401 fiona.ogrext DEBUG    Next index: 60
+2021-03-27 18:45:14,402 fiona.ogrext DEBUG    Next index: 61
+2021-03-27 18:45:14,402 fiona.ogrext DEBUG    Next index: 62
+2021-03-27 18:45:14,403 fiona.ogrext DEBUG    Next index: 63
+2021-03-27 18:45:14,404 fiona.ogrext DEBUG    Next index: 64
+2021-03-27 18:45:14,404 fiona.ogrext DEBUG    Next index: 65
+2021-03-27 18:45:14,405 fiona.ogrext DEBUG    Next index: 66
+2021-03-27 18:45:14,406 fiona.ogrext DEBUG    Next index: 67
+2021-03-27 18:45:14,406 fiona.ogrext DEBUG    Next index: 68
+2021-03-27 18:45:14,407 fiona.ogrext DEBUG    Next index: 69
+2021-03-27 18:45:14,407 fiona.ogrext DEBUG    Next index: 70
+2021-03-27 18:45:14,407 fiona.ogrext DEBUG    Next index: 71
+2021-03-27 18:45:14,408 fiona.ogrext DEBUG    Next index: 72
+2021-03-27 18:45:14,408 fiona.ogrext DEBUG    Next index: 73
+2021-03-27 18:45:14,409 fiona.ogrext DEBUG    Next index: 74
+2021-03-27 18:45:14,409 fiona.ogrext DEBUG    Next index: 75
+2021-03-27 18:45:14,409 fiona.ogrext DEBUG    Next index: 76
+2021-03-27 18:45:14,410 fiona.ogrext DEBUG    Next index: 77
+2021-03-27 18:45:14,410 fiona.ogrext DEBUG    Next index: 78
+2021-03-27 18:45:14,411 fiona.ogrext DEBUG    Next index: 79
+2021-03-27 18:45:14,411 fiona.ogrext DEBUG    Next index: 80
+2021-03-27 18:45:14,411 fiona.ogrext DEBUG    Next index: 81
+2021-03-27 18:45:14,412 fiona.ogrext DEBUG    Next index: 82
+2021-03-27 18:45:14,412 fiona.ogrext DEBUG    Next index: 83
+2021-03-27 18:45:14,413 fiona.ogrext DEBUG    Next index: 84
+2021-03-27 18:45:14,413 fiona.ogrext DEBUG    Next index: 85
+2021-03-27 18:45:14,413 fiona.ogrext DEBUG    Next index: 86
+2021-03-27 18:45:14,414 fiona.ogrext DEBUG    Next index: 87
+2021-03-27 18:45:14,414 fiona.ogrext DEBUG    Next index: 88
+2021-03-27 18:45:14,414 fiona.ogrext DEBUG    Next index: 89
+2021-03-27 18:45:14,415 fiona.ogrext DEBUG    Next index: 90
+2021-03-27 18:45:14,415 fiona.ogrext DEBUG    Next index: 91
+2021-03-27 18:45:14,415 fiona.ogrext DEBUG    Next index: 92
+2021-03-27 18:45:14,416 fiona.ogrext DEBUG    Next index: 93
+2021-03-27 18:45:14,416 fiona.ogrext DEBUG    Next index: 94
+2021-03-27 18:45:14,417 fiona.ogrext DEBUG    Next index: 95
+2021-03-27 18:45:14,417 fiona.ogrext DEBUG    Next index: 96
+2021-03-27 18:45:14,417 fiona.ogrext DEBUG    Next index: 97
+2021-03-27 18:45:14,418 fiona.ogrext DEBUG    Next index: 98
+2021-03-27 18:45:14,418 fiona.ogrext DEBUG    Next index: 99
+2021-03-27 18:45:14,419 fiona.ogrext DEBUG    Next index: 100
+2021-03-27 18:45:14,420 fiona.ogrext DEBUG    Next index: 101
+2021-03-27 18:45:14,420 fiona.ogrext DEBUG    Next index: 102
+2021-03-27 18:45:14,421 fiona.ogrext DEBUG    Next index: 103
+2021-03-27 18:45:14,421 fiona.ogrext DEBUG    Next index: 104
+2021-03-27 18:45:14,422 fiona.ogrext DEBUG    Next index: 105
+2021-03-27 18:45:14,422 fiona.ogrext DEBUG    Next index: 106
+2021-03-27 18:45:14,423 fiona.ogrext DEBUG    Next index: 107
+2021-03-27 18:45:14,423 fiona.ogrext DEBUG    Next index: 108
+2021-03-27 18:45:14,424 fiona.ogrext DEBUG    Next index: 109
+2021-03-27 18:45:14,424 fiona.ogrext DEBUG    Next index: 110
+2021-03-27 18:45:14,424 fiona.ogrext DEBUG    Next index: 111
+2021-03-27 18:45:14,425 fiona.ogrext DEBUG    Next index: 112
+2021-03-27 18:45:14,425 fiona.ogrext DEBUG    Next index: 113
+2021-03-27 18:45:14,425 fiona.ogrext DEBUG    Next index: 114
+2021-03-27 18:45:14,426 fiona.ogrext DEBUG    Next index: 115
+2021-03-27 18:45:14,426 fiona.ogrext DEBUG    Next index: 116
+2021-03-27 18:45:14,427 fiona.ogrext DEBUG    Next index: 117
+2021-03-27 18:45:14,427 fiona.ogrext DEBUG    Next index: 118
+2021-03-27 18:45:14,427 fiona.ogrext DEBUG    Next index: 119
+2021-03-27 18:45:14,428 fiona.ogrext DEBUG    Next index: 120
+2021-03-27 18:45:14,428 fiona.ogrext DEBUG    Next index: 121
+2021-03-27 18:45:14,429 fiona.ogrext DEBUG    Next index: 122
+2021-03-27 18:45:14,429 fiona.ogrext DEBUG    Next index: 123
+2021-03-27 18:45:14,429 fiona.ogrext DEBUG    Next index: 124
+2021-03-27 18:45:14,430 fiona.ogrext DEBUG    Next index: 125
+2021-03-27 18:45:14,430 fiona.ogrext DEBUG    Next index: 126
+2021-03-27 18:45:14,431 fiona.ogrext DEBUG    Next index: 127
+2021-03-27 18:45:14,431 fiona.ogrext DEBUG    Next index: 128
+2021-03-27 18:45:14,431 fiona.ogrext DEBUG    Next index: 129
+2021-03-27 18:45:14,432 fiona.ogrext DEBUG    Next index: 130
+2021-03-27 18:45:14,432 fiona.ogrext DEBUG    Next index: 131
+2021-03-27 18:45:14,432 fiona.ogrext DEBUG    Next index: 132
+2021-03-27 18:45:14,433 fiona.ogrext DEBUG    Next index: 133
+2021-03-27 18:45:14,433 fiona.ogrext DEBUG    Next index: 134
+2021-03-27 18:45:14,435 fiona.ogrext DEBUG    Next index: 135
+2021-03-27 18:45:14,436 fiona.ogrext DEBUG    Next index: 136
+2021-03-27 18:45:14,436 fiona.ogrext DEBUG    Next index: 137
+2021-03-27 18:45:14,437 fiona.ogrext DEBUG    Next index: 138
+2021-03-27 18:45:14,437 fiona.ogrext DEBUG    Next index: 139
+2021-03-27 18:45:14,437 fiona.ogrext DEBUG    Next index: 140
+2021-03-27 18:45:14,438 fiona.ogrext DEBUG    Next index: 141
+2021-03-27 18:45:14,438 fiona.ogrext DEBUG    Next index: 142
+2021-03-27 18:45:14,439 fiona.ogrext DEBUG    Next index: 143
+2021-03-27 18:45:14,439 fiona.ogrext DEBUG    Next index: 144
+2021-03-27 18:45:14,440 fiona.ogrext DEBUG    Next index: 145
+2021-03-27 18:45:14,440 fiona.ogrext DEBUG    Next index: 146
+2021-03-27 18:45:14,440 fiona.ogrext DEBUG    Next index: 147
+2021-03-27 18:45:14,441 fiona.ogrext DEBUG    Next index: 148
+2021-03-27 18:45:14,441 fiona.ogrext DEBUG    Next index: 149
+2021-03-27 18:45:14,442 fiona.ogrext DEBUG    Next index: 150
+2021-03-27 18:45:14,442 fiona.ogrext DEBUG    Next index: 151
+2021-03-27 18:45:14,442 fiona.ogrext DEBUG    Next index: 152
+2021-03-27 18:45:14,443 fiona.ogrext DEBUG    Next index: 153
+2021-03-27 18:45:14,443 fiona.ogrext DEBUG    Next index: 154
+2021-03-27 18:45:14,444 fiona.ogrext DEBUG    Next index: 155
+2021-03-27 18:45:14,444 fiona.ogrext DEBUG    Next index: 156
+2021-03-27 18:45:14,444 fiona.ogrext DEBUG    Next index: 157
+2021-03-27 18:45:14,445 fiona.ogrext DEBUG    Next index: 158
+2021-03-27 18:45:14,445 fiona.ogrext DEBUG    Next index: 159
+2021-03-27 18:45:14,446 fiona.ogrext DEBUG    Next index: 160
+2021-03-27 18:45:14,446 fiona.ogrext DEBUG    Next index: 161
+2021-03-27 18:45:14,454 fiona.ogrext DEBUG    Next index: 162
+2021-03-27 18:45:14,455 fiona.ogrext DEBUG    Next index: 163
+2021-03-27 18:45:14,456 fiona.ogrext DEBUG    Next index: 164
+2021-03-27 18:45:14,456 fiona.ogrext DEBUG    Next index: 165
+2021-03-27 18:45:14,457 fiona.ogrext DEBUG    Next index: 166
+2021-03-27 18:45:14,457 fiona.ogrext DEBUG    Next index: 167
+2021-03-27 18:45:14,458 fiona.ogrext DEBUG    Next index: 168
+2021-03-27 18:45:14,458 fiona.ogrext DEBUG    Next index: 169
+2021-03-27 18:45:14,459 fiona.ogrext DEBUG    Next index: 170
+2021-03-27 18:45:14,459 fiona.ogrext DEBUG    Next index: 171
+2021-03-27 18:45:14,460 fiona.ogrext DEBUG    Next index: 172
+2021-03-27 18:45:14,461 fiona.ogrext DEBUG    Next index: 173
+2021-03-27 18:45:14,462 fiona.ogrext DEBUG    Next index: 174
+2021-03-27 18:45:14,463 fiona.ogrext DEBUG    Next index: 175
+2021-03-27 18:45:14,463 fiona.ogrext DEBUG    Next index: 176
+2021-03-27 18:45:14,463 fiona.ogrext DEBUG    Next index: 177
+2021-03-27 18:45:14,464 fiona.ogrext DEBUG    Next index: 178
+2021-03-27 18:45:14,464 fiona.ogrext DEBUG    Next index: 179
+2021-03-27 18:45:14,465 fiona.ogrext DEBUG    Next index: 180
+2021-03-27 18:45:14,465 fiona.ogrext DEBUG    Next index: 181
+2021-03-27 18:45:14,466 fiona.ogrext DEBUG    Next index: 182
+2021-03-27 18:45:14,466 fiona.ogrext DEBUG    Next index: 183
+2021-03-27 18:45:14,467 fiona.ogrext DEBUG    Next index: 184
+2021-03-27 18:45:14,467 fiona.ogrext DEBUG    Next index: 185
+2021-03-27 18:45:14,467 fiona.ogrext DEBUG    Next index: 186
+2021-03-27 18:45:14,468 fiona.ogrext DEBUG    Next index: 187
+2021-03-27 18:45:14,469 fiona.ogrext DEBUG    Next index: 188
+2021-03-27 18:45:14,469 fiona.ogrext DEBUG    Next index: 189
+2021-03-27 18:45:14,470 fiona.ogrext DEBUG    Next index: 190
+2021-03-27 18:45:14,470 fiona.ogrext DEBUG    Next index: 191
+2021-03-27 18:45:14,470 fiona.ogrext DEBUG    Next index: 192
+2021-03-27 18:45:14,472 fiona.ogrext DEBUG    Next index: 193
+2021-03-27 18:45:14,473 fiona.ogrext DEBUG    Next index: 194
+2021-03-27 18:45:14,473 fiona.ogrext DEBUG    Next index: 195
+2021-03-27 18:45:14,473 fiona.ogrext DEBUG    Next index: 196
+2021-03-27 18:45:14,474 fiona.ogrext DEBUG    Next index: 197
+2021-03-27 18:45:14,474 fiona.ogrext DEBUG    Next index: 198
+2021-03-27 18:45:14,474 fiona.ogrext DEBUG    Next index: 199
+2021-03-27 18:45:14,475 fiona.ogrext DEBUG    Next index: 200
+2021-03-27 18:45:14,475 fiona.ogrext DEBUG    Next index: 201
+2021-03-27 18:45:14,475 fiona.ogrext DEBUG    Next index: 202
+2021-03-27 18:45:14,476 fiona.ogrext DEBUG    Next index: 203
+2021-03-27 18:45:14,476 fiona.ogrext DEBUG    Next index: 204
+2021-03-27 18:45:14,476 fiona.ogrext DEBUG    Next index: 205
+2021-03-27 18:45:14,477 fiona.ogrext DEBUG    Next index: 206
+2021-03-27 18:45:14,478 fiona.ogrext DEBUG    Next index: 207
+2021-03-27 18:45:14,478 fiona.ogrext DEBUG    Next index: 208
+2021-03-27 18:45:14,478 fiona.ogrext DEBUG    Next index: 209
+2021-03-27 18:45:14,478 fiona.ogrext DEBUG    Next index: 210
+2021-03-27 18:45:14,479 fiona.ogrext DEBUG    Next index: 211
+2021-03-27 18:45:14,479 fiona.ogrext DEBUG    Next index: 212
+2021-03-27 18:45:14,479 fiona.ogrext DEBUG    Next index: 213
+2021-03-27 18:45:14,480 fiona.ogrext DEBUG    Next index: 214
+2021-03-27 18:45:14,480 fiona.ogrext DEBUG    Next index: 215
+2021-03-27 18:45:14,480 fiona.ogrext DEBUG    Next index: 216
+2021-03-27 18:45:14,480 fiona.ogrext DEBUG    Next index: 217
+2021-03-27 18:45:14,481 fiona.ogrext DEBUG    Next index: 218
+2021-03-27 18:45:14,481 fiona.ogrext DEBUG    Next index: 219
+2021-03-27 18:45:14,481 fiona.ogrext DEBUG    Next index: 220
+2021-03-27 18:45:14,481 fiona.ogrext DEBUG    Next index: 221
+2021-03-27 18:45:14,482 fiona.ogrext DEBUG    Next index: 222
+2021-03-27 18:45:14,482 fiona.ogrext DEBUG    Next index: 223
+2021-03-27 18:45:14,482 fiona.ogrext DEBUG    Next index: 224
+2021-03-27 18:45:14,482 fiona.ogrext DEBUG    Next index: 225
+2021-03-27 18:45:14,483 fiona.ogrext DEBUG    Next index: 226
+2021-03-27 18:45:14,483 fiona.ogrext DEBUG    Next index: 227
+2021-03-27 18:45:14,483 fiona.ogrext DEBUG    Next index: 228
+2021-03-27 18:45:14,484 fiona.ogrext DEBUG    Next index: 229
+2021-03-27 18:45:14,484 fiona.ogrext DEBUG    Next index: 230
+2021-03-27 18:45:14,485 fiona.ogrext DEBUG    Next index: 231
+2021-03-27 18:45:14,485 fiona.ogrext DEBUG    Next index: 232
+2021-03-27 18:45:14,486 fiona.ogrext DEBUG    Next index: 233
+2021-03-27 18:45:14,487 fiona.ogrext DEBUG    Next index: 234
+2021-03-27 18:45:14,487 fiona.ogrext DEBUG    Next index: 235
+2021-03-27 18:45:14,487 fiona.ogrext DEBUG    Next index: 236
+2021-03-27 18:45:14,488 fiona.ogrext DEBUG    Next index: 237
+2021-03-27 18:45:14,488 fiona.ogrext DEBUG    Next index: 238
+2021-03-27 18:45:14,488 fiona.ogrext DEBUG    Next index: 239
+2021-03-27 18:45:14,489 fiona.ogrext DEBUG    Next index: 240
+2021-03-27 18:45:14,489 fiona.ogrext DEBUG    Next index: 241
+2021-03-27 18:45:14,489 fiona.ogrext DEBUG    Next index: 242
+2021-03-27 18:45:14,490 fiona.ogrext DEBUG    Next index: 243
+2021-03-27 18:45:14,490 fiona.ogrext DEBUG    Next index: 244
+2021-03-27 18:45:14,490 fiona.ogrext DEBUG    Next index: 245
+2021-03-27 18:45:14,491 fiona.ogrext DEBUG    Next index: 246
+2021-03-27 18:45:14,491 fiona.ogrext DEBUG    Next index: 247
+2021-03-27 18:45:14,491 fiona.ogrext DEBUG    Next index: 248
+2021-03-27 18:45:14,491 fiona.ogrext DEBUG    Next index: 249
+2021-03-27 18:45:14,492 fiona.ogrext DEBUG    Next index: 250
+2021-03-27 18:45:14,493 fiona.ogrext DEBUG    Next index: 251
+2021-03-27 18:45:14,494 fiona.ogrext DEBUG    Next index: 252
+2021-03-27 18:45:14,494 fiona.ogrext DEBUG    Next index: 253
+2021-03-27 18:45:14,494 fiona.ogrext DEBUG    Next index: 254
+2021-03-27 18:45:14,494 fiona.ogrext DEBUG    Next index: 255
+2021-03-27 18:45:14,494 fiona.ogrext DEBUG    Next index: 256
+2021-03-27 18:45:14,495 fiona.ogrext DEBUG    Next index: 257
+2021-03-27 18:45:14,496 fiona.ogrext DEBUG    Next index: 258
+2021-03-27 18:45:14,497 fiona.ogrext DEBUG    Next index: 259
+2021-03-27 18:45:14,497 fiona.ogrext DEBUG    Next index: 260
+2021-03-27 18:45:14,497 fiona.ogrext DEBUG    Next index: 261
+2021-03-27 18:45:14,499 fiona.ogrext DEBUG    Next index: 262
+2021-03-27 18:45:14,499 fiona.ogrext DEBUG    Next index: 263
+2021-03-27 18:45:14,499 fiona.ogrext DEBUG    Next index: 264
+2021-03-27 18:45:14,499 fiona.ogrext DEBUG    Next index: 265
+2021-03-27 18:45:14,499 fiona.ogrext DEBUG    Next index: 266
+2021-03-27 18:45:14,500 fiona.ogrext DEBUG    Next index: 267
+2021-03-27 18:45:14,500 fiona.ogrext DEBUG    Next index: 268
+2021-03-27 18:45:14,500 fiona.ogrext DEBUG    Next index: 269
+2021-03-27 18:45:14,501 fiona.ogrext DEBUG    Next index: 270
+2021-03-27 18:45:14,502 fiona.ogrext DEBUG    Next index: 271
+2021-03-27 18:45:14,502 fiona.ogrext DEBUG    Next index: 272
+2021-03-27 18:45:14,503 fiona.ogrext DEBUG    Next index: 273
+2021-03-27 18:45:14,504 fiona.ogrext DEBUG    Next index: 274
+2021-03-27 18:45:14,504 fiona.ogrext DEBUG    Next index: 275
+2021-03-27 18:45:14,504 fiona.ogrext DEBUG    Next index: 276
+2021-03-27 18:45:14,505 fiona.ogrext DEBUG    Next index: 277
+2021-03-27 18:45:14,505 fiona.ogrext DEBUG    Next index: 278
+2021-03-27 18:45:14,505 fiona.ogrext DEBUG    Next index: 279
+2021-03-27 18:45:14,505 fiona.ogrext DEBUG    Next index: 280
+2021-03-27 18:45:14,506 fiona.ogrext DEBUG    Next index: 281
+2021-03-27 18:45:14,506 fiona.ogrext DEBUG    Next index: 282
+2021-03-27 18:45:14,506 fiona.ogrext DEBUG    Next index: 283
+2021-03-27 18:45:14,507 fiona.ogrext DEBUG    Next index: 284
+2021-03-27 18:45:14,507 fiona.ogrext DEBUG    Next index: 285
+2021-03-27 18:45:14,507 fiona.ogrext DEBUG    Next index: 286
+2021-03-27 18:45:14,507 fiona.ogrext DEBUG    Next index: 287
+2021-03-27 18:45:14,508 fiona.ogrext DEBUG    Next index: 288
+2021-03-27 18:45:14,508 fiona.ogrext DEBUG    Next index: 289
+2021-03-27 18:45:14,509 fiona.ogrext DEBUG    Next index: 290
+2021-03-27 18:45:14,509 fiona.ogrext DEBUG    Next index: 291
+2021-03-27 18:45:14,509 fiona.ogrext DEBUG    Next index: 292
+2021-03-27 18:45:14,510 fiona.ogrext DEBUG    Next index: 293
+2021-03-27 18:45:14,510 fiona.ogrext DEBUG    Next index: 294
+2021-03-27 18:45:14,510 fiona.ogrext DEBUG    Next index: 295
+2021-03-27 18:45:14,511 fiona.ogrext DEBUG    Next index: 296
+2021-03-27 18:45:14,511 fiona.ogrext DEBUG    Next index: 297
+2021-03-27 18:45:14,511 fiona.ogrext DEBUG    Next index: 298
+2021-03-27 18:45:14,512 fiona.ogrext DEBUG    Next index: 299
+2021-03-27 18:45:14,512 fiona.ogrext DEBUG    Next index: 300
+2021-03-27 18:45:14,513 fiona.ogrext DEBUG    Next index: 301
+2021-03-27 18:45:14,513 fiona.ogrext DEBUG    Next index: 302
+2021-03-27 18:45:14,514 fiona.ogrext DEBUG    Next index: 303
+2021-03-27 18:45:14,515 fiona.ogrext DEBUG    Next index: 304
+2021-03-27 18:45:14,515 fiona.ogrext DEBUG    Next index: 305
+2021-03-27 18:45:14,516 fiona.ogrext DEBUG    Next index: 306
+2021-03-27 18:45:14,516 fiona.ogrext DEBUG    Next index: 307
+2021-03-27 18:45:14,517 fiona.ogrext DEBUG    Next index: 308
+2021-03-27 18:45:14,517 fiona.ogrext DEBUG    Next index: 309
+2021-03-27 18:45:14,518 fiona.ogrext DEBUG    Next index: 310
+2021-03-27 18:45:14,518 fiona.ogrext DEBUG    Next index: 311
+2021-03-27 18:45:14,519 fiona.ogrext DEBUG    Next index: 312
+2021-03-27 18:45:14,519 fiona.ogrext DEBUG    Next index: 313
+2021-03-27 18:45:14,520 fiona.ogrext DEBUG    Next index: 314
+2021-03-27 18:45:14,521 fiona.ogrext DEBUG    Next index: 315
+2021-03-27 18:45:14,521 fiona.ogrext DEBUG    Next index: 316
+2021-03-27 18:45:14,521 fiona.ogrext DEBUG    Next index: 317
+2021-03-27 18:45:14,522 fiona.ogrext DEBUG    Next index: 318
+2021-03-27 18:45:14,523 fiona.ogrext DEBUG    Next index: 319
+2021-03-27 18:45:14,524 fiona.ogrext DEBUG    Next index: 320
+2021-03-27 18:45:14,525 fiona.ogrext DEBUG    Next index: 321
+2021-03-27 18:45:14,525 fiona.ogrext DEBUG    Next index: 322
+2021-03-27 18:45:14,526 fiona.ogrext DEBUG    Next index: 323
+2021-03-27 18:45:14,526 fiona.ogrext DEBUG    Next index: 324
+2021-03-27 18:45:14,527 fiona.ogrext DEBUG    Next index: 325
+2021-03-27 18:45:14,527 fiona.ogrext DEBUG    Next index: 326
+2021-03-27 18:45:14,528 fiona.ogrext DEBUG    Next index: 327
+2021-03-27 18:45:14,528 fiona.ogrext DEBUG    Next index: 328
+2021-03-27 18:45:14,529 fiona.ogrext DEBUG    Next index: 329
+2021-03-27 18:45:14,530 fiona.ogrext DEBUG    Next index: 330
+2021-03-27 18:45:14,530 fiona.ogrext DEBUG    Next index: 331
+2021-03-27 18:45:14,531 fiona.ogrext DEBUG    Next index: 332
+2021-03-27 18:45:14,531 fiona.ogrext DEBUG    Next index: 333
+2021-03-27 18:45:14,532 fiona.ogrext DEBUG    Next index: 334
+2021-03-27 18:45:14,532 fiona.ogrext DEBUG    Next index: 335
+2021-03-27 18:45:14,533 fiona.ogrext DEBUG    Next index: 336
+2021-03-27 18:45:14,533 fiona.ogrext DEBUG    Next index: 337
+2021-03-27 18:45:14,535 fiona.ogrext DEBUG    Next index: 338
+2021-03-27 18:45:14,536 fiona.ogrext DEBUG    Next index: 339
+2021-03-27 18:45:14,536 fiona.ogrext DEBUG    Next index: 340
+2021-03-27 18:45:14,537 fiona.ogrext DEBUG    Next index: 341
+2021-03-27 18:45:14,537 fiona.ogrext DEBUG    Next index: 342
+2021-03-27 18:45:14,538 fiona.ogrext DEBUG    Next index: 343
+2021-03-27 18:45:14,538 fiona.ogrext DEBUG    Next index: 344
+2021-03-27 18:45:14,538 fiona.ogrext DEBUG    Next index: 345
+2021-03-27 18:45:14,539 fiona.ogrext DEBUG    Next index: 346
+2021-03-27 18:45:14,539 fiona.ogrext DEBUG    Next index: 347
+2021-03-27 18:45:14,540 fiona.ogrext DEBUG    Next index: 348
+2021-03-27 18:45:14,540 fiona.ogrext DEBUG    Next index: 349
+2021-03-27 18:45:14,541 fiona.ogrext DEBUG    Next index: 350
+2021-03-27 18:45:14,546 fiona.ogrext DEBUG    Next index: 351
+2021-03-27 18:45:14,547 fiona.ogrext DEBUG    Next index: 352
+2021-03-27 18:45:14,547 fiona.ogrext DEBUG    Next index: 353
+2021-03-27 18:45:14,548 fiona.ogrext DEBUG    Next index: 354
+2021-03-27 18:45:14,548 fiona.ogrext DEBUG    Next index: 355
+2021-03-27 18:45:14,548 fiona.ogrext DEBUG    Next index: 356
+2021-03-27 18:45:14,549 fiona.ogrext DEBUG    Next index: 357
+2021-03-27 18:45:14,549 fiona.ogrext DEBUG    Next index: 358
+2021-03-27 18:45:14,549 fiona.ogrext DEBUG    Next index: 359
+2021-03-27 18:45:14,550 fiona.ogrext DEBUG    Next index: 360
+2021-03-27 18:45:14,550 fiona.ogrext DEBUG    Next index: 361
+2021-03-27 18:45:14,550 fiona.ogrext DEBUG    Next index: 362
+2021-03-27 18:45:14,592 fiona.collection DEBUG    Flushed buffer
+2021-03-27 18:45:14,592 fiona.collection DEBUG    Stopped session
+2021-03-27 18:45:14,593 fiona.env    DEBUG    Exiting env context: <fiona.env.Env object at 0x000001DC64B48548>
+2021-03-27 18:45:14,593 fiona.env    DEBUG    Cleared existing <fiona._env.GDALEnv object at 0x000001DC727D5648> options
+2021-03-27 18:45:14,593 fiona._env   DEBUG    Stopping GDALEnv <fiona._env.GDALEnv object at 0x000001DC727D5648>.
+2021-03-27 18:45:14,593 fiona._env   DEBUG    Error handler popped.
+2021-03-27 18:45:14,593 fiona._env   DEBUG    Stopped GDALEnv <fiona._env.GDALEnv object at 0x000001DC727D5648>.
+2021-03-27 18:45:14,594 fiona.env    DEBUG    Exiting outermost env
+2021-03-27 18:45:14,594 fiona.env    DEBUG    Exited env context: <fiona.env.Env object at 0x000001DC64B48548>
+2021-03-27 18:45:15,086 rasterio.env DEBUG    Entering env context: <rasterio.env.Env object at 0x000001DC58E65388>
+2021-03-27 18:45:15,087 rasterio.env DEBUG    Starting outermost env
+2021-03-27 18:45:15,087 rasterio.env DEBUG    No GDAL environment exists
+2021-03-27 18:45:15,087 rasterio.env DEBUG    New GDAL environment <rasterio._env.GDALEnv object at 0x000001DC6B5B3408> created
+2021-03-27 18:45:15,089 rasterio._env DEBUG    GDAL_DATA found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\gdal'.
+2021-03-27 18:45:15,089 rasterio._env DEBUG    PROJ_LIB found in environment: 'C:\\Users\\DELL\\anaconda3\\envs\\seaice10\\Library\\share\\proj'.
+2021-03-27 18:45:15,091 rasterio._env DEBUG    Started GDALEnv <rasterio._env.GDALEnv object at 0x000001DC6B5B3408>.
+2021-03-27 18:45:15,091 rasterio.env DEBUG    Entered env context: <rasterio.env.Env object at 0x000001DC58E65388>
+2021-03-27 18:45:15,151 rasterio.env DEBUG    Exiting env context: <rasterio.env.Env object at 0x000001DC58E65388>
+2021-03-27 18:45:15,151 rasterio.env DEBUG    Cleared existing <rasterio._env.GDALEnv object at 0x000001DC6B5B3408> options
+2021-03-27 18:45:15,151 rasterio._env DEBUG    Stopped GDALEnv <rasterio._env.GDALEnv object at 0x000001DC6B5B3408>.
+2021-03-27 18:45:15,152 rasterio.env DEBUG    Exiting outermost env
+2021-03-27 18:45:15,152 rasterio.env DEBUG    Exited env context: <rasterio.env.Env object at 0x000001DC58E65388>
+2021-03-27 18:45:15,159 eolearn.core.eoworkflow DEBUG    Removing intermediate result for TimeRaster
+2021-03-27 18:45:15,160 eolearn.core.eoworkflow DEBUG    Computing SaveImages(*(EOPatch(
+  data: {
+    BANDS: numpy.ndarray(shape=(3, 306, 357, 3), dtype=float32)
+  }
+  mask: {
+    CLM: numpy.ndarray(shape=(3, 306, 357, 1), dtype=uint8)
+    ICE_CHART: numpy.ndarray(shape=(3, 306, 357, 1), dtype=int16)
+    IS_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+    VALID_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+  }
+  scalar: {
+    COVERAGE: numpy.ndarray(shape=(3, 1), dtype=float64)
+  }
+  label: {}
+  vector: {}
+  data_timeless: {}
+  mask_timeless: {
+    TEMP: numpy.ndarray(shape=(306, 357, 1), dtype=int16)
+  }
+  scalar_timeless: {}
+  label_timeless: {}
+  vector_timeless: {}
+  meta_info: {
+    maxcc: 0.8
+    service_type: 'processing'
+    size_x: 357
+    size_y: 306
+    time_difference: datetime.timedelta(seconds=7200)
+    time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+  }
+  bbox: BBox(((-154699.68602846484, 6887656.18520223), (-83367.40418990178, 6948774.01983255)), crs=CRS('32617'))
+  timestamp: [datetime.datetime(2018, 4, 24, 17, 40, 23), ..., datetime.datetime(2018, 7, 3, 17, 42, 22)], length=3
+),), **{'patch_id': 24})
+2021-03-27 18:45:15,233 eolearn.core.eoworkflow DEBUG    Removing intermediate result for SaveImages
+2021-03-27 18:45:15,235 eolearn.core.eoworkflow DEBUG    Workflow finished with WorkflowResults(
+  Dependency(SaveImages):
+    EOPatch(
+      data: {
+        BANDS: numpy.ndarray(shape=(3, 306, 357, 3), dtype=float32)
+      }
+      mask: {
+        CLM: numpy.ndarray(shape=(3, 306, 357, 1), dtype=uint8)
+        ICE_CHART: numpy.ndarray(shape=(3, 306, 357, 1), dtype=int16)
+        IS_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+        VALID_DATA: numpy.ndarray(shape=(3, 306, 357, 1), dtype=bool)
+      }
+      scalar: {
+        COVERAGE: numpy.ndarray(shape=(3, 1), dtype=float64)
+      }
+      label: {}
+      vector: {}
+      data_timeless: {}
+      mask_timeless: {
+        TEMP: numpy.ndarray(shape=(306, 357, 1), dtype=int16)
+      }
+      scalar_timeless: {}
+      label_timeless: {}
+      vector_timeless: {}
+      meta_info: {
+        maxcc: 0.8
+        service_type: 'processing'
+        size_x: 357
+        size_y: 306
+        time_difference: datetime.timedelta(seconds=7200)
+        time_interval: ('2017-11-01T00:00:00', '2018-07-31T23:59:59')
+      }
+      bbox: BBox(((-154699.68602846484, 6887656.18520223), (-83367.40418990178, 6948774.01983255)), crs=CRS('32617'))
+      timestamp: [datetime.datetime(2018, 4, 24, 17, 40, 23), ..., datetime.datetime(2018, 7, 3, 17, 42, 22)], length=3
+    )
+)
+2021-03-27 18:45:15,235 root         DEBUG    EOWorkflow execution finished
