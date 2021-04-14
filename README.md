@@ -1,6 +1,7 @@
 # Hudson Bay Sea Ice Segmentation - Project Summary
 
--  
+-  Collected 3392 Sentinel-2 Satelite images of Hudson Bay sea ice in the Candian Arctic for 2016-1-1 to 2017-7-31 (August, September, and October months excluded)
+-  Matched each satellite image with a Canadian Regional Ice Chart Concentration Mask
 
 
 # Code/Resources
