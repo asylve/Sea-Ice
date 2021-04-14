@@ -1,8 +1,8 @@
 # Hudson Bay Sea Ice Segmentation - Project Summary
 
--  Collected 3392 satelite images of Hudson Bay sea ice in the Candian Arctic from 2016-1-1 to 2017-7-31 (August, September, and October excluded)
+-  Collected 3392 satelite images of Hudson Bay sea ice in the Candian Arctic from 2016-1-1 to 2017-7-31
 -  Generated sea ice concentrations masks for each image using Canadian Regional Ice Chart shapefiles
--  Used image/mask pairs to train a Convolutional Neural Network (U-Net) to segment satelite images based on seven different classes (7 levels of ice concentration and land)
+-  Used image/mask pairs to train a Convolutional Neural Network (U-Net) to segment satellite images based on seven different classes (7 levels of ice concentration and land)
     -  Model Accuracy:
     -  Model Mean Class IoU (intersection over union) score: 
  
