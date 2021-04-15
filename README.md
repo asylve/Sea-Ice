@@ -35,7 +35,7 @@ Canadian Regional Ice Charts show geospacial sea ice concentrations for ship saf
 
 A sample ice chart for Hudson Bay on April 12, 2021 is shown below. All charts are archived and available as shapefiles from the National Snow and Ice Data Centre dating back to 2006.
 
-![Ice Chart](/images/Ice_Chart_ex.gif)
+<img src="/Images/Ice_Chart_ex.gif" width="400" /> 
 
 ## 1.3 Data Collection Workflow
 
