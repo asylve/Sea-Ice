@@ -17,7 +17,7 @@
 
 # 1. Data Collection
 
-There are two main data sources for this project: Sentinel-2 satellite images and Canadian Regional Ice Charts. Sea Ice image/mask pairs were generated from these sources for analysis.
+There are two main data sources for this project: Sentinel-2 satellite images and Canadian Regional Ice Charts. These were used to generate images and masks, respectively.
 
 ## 1.1 Sentinel-2 
 
@@ -34,6 +34,12 @@ Canadian Regional Ice Charts show geospacial sea ice concentrations for ship saf
 - Great Lakes
 
 A sample ice chart for Hudson Bay on April 12, 2021 is shown below. All charts are archived and available as shapefiles from the National Snow and Ice Data Centre dating back to 2006.
+
+![Ice Chart](/images/Ice_Chart_ex.gif)
+
+## 1.3 Data Collection Workflow
+
+Data was collected using the EO-Learn python library, which is 
 
 # 2. Data Cleaning
 
