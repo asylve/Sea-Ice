@@ -21,7 +21,7 @@ There are two main data sources for this project: Sentinel-2 satellite images an
 
 ## 1.1 Sentinel-2 
 
-The Sentinel-2 mission is made up of a pair of optical satellites that image the globe roughly every 5 days. They cature images in 12 optical bands including the visible spectrum.
+The Sentinel-2 mission is made up of a pair of optical satellites that image the globe roughly every 5 days. They capture images in 12 optical bands including the visible spectrum.
 
 ## 1.2 Canadian Regional Ice Charts
 
@@ -43,7 +43,20 @@ A sample ice chart for Hudson Bay on April 12, 2021 is shown below. Each region 
 
 ## 1.3 Data Collection Workflow
 
-Data was collected using the EO-Learn python library, which is 
+Data was collected using the EO-Learn python library, which provides a framework for slicing large geographical areas into smaller, more manageable tiles called EOPatches. This allows for creating a data collection pipeline where satellite images are aquired through the Sentinelhub API. The workflow can also include filtering steps to avoid cloudy images as well as custom steps to add additional features such as image masks. The Data collection workflow loops over each EOPatch and consists of:
+
+- **add_data:** Collect all available satellite images for the EOPatch in false color (bands B03, B04, and B08)
+- **remove_dates:** Discard images that were taken more than 36 hours away from an available ice chart
+- **add_valid_mask:** Collect a mask for each image that says which pixels are valid data
+- **add_coverage:** Collect a mask for each image that says which pixels are blocked by clouds
+- **remove_cloudy_scenes:** Remove images where the sum of cloudy and non-valid pixels is greater than 5%
+- **time_raster:** Custom task to locate the ice chart temporally closest to the image, locate the area of the chart associated with the image, and rasterize into an ice concentration mask for the image
+- **save_im:** Save each image and mask 
+
+<p float="left">
+  <img src="/Images/Region-Grid.png" width="800" /> 
+  <img src="/Images/image-mask.png" width="800" />  
+</p>
 
 # 2. Data Cleaning
 
