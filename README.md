@@ -21,7 +21,7 @@ There are two main data sources for this project: Sentinel-2 satellite images an
 
 ## 1.1 Sentinel-2 
 
-The Sentinel-2 mission is made up of a pair of optical satellites that image the globe roughly every 5 days. They capture images in 12 optical bands including the visible spectrum.
+The Sentinel-2 mission is made up of a pair of optical satellites that image the globe roughly every 5 days. They capture images in 12 optical bands including the visible spectrum. Bands 3, 4, and 7 were used for this project, representing near infra-red, red and green wavelengths. 
 
 ## 1.2 Canadian Regional Ice Charts
 
@@ -40,7 +40,6 @@ A sample ice chart for Hudson Bay on April 12, 2021 is shown below. Each region 
   <img src="/Images/Chart Codes.PNG" width="400" />  
 </p>
 
-
 ## 1.3 Data Collection Workflow
 
 Data was collected using the EO-Learn python library, which provides a framework for slicing large geographical areas into smaller, more manageable tiles called EOPatches. This allows for creating a data collection pipeline where satellite images are aquired through the Sentinelhub API. The workflow can also include filtering steps to avoid cloudy images as well as custom steps to add additional features such as image masks. The Data collection workflow loops over each EOPatch and consists of:
@@ -54,17 +53,80 @@ Data was collected using the EO-Learn python library, which provides a framework
 - **save_im:** Save each image and mask 
 
 <p float="left">
-  <img src="/Images/Region-Grid.png" width="800" /> 
-  <img src="/Images/image-mask.png" width="800" />  
+  <img src="/Images/Region-Grid.png" width="600" /> 
+  <img src="/Images/image-mask.png" width="600" />  
 </p>
 
-# 2. Data Cleaning
+# 2 Data Processing
 
+## 2.1 Class Definitions
 
-# 3. Exploratory Data Analysis (EDA)
+There a many possible classes for ice in the SIGRID-3 format. In order to simplify analysis, the SIGRID-3 classes were binned into 8 classes broadly defined as:
 
+- 0: <10% ice
+- 1: 10-30% ice
+- 2: 30-50% ice
+- 3: 50-70% ice
+- 4: 70-90% ice
+- 5: 90-100% ice
+- 6: fast ice (thick ice that is 'fastented' to the coastline)
+- 7: land
 
+With these definitions, the pixel-wise distribution of classes across all 3,392 images in the dataset is shown below. It is clear that there is a strong class imbalance, with open water, 90-100% ice, and land occupying most of the dataset.
 
-# 4 Model Building
+<p float="left">
+  <img src="/Images/class_dist.png" width="600" /> 
+</p>
 
+## 2.2 Data Input Pipeline
 
+Before being fed into the model for training, the following operations were performed:
+
+- Image/mask pairs were split into training (80%) and validation (20%) sets
+    - The split was stratified based the the most common class represented in the images
+- Within the training data, images containing higher amounts of under-respresented pixels were over-sampled (eg. copied)
+    - This helped address the class imbalance in the dataset that would skew a model towards the over-represented classes (0,5, and 7) 
+- Random image augmentations were performed:
+    - Random flip left-right
+    - Random flip up-down
+    - Random image rotation by +- 5 degrees (corners we mapped to black in the image and land in the mask)
+
+The image below shows a image/mask pair to be fed into the training pipeline. Note the random image rotation.
+
+<p float="left">
+  <img src="/Images/input_image_mask.png" width="600" /> 
+</p>
+
+# 3 Model Building
+
+The aim here was to create a model to generate a predicted sea ice chart based on a satellite image. This is an image segmentation problem, wherein a model is expected to predict a class for each pixel in an image. 
+
+## 3.1 U-Net ([ref](https://arxiv.org/pdf/1505.04597.pdf))
+
+A popular convolutional neural network architecture for image segmentation is the 'U-Net'. It consists of a contraction path (composed of successive convolution, ReLU activation, and max pooling operations) followed by an expanation path. In the expansion path, a combination of upsampling and concatenation with high resolution images from the contraction path allows the network to localise features of the image at higher and higher resolution until each pixel of the image has a predicted class. A diagram of the basic architechture of the network is shown below.
+
+<p float="left">
+  <img src="/Images/U-Net.png" width="600" /> 
+</p>
+
+## 3.2 Model Definition
+
+The model for this project is an adapted version of a U-NET from the Dstl Satellite Imagery Feature Detection Kaggle competition. That competition also aimed to classify pixels in satelite images, so this model architucture was expected to be good fit here too. See [here](https://www.kaggle.com/drn01z3/end-to-end-baseline-with-u-net-keras) for the original model writeup. The base model architecture was supplimented with dropout layers to help with over-fitting. A diagram of the final model achitecture is shown below.
+
+<p float="left">
+  <img src="/Images/model-map.png" width="400" /> 
+</p>
+
+## 3.3 Training and Predictions
+
+The model seems to achieve optimal performance at after roughly 80 training epochs (where an epoch is a run through the entire training dataset). Plots of training/validation loss and mean IoU metric are shown below. IoU is also known as the [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index).
+
+<p float="left">
+  <img src="/Images/train-val.png" width="600" /> 
+</p>
+
+A series of validation data images, true masks, and predicted masks are shown below. The class imbalance of the dataset is apparent here, with land and solid ice dominating many of the images. Nevertheless the model is able to provide a good prediction of localized ice concentration in many cases. It is also interesting to note that the model often provides much finer detail than the published ice charts. This is an encouraging result for the potential usefullness of an algorith such as this for developing ice charts in the future.
+
+<p float="left">
+  <img src="/Images/predictions.png" width="600" /> 
+</p>
