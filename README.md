@@ -41,7 +41,7 @@ Canadian Regional Ice Charts show geospacial sea ice concentrations for ship saf
 - Eastern Coast
 - Great Lakes
 
-This project investigated the Hudson Bay region. A sample ice chart for Hudson Bay on April 12, 2021 is shown below. Each region on the chart has a corresponding set of codes giving information on (among other things) the concentration of sea ice. The table below shows the codes corresponding to ice concentration ([source])(https://library.wmo.int/doc_num.php?explnum_id=9270). All charts are archived and available as shapefiles from the National Snow and Ice Data Centre dating back to 2006.
+This project investigated the Hudson Bay region. A sample ice chart for Hudson Bay on April 12, 2021 is shown below. Each region on the chart has a corresponding set of codes giving information on (among other things) the concentration of sea ice. The table below shows the codes corresponding to ice concentration ([source](https://library.wmo.int/doc_num.php?explnum_id=9270)). All charts are archived and available as shapefiles from the National Snow and Ice Data Centre dating back to 2006.
 
 | <img src="/Images/Ice_Chart_ex.gif" height="400" />  | <img src="/Images/Chart_Codes.PNG" height="400" /> |  
 |:--:|:--:| 
