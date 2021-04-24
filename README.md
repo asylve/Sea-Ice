@@ -29,7 +29,7 @@ There are two main data sources for this project: Sentinel-2 satellite images an
 
 ## 1.1 Sentinel-2 
 
-The Sentinel-2 mission is made up of a pair of satellites that image the globe roughly every 5 days. They capture 12 optical bands including the visible spectrum. Bands 3, 4, and 7 were used for this project, representing near infra-red, red and green wavelengths. Sentinelhub provides a python API for aquiring Sentinel-2 images.
+The Sentinel-2 mission is made up of a pair of satellites that image the globe roughly every 5 days. They capture 12 optical bands including the visible spectrum. Bands 3, 4, and 8 were used for this project, representing near infra-red, red and green wavelengths. Sentinelhub provides a python API for aquiring Sentinel-2 images.
 
 ## 1.2 Canadian Regional Ice Charts
 
