@@ -2,9 +2,15 @@
 
 -  Collected 3392 satelite images of Hudson Bay sea ice in the Candian Arctic from 2016-1-1 to 2017-7-31
 -  Generated sea ice concentrations masks for each image using Canadian Regional Ice Chart shapefiles
--  Used image/mask pairs to train a Convolutional Neural Network (U-Net) to segment satellite images based on seven different classes (7 levels of ice concentration and land)
-    -  Model Accuracy:
-    -  Model Mean Class IoU (intersection over union) score: 
+-  Trained a Convolutional Neural Network (U-Net) to generate sea ice charts from satellite images based on seven different classes (7 levels of ice concentration and land)
+    -  Validation Accuracy:
+    -  Mean Validation IoU (intersection over union) score: 
+- Found a strong class imbalance favoring thick solid ice due to complete freezing in the winter months. Future work should focus on collecting more data during the spring months when ice is thawing and there is a greater variety in ice concentration.
+- Future work could also take advantage of additional satellite wavelength collection bands beyond the visible spectrum.
+
+<p float="left">
+  <img src="/Images/model-output.png" width="600" /> 
+</p>
  
 # Code/Resources
 
@@ -23,7 +29,7 @@ There are two main data sources for this project: Sentinel-2 satellite images an
 
 ## 1.1 Sentinel-2 
 
-The Sentinel-2 mission is made up of a pair of optical satellites that image the globe roughly every 5 days. They capture images in 12 optical bands including the visible spectrum. Bands 3, 4, and 7 were used for this project, representing near infra-red, red and green wavelengths. Sentinelhub provides a python API for aquiring Sentinel-2 images.
+The Sentinel-2 mission is made up of a pair of satellites that image the globe roughly every 5 days. They capture 12 optical bands including the visible spectrum. Bands 3, 4, and 7 were used for this project, representing near infra-red, red and green wavelengths. Sentinelhub provides a python API for aquiring Sentinel-2 images.
 
 ## 1.2 Canadian Regional Ice Charts
 
@@ -35,7 +41,7 @@ Canadian Regional Ice Charts show geospacial sea ice concentrations for ship saf
 - Eastern Coast
 - Great Lakes
 
-A sample ice chart for Hudson Bay on April 12, 2021 is shown below. Each region on the chart has a corresponding set of codes giving information on, among other things, the concentration of sea ice. The chart below right shows the codes corresponding to ice concentration ([source])(https://library.wmo.int/doc_num.php?explnum_id=9270). All charts are archived and available as shapefiles from the National Snow and Ice Data Centre dating back to 2006.
+This project investigated the Hudson Bay region. A sample ice chart for Hudson Bay on April 12, 2021 is shown below. Each region on the chart has a corresponding set of codes giving information on (among other things) the concentration of sea ice. The table below shows the codes corresponding to ice concentration ([source])(https://library.wmo.int/doc_num.php?explnum_id=9270). All charts are archived and available as shapefiles from the National Snow and Ice Data Centre dating back to 2006.
 
 | <img src="/Images/Ice_Chart_ex.gif" height="400" />  | <img src="/Images/Chart_Codes.PNG" height="400" /> |  
 |:--:|:--:| 
@@ -49,7 +55,7 @@ Data was collected using the EO-Learn python library, which provides a framework
 |:--:|
 | *Sliced hudson bay reagion. Image/mask pairs are generated on each tile.* |
 
-After slicing the region, an EO-Learn workflow was developed to aquire satellite images through the Sentinelhub API. The workflow includes filtering steps to remove cloudy images and a custom step to add a time-dependent image mask. The data collection workflow loops over each EOPatch and consists of:
+After slicing the region, an EO-Learn workflow was developed to aquire satellite images through the Sentinelhub API. The workflow includes filtering steps to remove cloudy images and a custom step to add a time-dependent image mask (from ice chart chapefiles). The data collection workflow loops over each EOPatch and consists of:
 
 - **add_data:** Collect all available satellite images for the EOPatch in false color (bands B03, B04, and B08)
 - **remove_dates:** Discard images that were taken more than 36 hours away from an available ice chart
@@ -67,7 +73,7 @@ After slicing the region, an EO-Learn workflow was developed to aquire satellite
 
 ## 2.1 Class Definitions
 
-In order to simplify analysis the 31 SIGRID-3 classes were binned into 8 classes broadly defined as:
+In order to simplify analysis the 31 SIGRID-3 classes shown in section 1.2 were binned into 8 classes broadly defined as:
 
 - 0: <10% ice
 - 1: 10-30% ice
@@ -78,7 +84,7 @@ In order to simplify analysis the 31 SIGRID-3 classes were binned into 8 classes
 - 6: fast ice (thick ice that is 'fastented' to the coastline)
 - 7: land
 
-With these definitions, the pixel-wise distribution of classes across all 3,392 images in the dataset is shown below. There is a strong class imbalance, with open water, 90-100% ice, and land occupying most of the dataset.
+With these definitions, the pixel-wise distribution of classes across all 3,392 images in the dataset was calculated. There is a strong class imbalance, with open water, 90-100% ice, and land occupying most of the dataset.
 
 |<img src="/Images/class_dist.png" width="400" /> |
 |:--:|
@@ -86,18 +92,18 @@ With these definitions, the pixel-wise distribution of classes across all 3,392 
 
 ## 2.2 Data Input Pipeline
 
-Before being fed into the model for training, the following operations were performed:
+Before being fed into the model for training, the following operations were performed on the dataset:
 
 - Image/mask pairs were split into training (80%) and validation (20%) sets
     - The split was stratified based the the most common class represented in the images
-- Within the training data, images containing higher amounts of under-respresented pixels were over-sampled (eg. copied)
-    - This helped address the class imbalance in the dataset that would skew a model towards the over-represented classes (0,5, and 7) 
-- Random image augmentations were performed:
+- Within the training data, images with high amounts of under-respresented pixels were over-sampled (eg. duplicated in the training set to increase their weight)
+    - This helped address the class imbalance in the dataset that would skew a model towards the over-represented classes
+- Random image augmentation:
     - Random flip left-right
     - Random flip up-down
     - Random image rotation by +- 5 degrees (corners we mapped to black in the image and land in the mask)
 
-This results in an image/mask pair for input like the one below.
+The result is a stream of image/mask pairs like this:
 
 |<img src="/Images/input_image_mask.png" width="600" /> |
 |:--:|
@@ -105,7 +111,7 @@ This results in an image/mask pair for input like the one below.
 
 # 3 Model Building
 
-The aim here was to create a model to generate a predicted sea ice chart based on a satellite image. This is an image segmentation problem, wherein a model is expected to predict a class for each pixel in an image. 
+The goal of the model was to automatically generate a sea ice chart based on a satellite image. This is an image segmentation problem, wherein a model is expected to predict a class for each pixel in an image. 
 
 ## 3.1 U-Net
 
