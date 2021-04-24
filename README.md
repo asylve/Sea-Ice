@@ -58,7 +58,7 @@ After slicing the region, an EO-Learn workflow was developed to aquire satellite
 - **remove_cloudy_scenes:** Remove images where the sum of cloudy and non-valid pixels is greater than 5%
 - **time_raster:** Custom task to locate the ice chart temporally closest to the image, locate the area of the chart associated with the image, and rasterize into an ice concentration mask for the image
 - **save_im:** Save each image and mask 
-- 
+
 | <img src="/Images/image-mask.png" width="600" />     |  
 |:--:|
 | *Image and mask pair generated through the EO-Learn workflow* |
