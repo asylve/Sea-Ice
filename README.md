@@ -11,9 +11,11 @@
 **Python Version:** 3.7.10  
 **Libraries Used:** eolearn, sentinelhub, numpy, pandas, matplotlib, geopandas, sklearn, tensorflow, keras
 
-**EO-Learn Satellite Image Collection and Cleaning:** https://eo-learn.readthedocs.io/en/latest/examples/land-cover-map/SI_LULC_pipeline.html 
-
 **Ice Chart Masks:** Canadian Ice Service, . 2009. Canadian Ice Service Arctic Regional Sea Ice Charts in SIGRID-3 Format, Version 1. Subset: Hudson Bay Regional Ice Charts. Boulder, Colorado USA. NSIDC: National Snow and Ice Data Center. doi: https://doi.org/10.7265/N51V5BW9. Date Accessed: March 27, 2021.
+
+**Satellite Imagery:** Modified Copernicus Sentinel data 2021/Sentinel Hub
+
+**EO-Learn Satellite Image Collection and Cleaning:** https://eo-learn.readthedocs.io/en/latest/examples/land-cover-map/SI_LULC_pipeline.html 
 
 # 1. Data Collection
 
@@ -21,7 +23,7 @@ There are two main data sources for this project: Sentinel-2 satellite images an
 
 ## 1.1 Sentinel-2 
 
-The Sentinel-2 mission is made up of a pair of optical satellites that image the globe roughly every 5 days. They capture images in 12 optical bands including the visible spectrum. Bands 3, 4, and 7 were used for this project, representing near infra-red, red and green wavelengths. 
+The Sentinel-2 mission is made up of a pair of optical satellites that image the globe roughly every 5 days. They capture images in 12 optical bands including the visible spectrum. Bands 3, 4, and 7 were used for this project, representing near infra-red, red and green wavelengths. Sentinelhub provides a python API for aquiring Sentinel-2 images.
 
 ## 1.2 Canadian Regional Ice Charts
 
@@ -35,14 +37,19 @@ Canadian Regional Ice Charts show geospacial sea ice concentrations for ship saf
 
 A sample ice chart for Hudson Bay on April 12, 2021 is shown below. Each region on the chart has a corresponding set of codes giving information on, among other things, the concentration of sea ice. The chart below right shows the codes corresponding to ice concentration ([source])(https://library.wmo.int/doc_num.php?explnum_id=9270). All charts are archived and available as shapefiles from the National Snow and Ice Data Centre dating back to 2006.
 
-<p float="left">
-  <img src="/Images/Ice_Chart_ex.gif" width="400" /> 
-  <img src="/Images/Chart Codes.PNG" width="400" />  
-</p>
+| <img src="/Images/Ice_Chart_ex.gif" height="400" />  | <img src="/Images/Chart Codes.PNG" height="400" /> |  
+|:--:|:--:| 
+| *Sample Ice Chart for Hudson Bay* | *SIGRID-3 Ice Chart Codes* |
 
 ## 1.3 Data Collection Workflow
 
-Data was collected using the EO-Learn python library, which provides a framework for slicing large geographical areas into smaller, more manageable tiles called EOPatches. This allows for creating a data collection pipeline where satellite images are aquired through the Sentinelhub API. The workflow can also include filtering steps to avoid cloudy images as well as custom steps to add additional features such as image masks. The Data collection workflow loops over each EOPatch and consists of:
+Data was collected using the EO-Learn python library, which provides a framework for slicing large geographical areas into smaller, more manageable tiles called EOPatches. 
+
+| <img src="/Images/Region-Grid.png" width="600" />   |  
+|:--:|
+| *Sliced hudson bay reagion. Image/mask pairs are generated on each tile.* |
+
+After slicing the region, an EO-Learn workflow was developed to aquire satellite images through the Sentinelhub API. The workflow includes filtering steps to remove cloudy images and a custom step to add a time-dependent image mask. The data collection workflow loops over each EOPatch and consists of:
 
 - **add_data:** Collect all available satellite images for the EOPatch in false color (bands B03, B04, and B08)
 - **remove_dates:** Discard images that were taken more than 36 hours away from an available ice chart
@@ -51,17 +58,16 @@ Data was collected using the EO-Learn python library, which provides a framework
 - **remove_cloudy_scenes:** Remove images where the sum of cloudy and non-valid pixels is greater than 5%
 - **time_raster:** Custom task to locate the ice chart temporally closest to the image, locate the area of the chart associated with the image, and rasterize into an ice concentration mask for the image
 - **save_im:** Save each image and mask 
-
-<p float="left">
-  <img src="/Images/Region-Grid.png" width="600" /> 
-  <img src="/Images/image-mask.png" width="600" />  
-</p>
+- 
+| <img src="/Images/image-mask.png" width="600" />     |  
+|:--:|
+| *Image and mask pair generated through the EO-Learn workflow* |
 
 # 2 Data Processing
 
 ## 2.1 Class Definitions
 
-There a many possible classes for ice in the SIGRID-3 format. In order to simplify analysis, the SIGRID-3 classes were binned into 8 classes broadly defined as:
+In order to simplify analysis the 31 SIGRID-3 classes were binned into 8 classes broadly defined as:
 
 - 0: <10% ice
 - 1: 10-30% ice
@@ -72,11 +78,11 @@ There a many possible classes for ice in the SIGRID-3 format. In order to simpli
 - 6: fast ice (thick ice that is 'fastented' to the coastline)
 - 7: land
 
-With these definitions, the pixel-wise distribution of classes across all 3,392 images in the dataset is shown below. It is clear that there is a strong class imbalance, with open water, 90-100% ice, and land occupying most of the dataset.
+With these definitions, the pixel-wise distribution of classes across all 3,392 images in the dataset is shown below. There is a strong class imbalance, with open water, 90-100% ice, and land occupying most of the dataset.
 
-<p float="left">
-  <img src="/Images/class_dist.png" width="600" /> 
-</p>
+|<img src="/Images/class_dist.png" width="400" /> |
+|:--:|
+| *Pixel-wise class distributino over all images* |
 
 ## 2.2 Data Input Pipeline
 
@@ -91,23 +97,23 @@ Before being fed into the model for training, the following operations were perf
     - Random flip up-down
     - Random image rotation by +- 5 degrees (corners we mapped to black in the image and land in the mask)
 
-The image below shows a image/mask pair to be fed into the training pipeline. Note the random image rotation.
+This results in an image/mask pair for input like the one below.
 
-<p float="left">
-  <img src="/Images/input_image_mask.png" width="600" /> 
-</p>
+|<img src="/Images/input_image_mask.png" width="600" /> |
+|:--:|
+| *Sample image/mask pair used a training input. Note the random image rotation.* |
 
 # 3 Model Building
 
 The aim here was to create a model to generate a predicted sea ice chart based on a satellite image. This is an image segmentation problem, wherein a model is expected to predict a class for each pixel in an image. 
 
-## 3.1 U-Net ([ref](https://arxiv.org/pdf/1505.04597.pdf))
+## 3.1 U-Net
 
 A popular convolutional neural network architecture for image segmentation is the 'U-Net'. It consists of a contraction path (composed of successive convolution, ReLU activation, and max pooling operations) followed by an expanation path. In the expansion path, a combination of upsampling and concatenation with high resolution images from the contraction path allows the network to localise features of the image at higher and higher resolution until each pixel of the image has a predicted class. A diagram of the basic architechture of the network is shown below.
 
-<p float="left">
-  <img src="/Images/U-Net.png" width="600" /> 
-</p>
+|<img src="/Images/U-Net.png" width="600" />  |
+|:--:|
+| *Base U-Net Architecture. Source: [https://arxiv.org/pdf/1505.04597.pdf](https://arxiv.org/pdf/1505.04597.pdf)* |
 
 ## 3.2 Model Definition
 
@@ -119,11 +125,17 @@ The model for this project is an adapted version of a U-NET from the Dstl Satell
 
 ## 3.3 Training and Predictions
 
-The model seems to achieve optimal performance at after roughly 80 training epochs (where an epoch is a run through the entire training dataset). Plots of training/validation loss and mean IoU metric are shown below. IoU is also known as the [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index).
+The neural network above was trained for 120 epochs (where an epoch is a run through the entire training dataset). Plots of training/validation loss and mean IoU metric are shown below. IoU is also known as the [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index).
 
-<p float="left">
-  <img src="/Images/train-val.png" width="600" /> 
-</p>
+|<img src="/Images/train-val.png" width="600" />   |
+|:--:|
+| *Model performance over training epochs* |
+
+It appeas that optimal validation data performance is achieved after roughly 80 epochs. The model weights at this 'optimal' point were saved and used for the final model. A confusion matrix for the final model was generated. 
+
+|<img src="/Images/confusion.png" width="600" />   |
+|:--:|
+| *Final model confusion matrix for validation data* |
 
 A series of validation data images, true masks, and predicted masks are shown below. The class imbalance of the dataset is apparent here, with land and solid ice dominating many of the images. Nevertheless the model is able to provide a good prediction of localized ice concentration in many cases. It is also interesting to note that the model often provides much finer detail than the published ice charts. This is an encouraging result for the potential usefullness of an algorith such as this for developing ice charts in the future.
 
