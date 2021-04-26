@@ -2,9 +2,9 @@
 
 -  Collected 3392 satellite images of Hudson Bay sea ice in the Canadian Arctic from 2016-1-1 to 2018-7-31
 -  Generated sea ice concentrations masks for each image using Canadian Regional Ice Chart shapefiles
--  Trained a Convolutional Neural Network (U-Net) to generate sea ice charts from satellite images based on seven different classes (7 levels of ice concentration and land)
-    -  Validation Accuracy: 83%
-    -  Mean Validation IoU (intersection over union) score: 0.44
+-  Trained a Convolutional Neural Network (U-Net) to generate sea ice charts from satellite images based on eight different classes (seven levels of ice concentration and land)
+    -  Model Accuracy: 83%
+    -  Model Mean IoU (intersection over union) score: 0.44
 - Found a strong class imbalance favoring thick solid ice due to complete freezing in the winter months. Future work should focus on collecting more data during the spring months when ice is thawing and there is a greater variety in ice concentration.
 - Future work could also take advantage of additional satellite wavelength collection bands beyond the visible spectrum.
 
@@ -147,6 +147,13 @@ A series of validation data images, true masks, and predicted masks are shown be
 
 <p float="left">
   <img src="/Images/pred1.png" width="600" /> 
-  <img src="/Images/pred2.png" width="600" />  
-    
+  <img src="/Images/pred2.png" width="600" />
+  <img src="/Images/pred3.png" width="600" />
+  <img src="/Images/pred4.png" width="600" />
+  <img src="/Images/pred5.png" width="600" />
+  <img src="/Images/pred6.png" width="600" />
+  <img src="/Images/pred7.png" width="600" />
+  <img src="/Images/pred8.png" width="600" />
+  <img src="/Images/pred9.png" width="600" />
+  <img src="/Images/pred10.png" width="600" />
 </p>
