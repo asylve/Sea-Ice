@@ -7,6 +7,7 @@
     -  Model Mean IoU (intersection over union) score: 0.44
 - Found a strong class imbalance favoring thick solid ice due to complete freezing in the winter months. Future work should focus on collecting more data during the spring months when ice is thawing and there is a greater variety in ice concentration.
 - Future work could also take advantage of additional satellite wavelength collection bands beyond the visible spectrum.
+- The dataset is available here: https://www.kaggle.com/alexandersylvester/arctic-sea-ice-image-masking
 
 <p float="left">
   <img src="/Images/pred1.png" width="800" /> 
