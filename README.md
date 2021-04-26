@@ -3,13 +3,13 @@
 -  Collected 3392 satellite images of Hudson Bay sea ice in the Canadian Arctic from 2016-1-1 to 2018-7-31
 -  Generated sea ice concentrations masks for each image using Canadian Regional Ice Chart shapefiles
 -  Trained a Convolutional Neural Network (U-Net) to generate sea ice charts from satellite images based on seven different classes (7 levels of ice concentration and land)
-    -  Validation Accuracy:
-    -  Mean Validation IoU (intersection over union) score: 
+    -  Validation Accuracy: 83%
+    -  Mean Validation IoU (intersection over union) score: 0.44
 - Found a strong class imbalance favoring thick solid ice due to complete freezing in the winter months. Future work should focus on collecting more data during the spring months when ice is thawing and there is a greater variety in ice concentration.
 - Future work could also take advantage of additional satellite wavelength collection bands beyond the visible spectrum.
 
 <p float="left">
-  <img src="/Images/model-output.png" width="600" /> 
+  <img src="/Images/pred1.png" width="800" /> 
 </p>
  
 # Code/Resources
@@ -139,12 +139,14 @@ The neural network above was trained for 120 epochs (where an epoch is a run thr
 
 It appears that optimal validation data performance is achieved after roughly 80 epochs. The model weights at this 'optimal' point were saved and used for the final model. A confusion matrix for the final model was generated. 
 
-|<img src="/Images/confusion.png" width="600" />   |
+|<img src="/Images/confusion_matrix.png" width="600" />   |
 |:--:|
 | *Final model confusion matrix for validation data* |
 
 A series of validation data images, true masks, and predicted masks are shown below. The class imbalance of the dataset is apparent here, with land and solid ice dominating many of the images. Nevertheless the model is able to provide a good prediction of localized ice concentration in many cases. It is also interesting to note that the model often provides much finer detail than the published ice charts. This is indicates potential usefullness for such an algorith in developing ice charts based on raw satellite data.
 
 <p float="left">
-  <img src="/Images/predictions.png" width="600" /> 
+  <img src="/Images/pred1.png" width="600" /> 
+  <img src="/Images/pred2.png" width="600" />  
+    
 </p>
