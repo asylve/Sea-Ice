@@ -1,6 +1,6 @@
 # Neural Net Mapping of Hudson Bay Sea Ice
 
-The Canadian Ice Service produces weekly regional sea ice charts for ship safety and environmental monitoring. In this project I use a convolutional neural network to automatically generate ice charts from satellite imagery. With increasing availability of satellite data, this network may be able to produce similar ice charts globally at higher detail.
+The Canadian Ice Service produces weekly regional sea ice charts for ship safety and environmental monitoring. In this project I use a convolutional neural network to automatically generate ice charts from satellite imagery. With increasing availability of satellite data, this network may be able to produce similar ice charts globally at higher detail. You can try out the model for yourself on this prototype (web application)[http://ec2-3-12-161-143.us-east-2.compute.amazonaws.com/].
 
 <p float="left">
   <img src="/Images/pred1.png" width="800" /> 
